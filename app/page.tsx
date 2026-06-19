@@ -84,17 +84,28 @@ export default function Home() {
   return (
     <main className="min-h-screen p-6 bg-gray-50">
 
-      <div className="text-center mt-12 mb-16">
-  <h1 className="text-5xl font-extrabold bg-gradient-to-r from-green-500 to-green-700 bg-clip-text text-transparent">
-    Income Tax Calculator Pakistan (Salaried)
-  </h1>
+      {/* HERO SECTION */}
 
-  <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-    Calculate monthly and yearly salary tax instantly using official FBR tax slabs.
-  </p>
+<div className="relative mt-16 mb-16">
+
+  <div className="absolute inset-0 bg-gradient-to-r from-green-100 via-white to-green-100 rounded-3xl blur-xl opacity-60"></div>
+
+  <div className="relative text-center py-12 rounded-3xl bg-white shadow-lg">
+
+    <h1 className="text-5xl font-extrabold bg-gradient-to-r from-green-500 to-emerald-700 bg-clip-text text-transparent">
+      Income Tax Calculator Pakistan
+    </h1>
+
+    <p className="text-gray-600 mt-6 max-w-2xl mx-auto text-lg">
+      Instantly calculate monthly and yearly salary tax using official FBR slabs.
+      Accurate, fast and professional.
+    </p>
+
+  </div>
+
 </div>
 
-      <div className="card p-10 max-w-xl mx-auto border border-gray-100 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 bg-white">
+      <div className="card p-10 max-w-xl mx-auto border border-gray-100 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 bg-white backdrop-blur-md">
         <select
           value={year}
           onChange={(e) => setYear(e.target.value)}

@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gradient-to-b from-white via-gray-50 to-green-50">
+      <body className="bg-gradient-to-b from-white via-gray-50 to-green-100">
 
         {/* NAVBAR */}
         <nav className="bg-white/70 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-gray-200">
@@ -75,7 +75,7 @@ export default function RootLayout({
 
   {/* SIDEBAR */}
   <aside className="w-72 hidden md:block">
-  <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-28 border border-gray-100 hover:shadow-2xl transition">
+  <div className="bg-white/80 backdrop-blur-md rounded-3xl shadow-xl p-6 sticky top-28 border border-gray-100 hover:shadow-2xl transition">
 
     <h3 className="text-xl font-bold mb-6 text-green-600">
       🚀 Quick Tools
