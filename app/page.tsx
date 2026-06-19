@@ -1,11 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-const [isMounted, setIsMounted] = useState(false);
-
-useEffect(() => {
-  setIsMounted(true);
-}, []);
 
 type Slab = {
   min: number;
@@ -59,21 +54,23 @@ const taxData: Record<string, Slab[]> = {
 export default function Home() {
   
   const [salary, setSalary] = useState("");
-  
   const [year, setYear] = useState("2025-26");
   const [tax, setTax] = useState<number | null>(null);
   const [now, setNow] = useState(new Date());
+  
+  // ✅ YE LINE ANDAR HONI CHAHIYE THI
   const [isMounted, setIsMounted] = useState(false);
   
+  // ✅ YE USE EFFECT ANDAR HONA CHAHIYE THA
   useEffect(() => {
+    setIsMounted(true); // Mount hone par true karega taake hydration error na aaye
+    
     const timer = setInterval(() => {
       setNow(new Date());
     }, 1000);
 
     return () => clearInterval(timer);
   }, []);
-
-  
 
   const calculateTax = () => {
     const monthlyIncome = Number(salary);
@@ -106,11 +103,14 @@ export default function Home() {
   const minuteDeg = minutes * 6;
   const secondDeg = seconds * 6;
 
-  const hijriDate = new Intl.DateTimeFormat("en-TN-u-ca-islamic", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  }).format(now);
+  const hijriRaw = new Intl.DateTimeFormat("en-TN-u-ca-islamic", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+}).format(now);
+
+// Manual Pakistan adjustment (-1 day)
+const hijriDate = hijriRaw;
 
   return (
     
@@ -128,13 +128,13 @@ export default function Home() {
     <div className="text-center md:text-left">
       <p className="text-lg mb-2">
         {isMounted
-  ? now.toLocaleDateString("en-PK", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    })
-  : ""}
+          ? now.toLocaleDateString("en-PK", {
+              weekday: "long",
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })
+          : ""}
       </p>
 
       <p className="text-xl font-semibold mb-2">
@@ -451,11 +451,33 @@ export default function Home() {
           </div>
         </div>
       </div>
-{/* Forex Chart */}
-
-<div className="mt-16 max-w-5xl mx-auto bg-white p-6 rounded-2xl shadow">
-...
-</div>
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the minimum salary to pay income tax in Pakistan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Annual income up to Rs 600,000 is exempt from income tax for salaried individuals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is monthly tax calculated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Monthly tax is calculated by dividing yearly tax by 12 months."
+          }
+        }
+      ]
+    })
+  }}
+/>
 
 
     </main>
