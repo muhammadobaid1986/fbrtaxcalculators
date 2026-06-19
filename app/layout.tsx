@@ -24,7 +24,6 @@ export default function RootLayout({
         <nav className="bg-gradient-to-r from-slate-900 via-gray-900 to-slate-800 shadow-lg sticky top-0 z-50">
   <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center gap-3">
 
-    {/* Logo */}
     <Link
       href="/"
       className="text-2xl font-semibold text-white tracking-wide"
@@ -32,8 +31,7 @@ export default function RootLayout({
       FBR Tax Calculators
     </Link>
 
-    {/* Nav Buttons */}
-    <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row gap-3 justify-between items-center">
+    <div className="flex flex-wrap justify-center gap-2">
 
       <Link href="/" className="px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition">
         Home
@@ -61,10 +59,10 @@ export default function RootLayout({
 </nav>
 
         {/* PAGE CONTENT */}
-        <div className="max-w-7xl mx-auto px-4 py-10 flex gap-8">
+        <div className="max-w-7xl mx-auto px-3 md:px-4 py-6 md:py-10 flex flex-col md:flex-row gap-8">
 
   {/* SIDEBAR */}
-  <aside className="w-72 hidden md:block">
+  <aside className="w-full md:w-72">
   <div className="bg-white/80 backdrop-blur-md rounded-3xl shadow-xl p-6 sticky top-28 border border-gray-100 hover:shadow-2xl transition">
 
     <h3 className="text-xl font-bold mb-6 text-green-600">
