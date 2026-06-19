@@ -114,7 +114,7 @@ const hijriDate = hijriRaw;
 
   return (
     
-    <main className="min-h-screen p-6 bg-gray-50">
+    <main className="min-h-screen p-3 md:p-6 bg-gray-50">
       {/* Pakistan Date & Clock Card */}
 
 <div className="max-w-4xl mx-auto mb-12 bg-gradient-to-r from-green-700 to-green-600 text-white p-8 rounded-3xl shadow-2xl">
@@ -185,7 +185,7 @@ const hijriDate = hijriRaw;
       {/* HERO SECTION */}
       <div className="mt-16 mb-16 max-w-4xl mx-auto">
         <div className="bg-white rounded-3xl shadow-2xl p-10 text-center">
-          <h1 className="text-5xl font-extrabold text-gray-800">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-gray-800">
             Income Tax Calculator Pakistan
           </h1>
 
@@ -196,7 +196,7 @@ const hijriDate = hijriRaw;
         </div>
       </div>
 
-      <div className="card p-10 max-w-xl mx-auto border border-gray-100 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 bg-white backdrop-blur-md">
+      <div className="card p-5 md:p-10 max-w-xl mx-auto border border-gray-100 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 bg-white backdrop-blur-md">
         <select
           value={year}
           onChange={(e) => setYear(e.target.value)}

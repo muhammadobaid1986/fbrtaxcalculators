@@ -33,7 +33,7 @@ export default function RootLayout({
     </Link>
 
     {/* Nav Buttons */}
-    <div className="flex flex-wrap justify-center gap-2">
+    <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row gap-3 justify-between items-center">
 
       <Link href="/" className="px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition">
         Home
