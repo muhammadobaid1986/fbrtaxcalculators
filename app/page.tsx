@@ -94,8 +94,7 @@ export default function Home() {
   </p>
 </div>
 
-      <div className="card p-10 max-w-xl mx-auto border rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 bg-white">
-
+      <div className="card p-10 max-w-xl mx-auto border border-gray-100 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 bg-white">
         <select
           value={year}
           onChange={(e) => setYear(e.target.value)}
