@@ -1,6 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+const [isMounted, setIsMounted] = useState(false);
+
+useEffect(() => {
+  setIsMounted(true);
+}, []);
 
 type Slab = {
   min: number;
@@ -58,6 +63,7 @@ export default function Home() {
   const [year, setYear] = useState("2025-26");
   const [tax, setTax] = useState<number | null>(null);
   const [now, setNow] = useState(new Date());
+  const [isMounted, setIsMounted] = useState(false);
   
   useEffect(() => {
     const timer = setInterval(() => {
@@ -121,20 +127,22 @@ export default function Home() {
 
     <div className="text-center md:text-left">
       <p className="text-lg mb-2">
-        {now.toLocaleDateString("en-PK", {
-          weekday: "long",
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        })}
+        {isMounted
+  ? now.toLocaleDateString("en-PK", {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    })
+  : ""}
       </p>
 
       <p className="text-xl font-semibold mb-2">
-        {now.toLocaleTimeString("en-PK")}
+        {isMounted ? now.toLocaleTimeString("en-PK") : ""}
       </p>
 
       <p className="text-lg">
-        Islamic Date: {hijriDate}
+        Islamic Date: {isMounted ? hijriDate : ""}
       </p>
     </div>
 

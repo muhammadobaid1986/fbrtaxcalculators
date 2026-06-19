@@ -166,28 +166,7 @@ export default function RootLayout({
             }),
           }}
         />
-<script
-  type="text/javascript"
-  src="https://s3.tradingview.com/tv.js"
-></script>
 
-<script
-  dangerouslySetInnerHTML={{
-    __html: `
-      new TradingView.widget({
-        width: "100%",
-        height: 400,
-        symbol: "OANDA:USDPRK",
-        interval: "D",
-        timezone: "Asia/Karachi",
-        theme: "light",
-        style: "1",
-        locale: "en",
-        container_id: "tradingview_chart"
-      });
-    `,
-  }}
-></script>
 
       </body>
     </html>
