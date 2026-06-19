@@ -25,3 +25,8 @@ body {
 button:hover {
   box-shadow: 0 8px 20px rgba(34, 197, 94, 0.4);
 }
+
+html,
+body {
+  overflow-x: hidden;
+}

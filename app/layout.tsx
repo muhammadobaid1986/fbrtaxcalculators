@@ -22,7 +22,7 @@ export default function RootLayout({
 
         {/* NAVBAR */}
         <nav className="bg-gradient-to-r from-slate-900 via-gray-900 to-slate-800 shadow-lg sticky top-0 z-50">
-  <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row gap-3 justify-between items-center">
+  <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center gap-3">
 
     {/* Logo */}
     <Link
@@ -103,7 +103,7 @@ export default function RootLayout({
 </aside>
 
   {/* MAIN CONTENT */}
-  <main className="flex-1">
+  <main className="flex-1 min-w-0">
     {children}
   </main>
 
