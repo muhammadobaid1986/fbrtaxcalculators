@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type Slab = {
   min: number;
@@ -49,18 +49,23 @@ const taxData: Record<string, Slab[]> = {
     { min: 2400000, max: 3600000, rate: 0.25, fixed: 186000 },
     { min: 3600000, max: Infinity, rate: 0.35, fixed: 486000 },
   ],
-
-  
 };
 
 export default function Home() {
-
   const [salary, setSalary] = useState("");
   const [year, setYear] = useState("2025-26");
   const [tax, setTax] = useState<number | null>(null);
+  const [now, setNow] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setNow(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
 
   const calculateTax = () => {
-
     const monthlyIncome = Number(salary);
     const annualIncome = monthlyIncome * 12;
 
@@ -75,19 +80,6 @@ export default function Home() {
     }
 
     setTax(Math.max(0, yearlyTax));
-{/* 2026-27 Placeholder */}
-
-<div className="mt-12 p-6 bg-rose-50 border-l-4 border-rose-400 rounded-xl">
-  <h3 className="text-lg font-bold mb-2">
-    Tax Year 2026-27 (Coming Soon)
-  </h3>
-  <p className="text-sm text-gray-700">
-    The official income tax slabs for 2026-27 will be updated
-    here after the Federal Budget is passed by the Parliament of Pakistan.
-    Please check back once the Finance Act 2026 is officially announced.
-  </p>
-</div>
-
   };
 
   const monthlyIncome = Number(salary) || 0;
@@ -96,24 +88,107 @@ export default function Home() {
   const monthlyAfterTax = monthlyIncome - monthlyTax;
   const yearlyAfterTax = annualIncome - (tax ?? 0);
 
+  const hours = now.getHours() % 12;
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+
+  const hourDeg = hours * 30 + minutes * 0.5;
+  const minuteDeg = minutes * 6;
+  const secondDeg = seconds * 6;
+
+  const hijriDate = new Intl.DateTimeFormat("en-TN-u-ca-islamic", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(now);
+
   return (
     <main className="min-h-screen p-6 bg-gray-50">
+      {/* Date / Time / Islamic Date / Analog Clock */}
+      <div className="max-w-4xl mx-auto mb-10 bg-white rounded-3xl shadow-xl p-6">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">
+              Current Date & Time
+            </h2>
+            <p className="text-lg text-gray-700 mb-2">
+              <span className="font-semibold">Date:</span>{" "}
+              {now.toLocaleDateString("en-PK", {
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </p>
+            <p className="text-lg text-gray-700 mb-2">
+              <span className="font-semibold">Time:</span>{" "}
+              {now.toLocaleTimeString("en-PK")}
+            </p>
+            <p className="text-lg text-gray-700">
+              <span className="font-semibold">Islamic Date:</span> {hijriDate}
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="relative w-40 h-40 rounded-full border-[10px] border-green-200 bg-white shadow-inner">
+              {/* Clock Center */}
+              <div className="absolute top-1/2 left-1/2 w-3 h-3 bg-green-700 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"></div>
+
+              {/* Hour Hand */}
+              <div
+                className="absolute top-1/2 left-1/2 w-1 h-12 bg-gray-800 rounded origin-bottom"
+                style={{
+                  transform: `translate(-50%, -100%) rotate(${hourDeg}deg)`,
+                }}
+              ></div>
+
+              {/* Minute Hand */}
+              <div
+                className="absolute top-1/2 left-1/2 w-1 h-16 bg-green-700 rounded origin-bottom"
+                style={{
+                  transform: `translate(-50%, -100%) rotate(${minuteDeg}deg)`,
+                }}
+              ></div>
+
+              {/* Second Hand */}
+              <div
+                className="absolute top-1/2 left-1/2 w-0.5 h-16 bg-red-500 rounded origin-bottom"
+                style={{
+                  transform: `translate(-50%, -100%) rotate(${secondDeg}deg)`,
+                }}
+              ></div>
+
+              {/* Numbers */}
+              <span className="absolute top-2 left-1/2 -translate-x-1/2 text-sm font-bold">
+                12
+              </span>
+              <span className="absolute right-3 top-1/2 -translate-y-1/2 text-sm font-bold">
+                3
+              </span>
+              <span className="absolute bottom-2 left-1/2 -translate-x-1/2 text-sm font-bold">
+                6
+              </span>
+              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm font-bold">
+                9
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* HERO SECTION */}
+      <div className="mt-16 mb-16 max-w-4xl mx-auto">
+        <div className="bg-white rounded-3xl shadow-2xl p-10 text-center">
+          <h1 className="text-5xl font-extrabold text-gray-800">
+            Income Tax Calculator Pakistan
+          </h1>
 
-<div className="mt-16 mb-16 max-w-4xl mx-auto">
-  <div className="bg-white rounded-3xl shadow-2xl p-10 text-center">
-
-    <h1 className="text-5xl font-extrabold text-gray-800">
-      Income Tax Calculator Pakistan
-    </h1>
-
-    <p className="text-gray-600 mt-6 text-lg">
-      Instantly calculate monthly and yearly salary tax using official FBR slabs.
-    </p>
-
-  </div>
-</div>
+          <p className="text-gray-600 mt-6 text-lg">
+            Instantly calculate monthly and yearly salary tax using official FBR
+            slabs.
+          </p>
+        </div>
+      </div>
 
       <div className="card p-10 max-w-xl mx-auto border border-gray-100 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 bg-white backdrop-blur-md">
         <select
@@ -145,7 +220,6 @@ export default function Home() {
 
         {tax !== null && (
           <div className="mt-8 text-sm space-y-2">
-
             <div className="flex justify-between">
               <span>Monthly Income</span>
               <span>{monthlyIncome.toLocaleString()}</span>
@@ -177,220 +251,200 @@ export default function Home() {
               <span>Yearly Income After Tax</span>
               <span>{yearlyAfterTax.toLocaleString()}</span>
             </div>
-
           </div>
         )}
 
         {/* Dynamic Slab Table */}
+        <div className="mt-12 max-w-xl mx-auto">
+          <h2 className="text-xl font-bold mb-4">Tax Slabs for {year}</h2>
 
-<div className="mt-12 max-w-xl mx-auto">
-  <h2 className="text-xl font-bold mb-4">
-    Tax Slabs for {year}
-  </h2>
-
-  <div className="overflow-x-auto">
-    <table className="w-full border text-sm bg-white rounded-lg shadow">
-      <thead>
-        <tr className="bg-gray-100">
-          <th className="border p-2 text-left">Income Range</th>
-          <th className="border p-2 text-left">Rate</th>
-        </tr>
-      </thead>
-      <tbody>
-        {taxData[year].map((slab, index) => (
-          <tr key={index}>
-            <td className="border p-2">
-              {slab.max === Infinity
-                ? `Above Rs ${slab.min.toLocaleString()}`
-                : `Rs ${slab.min.toLocaleString()} - Rs ${slab.max.toLocaleString()}`}
-            </td>
-            <td className="border p-2">
-              {slab.rate * 100}%
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-</div>
-
+          <div className="overflow-x-auto">
+            <table className="w-full border text-sm bg-white rounded-lg shadow">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border p-2 text-left">Income Range</th>
+                  <th className="border p-2 text-left">Rate</th>
+                </tr>
+              </thead>
+              <tbody>
+                {taxData[year].map((slab, index) => (
+                  <tr key={index}>
+                    <td className="border p-2">
+                      {slab.max === Infinity
+                        ? `Above Rs ${slab.min.toLocaleString()}`
+                        : `Rs ${slab.min.toLocaleString()} - Rs ${slab.max.toLocaleString()}`}
+                    </td>
+                    <td className="border p-2">{slab.rate * 100}%</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
 
       <div className="mt-12 p-6 bg-amber-50 border-l-4 border-amber-400 rounded-xl max-w-xl mx-auto">
-  <h3 className="text-lg font-bold mb-2">
-    Tax Year 2026‑27 Update
-  </h3>
-  <p className="text-sm text-gray-700">
-    The official income tax slabs for 2026‑27 will be updated here once the Federal Budget is passed by Parliament.
-  </p>
-</div>
-{/* SEO CONTENT SECTION */}
+        <h3 className="text-lg font-bold mb-2">Tax Year 2026‑27 Update</h3>
+        <p className="text-sm text-gray-700">
+          The official income tax slabs for 2026‑27 will be updated here once
+          the Federal Budget is passed by Parliament.
+        </p>
+      </div>
 
-<div className="mt-16 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
-  <h2 className="text-2xl font-bold mb-4">
-    Income Tax Calculator Pakistan – Complete Guide
-  </h2>
+      {/* SEO CONTENT SECTION */}
+      <div className="mt-16 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
+        <h2 className="text-2xl font-bold mb-4">
+          Income Tax Calculator Pakistan – Complete Guide
+        </h2>
 
-  <p className="mb-4 text-gray-700">
-    Use our free income tax calculator Pakistan to calculate salary tax
-    for tax years 2021 to 2026. This tool helps salaried individuals
-    estimate monthly and yearly tax based on official FBR tax slabs.
-  </p>
+        <p className="mb-4 text-gray-700">
+          Use our free income tax calculator Pakistan to calculate salary tax
+          for tax years 2021 to 2026. This tool helps salaried individuals
+          estimate monthly and yearly tax based on official FBR tax slabs.
+        </p>
 
-  <h3 className="text-xl font-semibold mt-6 mb-2">
-    How to Calculate Income Tax in Pakistan?
-  </h3>
+        <h3 className="text-xl font-semibold mt-6 mb-2">
+          How to Calculate Income Tax in Pakistan?
+        </h3>
 
-  <p className="mb-4 text-gray-700">
-    Income tax in Pakistan is calculated on annual income.
-    The government defines different tax slabs each year.
-    As your income increases, the tax rate increases according
-    to marginal slab rules.
-  </p>
+        <p className="mb-4 text-gray-700">
+          Income tax in Pakistan is calculated on annual income. The government
+          defines different tax slabs each year. As your income increases, the
+          tax rate increases according to marginal slab rules.
+        </p>
 
-  <h3 className="text-xl font-semibold mt-6 mb-2">
-    Who Should Use This Calculator?
-  </h3>
+        <h3 className="text-xl font-semibold mt-6 mb-2">
+          Who Should Use This Calculator?
+        </h3>
 
-  <p className="text-gray-700">
-    This calculator is designed for salaried individuals
-    who want to estimate their salary income tax instantly
-    without manual calculation.
-  </p>
-</div>
+        <p className="text-gray-700">
+          This calculator is designed for salaried individuals who want to
+          estimate their salary income tax instantly without manual calculation.
+        </p>
+      </div>
 
-{/* FAQ Section */}
+      {/* FAQ Section */}
+      <div className="mt-12 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
+        <h2 className="text-2xl font-bold mb-6">
+          Frequently Asked Questions (FAQs)
+        </h2>
 
-<div className="mt-12 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
-  <h2 className="text-2xl font-bold mb-6">
-    Frequently Asked Questions (FAQs)
-  </h2>
+        <div className="space-y-6 text-sm text-gray-700">
+          <div>
+            <p className="font-semibold">
+              What is the minimum salary to pay income tax in Pakistan?
+            </p>
+            <p>
+              Currently, annual income up to Rs 600,000 is exempt from income
+              tax for salaried individuals.
+            </p>
+          </div>
 
-  <div className="space-y-6 text-sm text-gray-700">
+          <div>
+            <p className="font-semibold">How is monthly tax calculated?</p>
+            <p>
+              Monthly tax is calculated by dividing total yearly tax by 12
+              months.
+            </p>
+          </div>
 
-    <div>
-      <p className="font-semibold">
-        What is the minimum salary to pay income tax in Pakistan?
-      </p>
-      <p>
-        Currently, annual income up to Rs 600,000 is exempt
-        from income tax for salaried individuals.
-      </p>
-    </div>
+          <div>
+            <p className="font-semibold">
+              Is this calculator affiliated with FBR?
+            </p>
+            <p>
+              No, this website is an independent tool based on publicly
+              available tax slabs.
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <div>
-      <p className="font-semibold">
-        How is monthly tax calculated?
-      </p>
-      <p>
-        Monthly tax is calculated by dividing total yearly tax by 12 months.
-      </p>
-    </div>
+      {/* SEO CONTENT SECTION */}
+      <div className="mt-16 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
+        <h2 className="text-2xl font-bold mb-4">
+          Income Tax Calculator Pakistan 2025-26
+        </h2>
 
-    <div>
-      <p className="font-semibold">
-        Is this calculator affiliated with FBR?
-      </p>
-      <p>
-        No, this website is an independent tool based on publicly available tax slabs.
-      </p>
-    </div>
+        <p className="mb-4 text-gray-700">
+          Our Income Tax Calculator Pakistan helps salaried individuals
+          calculate monthly and yearly income tax instantly according to
+          official FBR tax slabs. This calculator supports tax years 2021-22 to
+          2025-26 and provides accurate salary tax estimation.
+        </p>
 
-  </div>
-</div>
+        <h3 className="text-xl font-semibold mt-6 mb-2">
+          How Income Tax Is Calculated in Pakistan?
+        </h3>
 
-{/* SEO CONTENT SECTION */}
+        <p className="mb-4 text-gray-700">
+          Income tax in Pakistan is calculated on annual income. The government
+          defines tax slabs each year through the Finance Act. Tax is calculated
+          using a marginal rate system, meaning higher income portions are taxed
+          at higher rates.
+        </p>
 
-<div className="mt-16 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
+        <h3 className="text-xl font-semibold mt-6 mb-2">
+          Who Should Use This Salary Tax Calculator?
+        </h3>
 
-  <h2 className="text-2xl font-bold mb-4">
-    Income Tax Calculator Pakistan 2025-26
-  </h2>
+        <p className="mb-4 text-gray-700">
+          This calculator is designed for salaried individuals working in
+          Pakistan who want to estimate monthly tax deductions from their salary
+          and calculate yearly tax liability.
+        </p>
 
-  <p className="mb-4 text-gray-700">
-    Our Income Tax Calculator Pakistan helps salaried individuals
-    calculate monthly and yearly income tax instantly according to
-    official FBR tax slabs. This calculator supports tax years
-    2021-22 to 2025-26 and provides accurate salary tax estimation.
-  </p>
+        <h3 className="text-xl font-semibold mt-6 mb-2">
+          Supported Tax Years
+        </h3>
 
-  <h3 className="text-xl font-semibold mt-6 mb-2">
-    How Income Tax Is Calculated in Pakistan?
-  </h3>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 text-sm">
+          <li>Income Tax Calculator 2025-26</li>
+          <li>Income Tax Calculator 2024-25</li>
+          <li>Income Tax Calculator 2023-24</li>
+          <li>Income Tax Calculator 2022-23</li>
+          <li>Income Tax Calculator 2021-22</li>
+        </ul>
+      </div>
 
-  <p className="mb-4 text-gray-700">
-    Income tax in Pakistan is calculated on annual income.
-    The government defines tax slabs each year through the Finance Act.
-    Tax is calculated using a marginal rate system, meaning higher income
-    portions are taxed at higher rates.
-  </p>
+      {/* FAQ SECTION */}
+      <div className="mt-12 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
+        <h2 className="text-2xl font-bold mb-6">
+          Frequently Asked Questions (FAQs)
+        </h2>
 
-  <h3 className="text-xl font-semibold mt-6 mb-2">
-    Who Should Use This Salary Tax Calculator?
-  </h3>
+        <div className="space-y-6 text-sm text-gray-700">
+          <div>
+            <p className="font-semibold">
+              What is the minimum salary to pay income tax in Pakistan?
+            </p>
+            <p>
+              Annual income up to Rs 600,000 is currently exempt from income
+              tax for salaried individuals.
+            </p>
+          </div>
 
-  <p className="mb-4 text-gray-700">
-    This calculator is designed for salaried individuals working in
-    Pakistan who want to estimate monthly tax deductions from their
-    salary and calculate yearly tax liability.
-  </p>
+          <div>
+            <p className="font-semibold">
+              How is monthly income tax calculated?
+            </p>
+            <p>
+              Monthly tax is calculated by dividing yearly tax liability by 12
+              months.
+            </p>
+          </div>
 
-  <h3 className="text-xl font-semibold mt-6 mb-2">
-    Supported Tax Years
-  </h3>
-
-  <ul className="list-disc pl-6 space-y-2 text-gray-700 text-sm">
-    <li>Income Tax Calculator 2025-26</li>
-    <li>Income Tax Calculator 2024-25</li>
-    <li>Income Tax Calculator 2023-24</li>
-    <li>Income Tax Calculator 2022-23</li>
-    <li>Income Tax Calculator 2021-22</li>
-  </ul>
-
-</div>
-{/* FAQ SECTION */}
-
-<div className="mt-12 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
-
-  <h2 className="text-2xl font-bold mb-6">
-    Frequently Asked Questions (FAQs)
-  </h2>
-
-  <div className="space-y-6 text-sm text-gray-700">
-
-    <div>
-      <p className="font-semibold">
-        What is the minimum salary to pay income tax in Pakistan?
-      </p>
-      <p>
-        Annual income up to Rs 600,000 is currently exempt from income tax
-        for salaried individuals.
-      </p>
-    </div>
-
-    <div>
-      <p className="font-semibold">
-        How is monthly income tax calculated?
-      </p>
-      <p>
-        Monthly tax is calculated by dividing yearly tax liability by 12 months.
-      </p>
-    </div>
-
-    <div>
-      <p className="font-semibold">
-        Is this calculator officially affiliated with FBR?
-      </p>
-      <p>
-        No. This is an independent informational tool based on publicly
-        available tax slab data.
-      </p>
-    </div>
-
-  </div>
-
-</div>
-
+          <div>
+            <p className="font-semibold">
+              Is this calculator officially affiliated with FBR?
+            </p>
+            <p>
+              No. This is an independent informational tool based on publicly
+              available tax slab data.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }

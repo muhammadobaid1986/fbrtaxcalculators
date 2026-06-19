@@ -18,25 +18,43 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gradient-to-b from-gray-50 via-gray-100 to-gray-200">
+      <body className="bg-gradient-to-b from-slate-50 to-gray-200">
 
         {/* NAVBAR */}
-        <nav className="bg-gradient-to-r from-rose-500 via-pink-400 to-amber-300 shadow-xl sticky top-0 z-50">
+        <nav className="bg-gradient-to-r from-slate-900 via-gray-900 to-slate-800 shadow-lg sticky top-0 z-50">
   <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
+    {/* Logo */}
     <Link
       href="/"
-      className="text-3xl font-bold text-green-400 tracking-wide drop-shadow-lg"
+      className="text-2xl font-semibold text-white tracking-wide"
     >
       FBR Tax Calculators
     </Link>
 
-    <div className="space-x-4">
-      <Link href="/" className="px-4 py-2 bg-white text-green-700 rounded-full font-semibold shadow hover:scale-105 transition">Home</Link>
-      <Link href="/blog" className="px-4 py-2 bg-white text-green-700 rounded-full font-semibold shadow hover:scale-105 transition">Blog</Link>
-      <Link href="/zakat-calculator" className="px-4 py-2 bg-white text-green-700 rounded-full font-semibold shadow hover:scale-105 transition">Zakat</Link>
-      <Link href="/withholding-tax-calculator" className="px-4 py-2 bg-white text-green-700 rounded-full font-semibold shadow hover:scale-105 transition">WHT</Link>
-      <Link href="/about" className="px-4 py-2 bg-white text-green-700 rounded-full font-semibold shadow hover:scale-105 transition">About</Link>
+    {/* Nav Buttons */}
+    <div className="space-x-3">
+
+      <Link href="/" className="px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition">
+        Home
+      </Link>
+
+      <Link href="/blog" className="px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition">
+        Blog
+      </Link>
+
+      <Link href="/zakat-calculator" className="px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition">
+        Zakat
+      </Link>
+
+      <Link href="/withholding-tax-calculator" className="px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition">
+        WHT
+      </Link>
+
+      <Link href="/about" className="px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition">
+        About
+      </Link>
+
     </div>
 
   </div>
@@ -148,6 +166,28 @@ export default function RootLayout({
             }),
           }}
         />
+<script
+  type="text/javascript"
+  src="https://s3.tradingview.com/tv.js"
+></script>
+
+<script
+  dangerouslySetInnerHTML={{
+    __html: `
+      new TradingView.widget({
+        width: "100%",
+        height: 400,
+        symbol: "OANDA:USDPRK",
+        interval: "D",
+        timezone: "Asia/Karachi",
+        theme: "light",
+        style: "1",
+        locale: "en",
+        container_id: "tradingview_chart"
+      });
+    `,
+  }}
+></script>
 
       </body>
     </html>
