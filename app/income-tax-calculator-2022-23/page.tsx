@@ -63,7 +63,65 @@ export default function Page() {
 
 </div>
     
-    
+    {/* Deep SEO Authority Content */}
+
+<div className="mt-12 text-gray-700 text-sm space-y-5">
+
+  <h2 className="text-2xl font-bold">
+    Complete Guide to Income Tax in Pakistan 2025-26
+  </h2>
+
+  <p>
+    The Income Tax Calculator 2025-26 Pakistan helps salaried individuals
+    understand how their income tax is calculated according to official
+    FBR tax slabs. Income tax is applied on annual taxable income using
+    marginal tax rules.
+  </p>
+
+  <h3 className="text-xl font-semibold">
+    Understanding Marginal Tax System
+  </h3>
+
+  <p>
+    Pakistan uses a marginal tax system, which means higher portions
+    of income are taxed at higher rates. Only the income within
+    a specific slab is taxed at that slab's rate.
+  </p>
+
+  <h3 className="text-xl font-semibold">
+    Example Calculation for Rs 100,000 Monthly Salary
+  </h3>
+
+  <p>
+    Monthly Salary: Rs 100,000  
+    Annual Income: Rs 1,200,000  
+    First Rs 600,000 → 0%  
+    Remaining Rs 600,000 → 1%  
+    Total Yearly Tax: Rs 6,000  
+    Monthly Tax: Rs 500
+  </p>
+
+  <h3 className="text-xl font-semibold">
+    Who Should Use This Salary Tax Calculator?
+  </h3>
+
+  <p>
+    This tool is ideal for government employees, private sector workers,
+    corporate professionals, freelancers on payroll, and anyone
+    receiving salaried income in Pakistan.
+  </p>
+
+  <h3 className="text-xl font-semibold">
+    Important Notes
+  </h3>
+
+  <ul className="list-disc pl-6 space-y-2">
+    <li>Tax slabs may change after Federal Budget updates.</li>
+    <li>Always verify tax figures before filing official returns.</li>
+    <li>This calculator provides estimation only.</li>
+  </ul>
+
+</div>
     </div>
   );
 }
