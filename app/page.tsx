@@ -52,11 +52,13 @@ const taxData: Record<string, Slab[]> = {
 };
 
 export default function Home() {
+  
   const [salary, setSalary] = useState("");
+  
   const [year, setYear] = useState("2025-26");
   const [tax, setTax] = useState<number | null>(null);
   const [now, setNow] = useState(new Date());
-
+  
   useEffect(() => {
     const timer = setInterval(() => {
       setNow(new Date());
@@ -64,6 +66,8 @@ export default function Home() {
 
     return () => clearInterval(timer);
   }, []);
+
+  
 
   const calculateTax = () => {
     const monthlyIncome = Number(salary);
@@ -103,78 +107,72 @@ export default function Home() {
   }).format(now);
 
   return (
+    
     <main className="min-h-screen p-6 bg-gray-50">
-      {/* Date / Time / Islamic Date / Analog Clock */}
-      <div className="max-w-4xl mx-auto mb-10 bg-white rounded-3xl shadow-xl p-6">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">
-              Current Date & Time
-            </h2>
-            <p className="text-lg text-gray-700 mb-2">
-              <span className="font-semibold">Date:</span>{" "}
-              {now.toLocaleDateString("en-PK", {
-                weekday: "long",
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </p>
-            <p className="text-lg text-gray-700 mb-2">
-              <span className="font-semibold">Time:</span>{" "}
-              {now.toLocaleTimeString("en-PK")}
-            </p>
-            <p className="text-lg text-gray-700">
-              <span className="font-semibold">Islamic Date:</span> {hijriDate}
-            </p>
-          </div>
+      {/* Pakistan Date & Clock Card */}
 
-          <div className="flex justify-center">
-            <div className="relative w-40 h-40 rounded-full border-[10px] border-green-200 bg-white shadow-inner">
-              {/* Clock Center */}
-              <div className="absolute top-1/2 left-1/2 w-3 h-3 bg-green-700 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"></div>
+<div className="max-w-4xl mx-auto mb-12 bg-gradient-to-r from-green-700 to-green-600 text-white p-8 rounded-3xl shadow-2xl">
 
-              {/* Hour Hand */}
-              <div
-                className="absolute top-1/2 left-1/2 w-1 h-12 bg-gray-800 rounded origin-bottom"
-                style={{
-                  transform: `translate(-50%, -100%) rotate(${hourDeg}deg)`,
-                }}
-              ></div>
+  <h2 className="text-3xl font-bold mb-4 text-center">
+    🇵🇰 Pakistan Current Time
+  </h2>
 
-              {/* Minute Hand */}
-              <div
-                className="absolute top-1/2 left-1/2 w-1 h-16 bg-green-700 rounded origin-bottom"
-                style={{
-                  transform: `translate(-50%, -100%) rotate(${minuteDeg}deg)`,
-                }}
-              ></div>
+  <div className="grid md:grid-cols-2 gap-8 items-center">
 
-              {/* Second Hand */}
-              <div
-                className="absolute top-1/2 left-1/2 w-0.5 h-16 bg-red-500 rounded origin-bottom"
-                style={{
-                  transform: `translate(-50%, -100%) rotate(${secondDeg}deg)`,
-                }}
-              ></div>
+    <div className="text-center md:text-left">
+      <p className="text-lg mb-2">
+        {now.toLocaleDateString("en-PK", {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}
+      </p>
 
-              {/* Numbers */}
-              <span className="absolute top-2 left-1/2 -translate-x-1/2 text-sm font-bold">
-                12
-              </span>
-              <span className="absolute right-3 top-1/2 -translate-y-1/2 text-sm font-bold">
-                3
-              </span>
-              <span className="absolute bottom-2 left-1/2 -translate-x-1/2 text-sm font-bold">
-                6
-              </span>
-              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm font-bold">
-                9
-              </span>
-            </div>
-          </div>
-        </div>
+      <p className="text-xl font-semibold mb-2">
+        {now.toLocaleTimeString("en-PK")}
+      </p>
+
+      <p className="text-lg">
+        Islamic Date: {hijriDate}
+      </p>
+    </div>
+
+    <div className="flex justify-center">
+      <div className="relative w-48 h-48 rounded-full bg-white border-8 border-green-200 shadow-xl">
+
+        <div className="absolute top-1/2 left-1/2 w-4 h-4 bg-green-800 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"></div>
+
+        {/* Hour Hand */}
+        <div
+          className="absolute top-1/2 left-1/2 w-2 h-14 bg-black origin-bottom"
+          style={{
+            transform: `translate(-50%, -100%) rotate(${hourDeg}deg)`
+          }}
+        ></div>
+
+        {/* Minute Hand */}
+        <div
+          className="absolute top-1/2 left-1/2 w-1 h-20 bg-green-700 origin-bottom"
+          style={{
+            transform: `translate(-50%, -100%) rotate(${minuteDeg}deg)`
+          }}
+        ></div>
+
+        {/* Second Hand */}
+        <div
+          className="absolute top-1/2 left-1/2 w-0.5 h-24 bg-red-500 origin-bottom"
+          style={{
+            transform: `translate(-50%, -100%) rotate(${secondDeg}deg)`
+          }}
+        ></div>
+
       </div>
+    </div>
+
+  </div>
+
+</div>
 
       {/* HERO SECTION */}
       <div className="mt-16 mb-16 max-w-4xl mx-auto">
@@ -445,6 +443,13 @@ export default function Home() {
           </div>
         </div>
       </div>
+{/* Forex Chart */}
+
+<div className="mt-16 max-w-5xl mx-auto bg-white p-6 rounded-2xl shadow">
+...
+</div>
+
+
     </main>
   );
 }
