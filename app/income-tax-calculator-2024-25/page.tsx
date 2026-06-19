@@ -31,6 +31,46 @@ export default function Page() {
         <li>2,400,001 – 3,600,000 – 25%</li>
         <li>Above 3,600,000 – 30%</li>
       </ul>
+    {/* Detailed SEO Content */}
+
+<div className="mt-10 text-gray-700 text-sm space-y-4">
+
+  <h3 className="text-xl font-semibold mt-6">
+    Detailed Explanation of 2025-26 Tax Slabs
+  </h3>
+
+  <p>
+    The tax slabs for 2025-26 are structured to apply marginal taxation.
+    This means higher income portions are taxed at higher rates.
+    For example, if your annual income is Rs 1,200,000,
+    only the portion above Rs 600,000 is taxed at 1%.
+  </p>
+
+  <p>
+    It is important to understand that income tax is calculated annually.
+    Employers usually deduct tax monthly based on estimated yearly income.
+  </p>
+
+  <h3 className="text-xl font-semibold mt-6">
+    Example Calculation for 2025-26
+  </h3>
+
+  <p>
+    If your monthly salary is Rs 100,000,
+    your annual income becomes Rs 1,200,000.
+    The first Rs 600,000 is tax-free.
+    The remaining Rs 600,000 is taxed at 1%.
+    This results in Rs 6,000 yearly tax.
+  </p>
+
+  <p>
+    Our calculator automatically performs this calculation
+    and provides both monthly and yearly tax breakdown.
+  </p>
+
+</div>
+    
+    
     </div>
   );
 }
