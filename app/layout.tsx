@@ -114,7 +114,7 @@ export default function RootLayout({
 
             <div>
               <h3 className="text-xl font-bold text-white mb-4">
-                FBR Tax Calculators
+                FBR Tax Calculators pk
               </h3>
               <p className="text-sm leading-relaxed text-gray-400">
                 Free modern tax & financial calculation tools for Pakistan.
