@@ -1,14 +1,28 @@
 export default function sitemap() {
   return [
-    { url: "https://fbrtaxcalculators.com" },
-    { url: "https://fbrtaxcalculators.com/blog" },
-    { url: "https://fbrtaxcalculators.com/zakat-calculator" },
-    { url: "https://fbrtaxcalculators.com/withholding-tax-calculator" },
-
-    { url: "https://fbrtaxcalculators.com/blog/how-to-calculate-income-tax" },
-    { url: "https://fbrtaxcalculators.com/blog/filer-vs-non-filer" },
-    { url: "https://fbrtaxcalculators.com/blog/how-to-file-tax-return-online" },
-    { url: "https://fbrtaxcalculators.com/blog/how-to-become-a-filer" },
-    { url: "https://fbrtaxcalculators.com/blog/latest-budget-2025-26-tax-slabs" },
+    {
+      url: "https://fbrtaxcalculators.com",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://fbrtaxcalculators.com/income-tax-calculator-2025-26",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://fbrtaxcalculators.com/income-tax-calculator-2024-25",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://fbrtaxcalculators.com/income-tax-calculator-2023-24",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://fbrtaxcalculators.com/income-tax-calculator-2022-23",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://fbrtaxcalculators.com/income-tax-calculator-2021-22",
+      lastModified: new Date(),
+    },
   ];
 }

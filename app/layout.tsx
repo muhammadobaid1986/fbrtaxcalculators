@@ -8,7 +8,7 @@ export const metadata = {
     template: "%s | FBR Tax Calculators",
   },
   description:
-    "Free online tax calculators for Pakistan including Income Tax Calculator (2021-2026), Zakat Calculator and Withholding Tax Calculator.",
+  "Free Income Tax Calculator Pakistan 2025-26. Calculate salary income tax for tax years 2021-2026 using official FBR tax slabs.",
 };
 
 export default function RootLayout({
@@ -18,15 +18,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-gradient-to-b from-white via-gray-50 to-green-50">
 
         {/* NAVBAR */}
-        <nav className="bg-white shadow-sm sticky top-0 z-50">
+        <nav className="bg-white/70 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-gray-200">
           <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             
-            <Link href="/" className="text-2xl font-bold gradient-text">
-              FBR Tax Calculators
-            </Link>
+            <Link
+  href="/"
+  className="text-3xl font-extrabold bg-gradient-to-r from-green-500 via-emerald-600 to-green-700 bg-clip-text text-transparent tracking-wide"
+>
+  FBR Tax Calculators
+</Link>
 
             <div className="space-x-6 text-gray-700 font-medium hidden md:block">
   <Link
@@ -71,17 +74,43 @@ export default function RootLayout({
         <div className="max-w-7xl mx-auto px-4 py-10 flex gap-8">
 
   {/* SIDEBAR */}
-  <aside className="w-64 hidden md:block">
-    <div className="bg-white rounded-xl shadow p-6 sticky top-24">
-      <h3 className="font-bold text-lg mb-4">Quick Links</h3>
-      <ul className="space-y-3 text-sm">
-        <li><Link href="/" className="hover:text-green-600">Income Tax Calculator</Link></li>
-        <li><Link href="/zakat-calculator" className="hover:text-green-600">Zakat Calculator</Link></li>
-        <li><Link href="/withholding-tax-calculator" className="hover:text-green-600">Withholding Tax</Link></li>
-        <li><Link href="/blog" className="hover:text-green-600">Tax Guides</Link></li>
-      </ul>
-    </div>
-  </aside>
+  <aside className="w-72 hidden md:block">
+  <div className="bg-white rounded-3xl shadow-xl p-6 sticky top-28 border border-gray-100 hover:shadow-2xl transition">
+
+    <h3 className="text-xl font-bold mb-6 text-green-600">
+      🚀 Quick Tools
+    </h3>
+
+    <ul className="space-y-4 text-sm">
+
+      <li>
+        <Link href="/" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+          💰 Income Tax Calculator
+        </Link>
+      </li>
+
+      <li>
+        <Link href="/zakat-calculator" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+          🕌 Zakat Calculator
+        </Link>
+      </li>
+
+      <li>
+        <Link href="/withholding-tax-calculator" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+          📊 Withholding Tax
+        </Link>
+      </li>
+
+      <li>
+        <Link href="/blog" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+          📘 Tax Guides
+        </Link>
+      </li>
+
+    </ul>
+
+  </div>
+</aside>
 
   {/* MAIN CONTENT */}
   <main className="flex-1">
