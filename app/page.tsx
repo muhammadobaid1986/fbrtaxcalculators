@@ -49,6 +49,8 @@ const taxData: Record<string, Slab[]> = {
     { min: 2400000, max: 3600000, rate: 0.25, fixed: 186000 },
     { min: 3600000, max: Infinity, rate: 0.35, fixed: 486000 },
   ],
+
+  
 };
 
 export default function Home() {
@@ -73,6 +75,19 @@ export default function Home() {
     }
 
     setTax(Math.max(0, yearlyTax));
+{/* 2026-27 Placeholder */}
+
+<div className="mt-12 p-6 bg-rose-50 border-l-4 border-rose-400 rounded-xl">
+  <h3 className="text-lg font-bold mb-2">
+    Tax Year 2026-27 (Coming Soon)
+  </h3>
+  <p className="text-sm text-gray-700">
+    The official income tax slabs for 2026-27 will be updated
+    here after the Federal Budget is passed by the Parliament of Pakistan.
+    Please check back once the Finance Act 2026 is officially announced.
+  </p>
+</div>
+
   };
 
   const monthlyIncome = Number(salary) || 0;
@@ -86,23 +101,18 @@ export default function Home() {
 
       {/* HERO SECTION */}
 
-<div className="relative mt-16 mb-16">
+<div className="mt-16 mb-16 max-w-4xl mx-auto">
+  <div className="bg-white rounded-3xl shadow-2xl p-10 text-center">
 
-  <div className="absolute inset-0 bg-gradient-to-r from-green-100 via-white to-green-100 rounded-3xl blur-xl opacity-60"></div>
-
-  <div className="relative text-center py-12 rounded-3xl bg-white shadow-lg">
-
-    <h1 className="text-5xl font-extrabold bg-gradient-to-r from-green-500 to-emerald-700 bg-clip-text text-transparent">
+    <h1 className="text-5xl font-extrabold text-gray-800">
       Income Tax Calculator Pakistan
     </h1>
 
-    <p className="text-gray-600 mt-6 max-w-2xl mx-auto text-lg">
+    <p className="text-gray-600 mt-6 text-lg">
       Instantly calculate monthly and yearly salary tax using official FBR slabs.
-      Accurate, fast and professional.
     </p>
 
   </div>
-
 </div>
 
       <div className="card p-10 max-w-xl mx-auto border border-gray-100 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 bg-white backdrop-blur-md">
@@ -205,6 +215,15 @@ export default function Home() {
 </div>
 
       </div>
+
+      <div className="mt-12 p-6 bg-amber-50 border-l-4 border-amber-400 rounded-xl max-w-xl mx-auto">
+  <h3 className="text-lg font-bold mb-2">
+    Tax Year 2026‑27 Update
+  </h3>
+  <p className="text-sm text-gray-700">
+    The official income tax slabs for 2026‑27 will be updated here once the Federal Budget is passed by Parliament.
+  </p>
+</div>
 {/* SEO CONTENT SECTION */}
 
 <div className="mt-16 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">

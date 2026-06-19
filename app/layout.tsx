@@ -18,57 +18,29 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gradient-to-b from-white via-gray-50 to-green-100">
+      <body className="bg-gradient-to-b from-gray-50 via-gray-100 to-gray-200">
 
         {/* NAVBAR */}
-        <nav className="bg-white/70 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-gray-200">
-          <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            
-            <Link
-  href="/"
-  className="text-3xl font-extrabold bg-gradient-to-r from-green-500 via-emerald-600 to-green-700 bg-clip-text text-transparent tracking-wide"
->
-  FBR Tax Calculators
-</Link>
+        <nav className="bg-gradient-to-r from-rose-500 via-pink-400 to-amber-300 shadow-xl sticky top-0 z-50">
+  <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-            <div className="space-x-6 text-gray-700 font-medium hidden md:block">
-  <Link
-  href="/"
-  className="px-4 py-2 bg-green-600 text-white rounded-full shadow hover:bg-green-700 transition"
->
-  Home
-</Link>
-  <Link
-  href="/blog"
-  className="px-4 py-2 bg-green-600 text-white rounded-full shadow hover:bg-green-700 transition"
->
-  Blog
-</Link>
+    <Link
+      href="/"
+      className="text-3xl font-bold text-green-400 tracking-wide drop-shadow-lg"
+    >
+      FBR Tax Calculators
+    </Link>
 
-<Link
-  href="/zakat-calculator"
-  className="px-4 py-2 bg-green-600 text-white rounded-full shadow hover:bg-green-700 transition"
->
-  Zakat
-</Link>
+    <div className="space-x-4">
+      <Link href="/" className="px-4 py-2 bg-white text-green-700 rounded-full font-semibold shadow hover:scale-105 transition">Home</Link>
+      <Link href="/blog" className="px-4 py-2 bg-white text-green-700 rounded-full font-semibold shadow hover:scale-105 transition">Blog</Link>
+      <Link href="/zakat-calculator" className="px-4 py-2 bg-white text-green-700 rounded-full font-semibold shadow hover:scale-105 transition">Zakat</Link>
+      <Link href="/withholding-tax-calculator" className="px-4 py-2 bg-white text-green-700 rounded-full font-semibold shadow hover:scale-105 transition">WHT</Link>
+      <Link href="/about" className="px-4 py-2 bg-white text-green-700 rounded-full font-semibold shadow hover:scale-105 transition">About</Link>
+    </div>
 
-<Link
-  href="/withholding-tax-calculator"
-  className="px-4 py-2 bg-green-600 text-white rounded-full shadow hover:bg-green-700 transition"
->
-  WHT
-</Link>
-
-<Link
-  href="/about"
-  className="px-4 py-2 bg-green-600 text-white rounded-full shadow hover:bg-green-700 transition"
->
-  About
-</Link>
-</div>
-
-          </div>
-        </nav>
+  </div>
+</nav>
 
         {/* PAGE CONTENT */}
         <div className="max-w-7xl mx-auto px-4 py-10 flex gap-8">
