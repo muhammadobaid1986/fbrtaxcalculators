@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
+// @ts-ignore
+import HijriDate from "hijri-date";
 type Slab = {
   min: number;
   max: number;
@@ -103,13 +104,15 @@ export default function Home() {
   const minuteDeg = minutes * 6;
   const secondDeg = seconds * 6;
 
-  const hijriRaw = new Intl.DateTimeFormat("en-SA-u-ca-islamic", {
+  
+  const hijri = new HijriDate();
+
+const hijriRaw = new Intl.DateTimeFormat("en-SA-u-ca-islamic", {
   day: "numeric",
   month: "long",
   year: "numeric",
 }).format(now);
 
-// Manual Pakistan adjustment (-1 day)
 const hijriDate = hijriRaw;
 
   return (
