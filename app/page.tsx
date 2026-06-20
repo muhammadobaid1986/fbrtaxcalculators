@@ -325,44 +325,7 @@ const hijriDate = moment().format("iD iMMMM iYYYY") + " AH";
         </p>
       </div>
 
-      {/* FAQ Section */}
-      <div className="mt-12 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
-        <h2 className="text-2xl font-bold mb-6">
-          Frequently Asked Questions (FAQs)
-        </h2>
-
-        <div className="space-y-6 text-sm text-gray-700">
-          <div>
-            <p className="font-semibold">
-              What is the minimum salary to pay income tax in Pakistan?
-            </p>
-            <p>
-              Currently, annual income up to Rs 600,000 is exempt from income
-              tax for salaried individuals.
-            </p>
-          </div>
-
-          <div>
-            <p className="font-semibold">How is monthly tax calculated?</p>
-            <p>
-              Monthly tax is calculated by dividing total yearly tax by 12
-              months.
-            </p>
-          </div>
-
-          <div>
-            <p className="font-semibold">
-              Is this calculator affiliated with FBR?
-            </p>
-            <p>
-              No, this website is an independent tool based on publicly
-              available tax slabs.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* SEO CONTENT SECTION */}
+        {/* SEO CONTENT SECTION */}
       <div className="mt-16 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
         <h2 className="text-2xl font-bold mb-4">
           Income Tax Calculator Pakistan 2025-26
