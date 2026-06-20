@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://fbrtaxcalculators.com/sitemap.xml",
+    sitemap: "https://fbrtaxcalculators.vercel.app/sitemap.xml",
   };
 }
