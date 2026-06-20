@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-// @ts-ignore
-import HijriDate from "hijri-date";
+import moment from "moment-hijri";
 type Slab = {
   min: number;
   max: number;
@@ -105,15 +104,9 @@ export default function Home() {
   const secondDeg = seconds * 6;
 
   
-  const hijri = new HijriDate();
+ 
 
-const hijriRaw = new Intl.DateTimeFormat("en-SA-u-ca-islamic", {
-  day: "numeric",
-  month: "long",
-  year: "numeric",
-}).format(now);
-
-const hijriDate = hijriRaw;
+const hijriDate = moment().format("iD iMMMM iYYYY") + " AH";
 
   return (
     
