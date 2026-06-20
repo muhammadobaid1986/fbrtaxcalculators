@@ -1,7 +1,10 @@
 import "./globals.css";
 import Link from "next/link";
 
-export const metadata = {
+export const metadata = { 
+  verification: {
+  google: "3-xbUg1415g0V22gQIq0dUa8WcpugZrgWj6caHV2MUw",
+},  
   metadataBase: new URL("https://fbrtaxcalculators.com"),
   title: {
     default: "FBR Tax Calculators Pakistan | Income Tax, Zakat & WHT Tools",
