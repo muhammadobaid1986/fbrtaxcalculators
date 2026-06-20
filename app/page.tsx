@@ -103,7 +103,7 @@ export default function Home() {
   const minuteDeg = minutes * 6;
   const secondDeg = seconds * 6;
 
-  const hijriRaw = new Intl.DateTimeFormat("en-TN-u-ca-islamic", {
+  const hijriRaw = new Intl.DateTimeFormat("en-SA-u-ca-islamic", {
   day: "numeric",
   month: "long",
   year: "numeric",
