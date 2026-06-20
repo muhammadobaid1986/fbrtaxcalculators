@@ -5,7 +5,7 @@ export const metadata = {
   verification: {
   google: "3-xbUq141sg0V22gQIqOdUa8WcpugZrgWj6caHV2MUw",
 },  
-  metadataBase: new URL("https://fbrtaxcalculators.com"),
+  metadataBase: new URL("https://fbrtaxcalculators.vercel.app"),
   title: {
     default: "FBR Tax Calculators Pakistan | Income Tax, Zakat & WHT Tools",
     template: "%s | FBR Tax Calculators",
