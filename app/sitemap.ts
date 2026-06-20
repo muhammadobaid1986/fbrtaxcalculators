@@ -1,27 +1,27 @@
 export default function sitemap() {
   return [
     {
-      url: "https://fbrtaxcalculators.com",
+      url: "https://fbrtaxcalculators.vercel.app",
       lastModified: new Date(),
     },
     {
-      url: "https://fbrtaxcalculators.com/income-tax-calculator-2025-26",
+      url: "https://fbrtaxcalculators.vercel.app/income-tax-calculator-2025-26",
       lastModified: new Date(),
     },
     {
-      url: "https://fbrtaxcalculators.com/income-tax-calculator-2024-25",
+      url: "https://fbrtaxcalculators.vercel.app/income-tax-calculator-2024-25",
       lastModified: new Date(),
     },
     {
-      url: "https://fbrtaxcalculators.com/income-tax-calculator-2023-24",
+      url: "https://fbrtaxcalculators.vercel.app/income-tax-calculator-2023-24",
       lastModified: new Date(),
     },
     {
-      url: "https://fbrtaxcalculators.com/income-tax-calculator-2022-23",
+      url: "https://fbrtaxcalculators.vercel.app/income-tax-calculator-2022-23",
       lastModified: new Date(),
     },
     {
-      url: "https://fbrtaxcalculators.com/income-tax-calculator-2021-22",
+      url: "https://fbrtaxcalculators.vercel.app/income-tax-calculator-2021-22",
       lastModified: new Date(),
     },
   ];
