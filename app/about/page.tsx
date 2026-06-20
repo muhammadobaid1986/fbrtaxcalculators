@@ -10,6 +10,7 @@ export default function About() {
       <p className="mb-4">
         FBR Tax Calculators is an independent platform providing free
         income tax calculation tools for Pakistan.
+        Created By Muhammad Obaid Ullah
       </p>
 
       <p>
