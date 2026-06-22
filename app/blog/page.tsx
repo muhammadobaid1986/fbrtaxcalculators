@@ -45,6 +45,10 @@ const posts = [
   title: "Tax on Freelancers in Pakistan",
   link: "/tax-on-freelancers-pakistan"
 },
+{
+  title: "Benefits of Being a Filer in Pakistan",
+  link: "/benefits-of-being-filer-pakistan"
+},
 ];
 
 export default function Blog() {

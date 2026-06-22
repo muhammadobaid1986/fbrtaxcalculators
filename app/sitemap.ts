@@ -89,5 +89,9 @@ export default function sitemap() {
   url: "https://fbrtaxcalculators.vercel.app/tax-on-freelancers-pakistan",
   lastModified: new Date(),
 },
+{
+  url: "https://fbrtaxcalculators.vercel.app/benefits-of-being-filer-pakistan",
+  lastModified: new Date(),
+},
   ];
 }
