@@ -86,6 +86,12 @@ export default function RootLayout({
         </Link>
       </li>
 
+            <li>
+        <Link href="/salary-after-tax-calculator" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+          💸 Salary After Tax
+        </Link>
+      </li>
+
       <li>
         <Link href="/withholding-tax-calculator" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
           📊 Withholding Tax
@@ -134,6 +140,7 @@ export default function RootLayout({
                 <li><Link href="/zakat-calculator" className="hover:text-green-400 transition">Zakat Calculator</Link></li>
                 <li><Link href="/withholding-tax-calculator" className="hover:text-green-400 transition">WHT Calculator</Link></li>
                 <li><Link href="/blog" className="hover:text-green-400 transition">Tax Blog</Link></li>
+                <li><Link href="/salary-after-tax-calculator" className="hover:text-green-400 transition">Salary After Tax</Link></li>
               </ul>
             </div>
 
