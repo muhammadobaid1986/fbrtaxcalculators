@@ -53,6 +53,10 @@ const posts = [
   title: "How to Check ATL Status in Pakistan",
   link: "/atl-status-check-pakistan"
 },
+{
+  title: "How to Register on FBR Iris",
+  link: "/how-to-register-on-fbr-iris"
+},
 ];
 
 export default function Blog() {
