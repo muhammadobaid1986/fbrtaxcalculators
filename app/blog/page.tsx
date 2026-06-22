@@ -10,13 +10,13 @@ const posts = [
     link: "/how-to-calculate-income-tax",
   },
   {
-    title: "Filer vs Non Filer – Complete Guide",
-    link: "/filer-vs-non-filer"
-  },
+  title: "Filer vs Non Filer – Complete Guide",
+  link: "/filer-vs-non-filer-2025"
+},
   {
-    title: "How to File Tax Return Online in Pakistan",
-    link: "/how-to-file-tax-return-online"
-  },
+  title: "How to File Tax Return Online in Pakistan",
+  link: "/how-to-file-tax-return-online-pakistan"
+},
   {
     title: "How to Become a Filer in Pakistan",
     link: "/how-to-become-a-filer"
