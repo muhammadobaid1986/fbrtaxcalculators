@@ -109,6 +109,10 @@ export default function sitemap() {
   url: "https://fbrtaxcalculators.vercel.app/how-to-check-filer-status-pakistan",
   lastModified: new Date(),
 },
+{
+  url: "https://fbrtaxcalculators.vercel.app/salary-after-tax-calculator",
+  lastModified: new Date(),
+},
   ];
   
 }

@@ -65,6 +65,10 @@ const posts = [
   title: "How to Check Filer Status in Pakistan",
   link: "/how-to-check-filer-status-pakistan"
 },
+{
+  title: "Salary After Tax Calculator",
+  link: "/salary-after-tax-calculator"
+},
 ];
 
 export default function Blog() {
