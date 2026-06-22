@@ -2,11 +2,7 @@
 
 import { useState } from "react";
 
-export const metadata = {
-  title: "Salary After Tax Calculator Pakistan",
-  description:
-    "Calculate take-home salary after tax deductions in Pakistan.",
-};
+
 
 export default function SalaryAfterTaxCalculator() {
   const [salary, setSalary] = useState("");
