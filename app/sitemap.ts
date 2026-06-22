@@ -80,5 +80,14 @@ export default function sitemap() {
       url: "https://fbrtaxcalculators.vercel.app/latest-budget-2025-26-tax-slabs",
       lastModified: new Date(),
     },
+
+    {
+  url: "https://fbrtaxcalculators.vercel.app/tax-on-prize-bonds-pakistan",
+  lastModified: new Date(),
+},
+{
+  url: "https://fbrtaxcalculators.vercel.app/tax-on-freelancers-pakistan",
+  lastModified: new Date(),
+},
   ];
 }

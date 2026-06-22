@@ -41,6 +41,10 @@ const posts = [
   title: "Tax on Prize Bonds in Pakistan",
   link: "/tax-on-prize-bonds-pakistan"
 },
+{
+  title: "Tax on Freelancers in Pakistan",
+  link: "/tax-on-freelancers-pakistan"
+},
 ];
 
 export default function Blog() {
