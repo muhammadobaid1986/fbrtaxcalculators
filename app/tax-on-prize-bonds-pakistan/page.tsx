@@ -38,6 +38,26 @@ export default function PrizeBondTax() {
       <p className="mb-4">
         Prize money can be claimed through designated banks after verification.
       </p>
+<div className="mt-8">
+  <h2 className="text-2xl font-bold mb-4">
+    Related Guides
+  </h2>
+
+  <ul className="list-disc pl-6 space-y-2">
+    <li>
+      <a href="/how-to-become-a-filer" className="text-green-600">
+        How to Become a Filer
+      </a>
+    </li>
+
+    <li>
+      <a href="/benefits-of-being-filer-pakistan" className="text-green-600">
+        Benefits of Being a Filer
+      </a>
+    </li>
+  </ul>
+</div>
+
     </div>
   );
 }

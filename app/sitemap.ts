@@ -93,5 +93,9 @@ export default function sitemap() {
   url: "https://fbrtaxcalculators.vercel.app/benefits-of-being-filer-pakistan",
   lastModified: new Date(),
 },
+{
+  url: "https://fbrtaxcalculators.vercel.app/atl-status-check-pakistan",
+  lastModified: new Date(),
+},
   ];
 }

@@ -49,6 +49,10 @@ const posts = [
   title: "Benefits of Being a Filer in Pakistan",
   link: "/benefits-of-being-filer-pakistan"
 },
+{
+  title: "How to Check ATL Status in Pakistan",
+  link: "/atl-status-check-pakistan"
+},
 ];
 
 export default function Blog() {
