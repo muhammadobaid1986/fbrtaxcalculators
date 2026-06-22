@@ -113,6 +113,10 @@ export default function sitemap() {
   url: "https://fbrtaxcalculators.vercel.app/salary-after-tax-calculator",
   lastModified: new Date(),
 },
+{
+  url: "https://fbrtaxcalculators.vercel.app/how-to-calculate-income-tax",
+  lastModified: new Date(),
+},
   ];
   
 }
