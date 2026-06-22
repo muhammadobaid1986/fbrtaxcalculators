@@ -7,35 +7,35 @@ export const metadata = {
 const posts = [
   {
     title: "How to Calculate Income Tax in Pakistan",
-    link: "/blog/how-to-calculate-income-tax",
+    link: "/how-to-calculate-income-tax",
   },
   {
     title: "Filer vs Non Filer – Complete Guide",
-    link: "/blog/filer-vs-non-filer",
+    link: "/filer-vs-non-filer"
   },
   {
     title: "How to File Tax Return Online in Pakistan",
-    link: "/blog/how-to-file-tax-return-online",
+    link: "/how-to-file-tax-return-online"
   },
   {
     title: "How to Become a Filer in Pakistan",
-    link: "/blog/how-to-become-a-filer",
+    link: "/how-to-become-a-filer"
   },
   {
     title: "Latest Budget 2025-26 Income Tax Slabs",
-    link: "/blog/latest-budget-2025-26-tax-slabs",
+    link: "/latest-budget-2025-26-tax-slabs"
   },
   {
     title: "Property Tax in Pakistan – Complete Guide",
-    link: "/blog/property-tax-in-pakistan",
+    link: "/property-tax-in-pakistan"
   },
   {
     title: "Tax on Bank Profit in Pakistan",
-    link: "/blog/tax-on-bank-profit",
+    link: "/tax-on-bank-profit"
   },
   {
     title: "Tax on Car Registration in Pakistan",
-    link: "/blog/tax-on-car-registration",
+    link: "/tax-on-car-registration"
   },
 ];
 
