@@ -57,6 +57,14 @@ const posts = [
   title: "How to Register on FBR Iris",
   link: "/how-to-register-on-fbr-iris"
 },
+{
+  title: "Tax on Foreign Remittances in Pakistan",
+  link: "/tax-on-remittances-pakistan"
+},
+{
+  title: "How to Check Filer Status in Pakistan",
+  link: "/how-to-check-filer-status-pakistan"
+},
 ];
 
 export default function Blog() {

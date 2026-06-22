@@ -182,13 +182,12 @@ const hijriDate = moment().format("iD iMMMM iYYYY") + " AH";
       <div className="mt-16 mb-16 max-w-4xl mx-auto">
         <div className="bg-white rounded-3xl shadow-2xl p-10 text-center">
           <h1 className="text-3xl md:text-5xl font-extrabold text-gray-800">
-            Income Tax Calculator Pakistan
-          </h1>
+  Income Tax Calculator Pakistan 2025-26
+</h1>
 
           <p className="text-gray-600 mt-6 text-lg">
-            Instantly calculate monthly and yearly salary tax using official FBR
-            slabs.
-          </p>
+  Calculate salary income tax online in Pakistan for tax year 2025-26 using official FBR tax slabs. Get monthly tax, yearly tax and take-home salary instantly.
+</p>
         </div>
       </div>
 
@@ -358,6 +357,13 @@ const hijriDate = moment().format("iD iMMMM iYYYY") + " AH";
           Pakistan who want to estimate monthly tax deductions from their salary
           and calculate yearly tax liability.
         </p>
+        <h3 className="text-xl font-semibold mt-6 mb-2">
+  Why Use Our Income Tax Calculator Pakistan?
+</h3>
+
+<p className="mb-4 text-gray-700">
+  Our calculator helps employees, freelancers and professionals estimate their tax liability according to current FBR tax slabs. The tool supports multiple tax years and provides instant results.
+</p>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">
           Supported Tax Years
@@ -369,6 +375,9 @@ const hijriDate = moment().format("iD iMMMM iYYYY") + " AH";
           <li>Income Tax Calculator 2023-24</li>
           <li>Income Tax Calculator 2022-23</li>
           <li>Income Tax Calculator 2021-22</li>
+          <li>Income Tax Calculator Pakistan</li>
+<li>Salary Tax Calculator Pakistan</li>
+<li>FBR Tax Calculator Pakistan</li>
         </ul>
       </div>
 
