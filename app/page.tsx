@@ -305,12 +305,76 @@ const hijriDate = moment().format("iD iMMMM iYYYY") + " AH";
 
       <div className="mt-12 p-6 bg-amber-50 border-l-4 border-amber-400 rounded-xl max-w-xl mx-auto">
         <h3 className="text-lg font-bold mb-2">Tax Year 2026‑27 Update</h3>
+        
         <p className="text-sm text-gray-700">
           The official income tax slabs for 2026‑27 will be updated here once
           the Federal Budget is passed by Parliament.
         </p>
       </div>
+{/* POPULAR TOOLS */}
+<div className="max-w-5xl mx-auto mt-16">
 
+  <h2 className="text-3xl font-bold text-center mb-10">
+    Popular Tax Calculators
+  </h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <a
+      href="/"
+      className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl hover:-translate-y-1 transition"
+    >
+      <div className="text-5xl mb-4">💰</div>
+      <h3 className="font-bold text-lg">
+        Income Tax Calculator
+      </h3>
+      <p className="text-gray-600 text-sm mt-2">
+        Calculate monthly & yearly income tax.
+      </p>
+    </a>
+
+    <a
+      href="/salary-after-tax-calculator"
+      className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl hover:-translate-y-1 transition"
+    >
+      <div className="text-5xl mb-4">💵</div>
+      <h3 className="font-bold text-lg">
+        Salary After Tax
+      </h3>
+      <p className="text-gray-600 text-sm mt-2">
+        Estimate your take-home salary.
+      </p>
+    </a>
+
+    <a
+      href="/zakat-calculator"
+      className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl hover:-translate-y-1 transition"
+    >
+      <div className="text-5xl mb-4">🕌</div>
+      <h3 className="font-bold text-lg">
+        Zakat Calculator
+      </h3>
+      <p className="text-gray-600 text-sm mt-2">
+        Calculate your yearly zakat.
+      </p>
+    </a>
+
+    <a
+      href="/withholding-tax-calculator"
+      className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl hover:-translate-y-1 transition"
+    >
+      <div className="text-5xl mb-4">📊</div>
+      <h3 className="font-bold text-lg">
+        WHT Calculator
+      </h3>
+      <p className="text-gray-600 text-sm mt-2">
+        Calculate withholding tax instantly.
+      </p>
+    </a>
+
+  </div>
+
+</div>
       {/* WHY CHOOSE US */}
 <div className="max-w-5xl mx-auto mt-16">
 
