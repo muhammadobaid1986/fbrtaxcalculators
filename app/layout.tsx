@@ -174,6 +174,18 @@ export default function RootLayout({
             }),
           }}
         />
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "FBR Tax Calculators",
+      url: "https://fbrtaxcalculators.vercel.app",
+      logo: "https://fbrtaxcalculators.vercel.app/favicon.ico",
+    }),
+  }}
+/>
 
 
       </body>
