@@ -1,33 +1,50 @@
 "use client";
 
 import { useState } from "react";
+type Slab = {
+  min: number;
+  max: number;
+  rate: number;
+  fixed: number;
+};
+
+const slabs: Slab[] = [
+  { min: 0, max: 600000, rate: 0, fixed: 0 },
+  { min: 600000, max: 1200000, rate: 0.01, fixed: 0 },
+  { min: 1200000, max: 2400000, rate: 0.15, fixed: 6000 },
+  { min: 2400000, max: 3600000, rate: 0.25, fixed: 186000 },
+  { min: 3600000, max: Infinity, rate: 0.35, fixed: 486000 },
+];
 
 export default function SalaryAfterTaxCalculator() {
   const [salary, setSalary] = useState("");
   const [result, setResult] = useState<number | null>(null);
 
   const calculate = () => {
-    const monthlySalary = Number(salary);
+  const monthlySalary = Number(salary);
 
-    if (!monthlySalary) {
-      setResult(null);
-      return;
+  if (!monthlySalary) {
+    setResult(null);
+    return;
+  }
+
+  const annualSalary = monthlySalary * 12;
+
+  let yearlyTax = 0;
+
+  for (const slab of slabs) {
+    if (annualSalary > slab.min && annualSalary <= slab.max) {
+      yearlyTax =
+        slab.fixed + (annualSalary - slab.min) * slab.rate;
+      break;
     }
+  }
 
-    // Basic calculation (can be updated with actual slabs later)
-    let taxRate = 0;
-    const annualSalary = monthlySalary * 12;
+  const monthlyTax = yearlyTax / 12;
+  const takeHomeSalary = monthlySalary - monthlyTax;
 
-    if (annualSalary > 600000 && annualSalary <= 1200000) taxRate = 0.05;
-    else if (annualSalary > 1200000 && annualSalary <= 2400000) taxRate = 0.15;
-    else if (annualSalary > 2400000 && annualSalary <= 3600000) taxRate = 0.25;
-    else if (annualSalary > 3600000) taxRate = 0.30;
-
-    const estimatedTax = monthlySalary * taxRate;
-    const takeHomeSalary = monthlySalary - estimatedTax;
-
-    setResult(takeHomeSalary);
-  };
+  setResult(takeHomeSalary);
+};
 
   return (
     <div className="max-w-3xl mx-auto bg-white p-8 rounded-3xl shadow-xl border border-gray-100 mt-10">
