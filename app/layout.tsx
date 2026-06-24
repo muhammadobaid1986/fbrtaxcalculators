@@ -164,31 +164,35 @@ export default function RootLayout({
 
         {/* Schema Markup */}
         <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "FBR Tax Calculators",
-              url: "https://fbrtaxcalculators.com",
-            }),
-          }}
-        />
-        <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "FBR Tax Calculators",
-      url: "https://fbrtaxcalculators.vercel.app",
-      logo: "https://fbrtaxcalculators.vercel.app/favicon.ico",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://fbrtaxcalculators.vercel.app/#website",
+          url: "https://fbrtaxcalculators.vercel.app",
+          name: "FBR Tax Calculators",
+          description:
+            "Income Tax Calculator Pakistan, Zakat Calculator, Withholding Tax Calculator and FBR Tax Guides.",
+          inLanguage: "en"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://fbrtaxcalculators.vercel.app/#organization",
+          name: "FBR Tax Calculators",
+          url: "https://fbrtaxcalculators.vercel.app",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://fbrtaxcalculators.vercel.app/favicon.ico"
+          }
+        }
+      ]
     }),
   }}
 />
-
-
-      </body>
+    </body>
     </html>
   );
 }
