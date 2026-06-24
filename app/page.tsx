@@ -63,14 +63,17 @@ export default function Home() {
   
   // ✅ YE USE EFFECT ANDAR HONA CHAHIYE THA
   useEffect(() => {
-    setIsMounted(true); // Mount hone par true karega taake hydration error na aaye
-    
-    const timer = setInterval(() => {
-      setNow(new Date());
-    }, 1000);
+  setIsMounted(true);
 
-    return () => clearInterval(timer);
-  }, []);
+  // First update immediately
+  setNow(new Date());
+
+  const timer = setInterval(() => {
+    setNow(new Date());
+  }, 1000);
+
+  return () => clearInterval(timer);
+}, []);
 
   const calculateTax = () => {
     const monthlyIncome = Number(salary);
