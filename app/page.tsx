@@ -311,6 +311,59 @@ const hijriDate = moment().format("iD iMMMM iYYYY") + " AH";
         </p>
       </div>
 
+      {/* WHY CHOOSE US */}
+<div className="max-w-5xl mx-auto mt-16">
+
+  <h2 className="text-3xl font-bold text-center mb-10">
+    Why Choose FBR Tax Calculators?
+  </h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
+      <div className="text-5xl mb-4">✅</div>
+      <h3 className="font-bold text-xl mb-2">
+        Official FBR Slabs
+      </h3>
+      <p className="text-gray-600 text-sm">
+        Calculations are based on publicly available FBR tax slabs.
+      </p>
+    </div>
+
+    <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
+      <div className="text-5xl mb-4">⚡</div>
+      <h3 className="font-bold text-xl mb-2">
+        Instant Results
+      </h3>
+      <p className="text-gray-600 text-sm">
+        Calculate monthly and yearly income tax instantly.
+      </p>
+    </div>
+
+    <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
+      <div className="text-5xl mb-4">📱</div>
+      <h3 className="font-bold text-xl mb-2">
+        Mobile Friendly
+      </h3>
+      <p className="text-gray-600 text-sm">
+        Fully responsive and works smoothly on all devices.
+      </p>
+    </div>
+
+    <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
+      <div className="text-5xl mb-4">🆓</div>
+      <h3 className="font-bold text-xl mb-2">
+        Completely Free
+      </h3>
+      <p className="text-gray-600 text-sm">
+        No registration required. Use all tools free of cost.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
       {/* SEO CONTENT SECTION */}
       <div className="mt-16 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
         <h2 className="text-2xl font-bold mb-4">
