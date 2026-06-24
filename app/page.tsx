@@ -59,18 +59,17 @@ export default function Home() {
   const [now, setNow] = useState(new Date());
   
   // ✅ YE LINE ANDAR HONI CHAHIYE THI
-  const [isMounted, setIsMounted] = useState(false);
+  
   
   // ✅ YE USE EFFECT ANDAR HONA CHAHIYE THA
   useEffect(() => {
-  setIsMounted(true);
-
-  // First update immediately
-  setNow(new Date());
-
-  const timer = setInterval(() => {
+  const updateTime = () => {
     setNow(new Date());
-  }, 1000);
+  };
+
+  updateTime();
+
+  const timer = setInterval(updateTime, 1000);
 
   return () => clearInterval(timer);
 }, []);
@@ -126,22 +125,23 @@ const hijriDate = moment().format("iD iMMMM iYYYY") + " AH";
 
     <div className="text-center md:text-left">
       <p className="text-lg mb-2">
-        {isMounted
-          ? now.toLocaleDateString("en-PK", {
-              weekday: "long",
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            })
-          : ""}
+        {now.toLocaleDateString("en-PK", {
+  timeZone: "Asia/Karachi",
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+})}
       </p>
 
       <p className="text-xl font-semibold mb-2">
-        {isMounted ? now.toLocaleTimeString("en-PK") : ""}
+        {now.toLocaleTimeString("en-PK", {
+  timeZone: "Asia/Karachi",
+})}
       </p>
 
       <p className="text-lg">
-        Islamic Date: {isMounted ? hijriDate : ""}
+        Islamic Date: {hijriDate}
       </p>
     </div>
 
