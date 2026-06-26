@@ -21,6 +21,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1040104111900400"
+        crossOrigin="anonymous"
+      ></script>
+    </head>
       <body className="bg-gradient-to-b from-slate-50 to-gray-200">
 
         {/* NAVBAR */}
