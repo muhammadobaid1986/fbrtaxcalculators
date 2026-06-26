@@ -56,7 +56,8 @@ export default function Home() {
   const [salary, setSalary] = useState("");
   const [year, setYear] = useState("2025-26");
   const [tax, setTax] = useState<number | null>(null);
-  const [now, setNow] = useState(new Date());
+  const [now, setNow] = useState<Date | null>(null);
+  const [hijriDate, setHijriDate] = useState("");
   
   // ✅ YE LINE ANDAR HONI CHAHIYE THI
   
@@ -65,6 +66,7 @@ export default function Home() {
   useEffect(() => {
   const updateTime = () => {
     setNow(new Date());
+    setHijriDate(moment().format("iD iMMMM iYYYY") + " AH");
   };
 
   updateTime();
@@ -97,9 +99,9 @@ export default function Home() {
   const monthlyAfterTax = monthlyIncome - monthlyTax;
   const yearlyAfterTax = annualIncome - (tax ?? 0);
 
-  const hours = now.getHours() % 12;
-  const minutes = now.getMinutes();
-  const seconds = now.getSeconds();
+  const hours = now ? now.getHours() % 12 : 0;
+const minutes = now ? now.getMinutes() : 0;
+const seconds = now ? now.getSeconds() : 0;
 
   const hourDeg = hours * 30 + minutes * 0.5;
   const minuteDeg = minutes * 6;
@@ -108,7 +110,6 @@ export default function Home() {
   
  
 
-const hijriDate = moment().format("iD iMMMM iYYYY") + " AH";
 
   return (
     
@@ -125,7 +126,8 @@ const hijriDate = moment().format("iD iMMMM iYYYY") + " AH";
 
     <div className="text-center md:text-left">
       <p className="text-lg mb-2">
-        {now.toLocaleDateString("en-PK", {
+      {now &&
+  now.toLocaleDateString("en-PK", {
   timeZone: "Asia/Karachi",
   weekday: "long",
   year: "numeric",
@@ -135,7 +137,8 @@ const hijriDate = moment().format("iD iMMMM iYYYY") + " AH";
       </p>
 
       <p className="text-xl font-semibold mb-2">
-        {now.toLocaleTimeString("en-PK", {
+        {now &&
+  now.toLocaleTimeString("en-PK", {
   timeZone: "Asia/Karachi",
 })}
       </p>

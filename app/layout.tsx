@@ -5,7 +5,7 @@ export const metadata = {
   verification: {
   google: "3-xbUq141sg0V22gQIqOdUa8WcpugZrgWj6caHV2MUw",
 },  
-  metadataBase: new URL("https://fbrtaxcalculators.vercel.app"),
+  metadataBase: new URL("https://fbrtaxcalculators.com"),
   title: {
     default: "FBR Tax Calculators Pakistan | Income Tax, Zakat & WHT Tools",
     template: "%s | FBR Tax Calculators",
@@ -171,8 +171,8 @@ export default function RootLayout({
       "@graph": [
         {
           "@type": "WebSite",
-          "@id": "https://fbrtaxcalculators.vercel.app/#website",
-          url: "https://fbrtaxcalculators.vercel.app",
+          "@id": "https://fbrtaxcalculators.com/#website",
+          url: "https://fbrtaxcalculators.com",
           name: "FBR Tax Calculators",
           description:
             "Income Tax Calculator Pakistan, Zakat Calculator, Withholding Tax Calculator and FBR Tax Guides.",
@@ -180,12 +180,12 @@ export default function RootLayout({
         },
         {
           "@type": "Organization",
-          "@id": "https://fbrtaxcalculators.vercel.app/#organization",
+          "@id": "https://fbrtaxcalculators.com/#organization",
           name: "FBR Tax Calculators",
-          url: "https://fbrtaxcalculators.vercel.app",
+          url: "https://fbrtaxcalculators.com",
           logo: {
             "@type": "ImageObject",
-            url: "https://fbrtaxcalculators.vercel.app/favicon.ico"
+            url: "https://fbrtaxcalculators.com/favicon.ico"
           }
         }
       ]
