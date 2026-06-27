@@ -117,6 +117,11 @@ export default function sitemap() {
   url: "https://fbrtaxcalculators.com/how-to-calculate-income-tax",
   lastModified: new Date(),
 },
+{
+  url: "https://fbrtaxcalculators.com/income-tax-on-100000-salary-pakistan",
+  lastModified: new Date(),
+},
+
   ];
   
 }

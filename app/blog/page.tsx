@@ -69,6 +69,11 @@ const posts = [
   title: "Salary After Tax Calculator",
   link: "/salary-after-tax-calculator"
 },
+{
+  title: "Income Tax on Rs.100,000 Salary in Pakistan",
+  link: "/income-tax-on-100000-salary-pakistan"
+},
+
 ];
 
 export default function Blog() {
