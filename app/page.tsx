@@ -214,11 +214,19 @@ const seconds = now ? now.getSeconds() : 0;
 </div>
 
       <div className="card p-5 md:p-10 max-w-xl mx-auto border border-gray-100 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 bg-white backdrop-blur-md">
+        <label
+  htmlFor="taxYear"
+  className="block text-sm font-semibold mb-2"
+>
+  Select Tax Year
+</label>
         <select
-          value={year}
-          onChange={(e) => setYear(e.target.value)}
-          className="w-full p-3 border rounded-lg mb-4"
-        >
+  id="taxYear"
+  aria-label="Select Tax Year"
+  value={year}
+  onChange={(e) => setYear(e.target.value)}
+  className="w-full p-3 border rounded-lg mb-4"
+>
           {Object.keys(taxData).map((y) => (
             <option key={y} value={y}>
               Tax Year {y}
