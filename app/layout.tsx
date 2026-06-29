@@ -1,5 +1,6 @@
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = { 
   verification: {
@@ -35,11 +36,28 @@ export default function RootLayout({
   <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center gap-3">
 
     <Link
-      href="/"
-      className="text-2xl font-semibold text-white tracking-wide"
-    >
+  href="/"
+  className="flex items-center gap-3"
+>
+  <Image
+    src="/logo.png"
+    alt="FBR Tax Calculators Logo"
+    width={44}
+    height={44}
+    priority
+    className="rounded-xl"
+  />
+
+  <div>
+    <h1 className="text-xl md:text-2xl font-bold text-white leading-none">
       FBR Tax Calculators
-    </Link>
+    </h1>
+
+    <p className="text-xs text-gray-300">
+      Pakistan Tax Tools
+    </p>
+  </div>
+</Link>
 
     <div className="flex flex-wrap justify-center gap-2">
 
