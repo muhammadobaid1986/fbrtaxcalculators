@@ -122,6 +122,11 @@ export default function sitemap() {
   lastModified: new Date(),
 },
 
+{
+  url: "https://fbrtaxcalculators.com/income-tax-on-150000-salary-pakistan",
+  lastModified: new Date(),
+},
+
   ];
   
 }

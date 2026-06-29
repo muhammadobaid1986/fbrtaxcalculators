@@ -74,6 +74,11 @@ const posts = [
   link: "/income-tax-on-100000-salary-pakistan"
 },
 
+{
+  title: "Income Tax on Rs.150,000 Salary in Pakistan",
+  link: "/income-tax-on-150000-salary-pakistan"
+},
+
 ];
 
 export default function Blog() {
