@@ -382,6 +382,20 @@ const seconds = now ? now.getSeconds() : 0;
         Calculate withholding tax instantly.
       </p>
     </a>
+    <a
+  href="/monthly-tax-calculator-pakistan"
+  className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl hover:-translate-y-1 transition"
+>
+  <div className="text-5xl mb-4">📅</div>
+
+  <h3 className="font-bold text-lg">
+    Monthly Tax Calculator
+  </h3>
+
+  <p className="text-gray-600 text-sm mt-2">
+    Estimate monthly salary tax instantly.
+  </p>
+</a>
 
   </div>
 
@@ -520,6 +534,13 @@ const seconds = now ? now.getSeconds() : 0;
 <p className="mb-4 text-gray-700">
   Our calculator helps employees, freelancers and professionals estimate their tax liability according to current FBR tax slabs. The tool supports multiple tax years and provides instant results.
 </p>
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  Monthly Tax Calculator Pakistan
+</h3>
+
+<p className="mb-4 text-gray-700">
+  Our Monthly Tax Calculator Pakistan helps salaried employees estimate monthly income tax according to the latest FBR tax slabs. Simply enter your monthly salary to calculate tax instantly and estimate your yearly tax liability.
+</p>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">
           Supported Tax Years
@@ -534,6 +555,15 @@ const seconds = now ? now.getSeconds() : 0;
           <li>Income Tax Calculator Pakistan</li>
 <li>Salary Tax Calculator Pakistan</li>
 <li>FBR Tax Calculator Pakistan</li>
+<li>Monthly Tax Calculator Pakistan</li>
+<li>Pakistan Salary Tax Calculator</li>
+<li>Online Tax Calculator Pakistan</li>
+<li>FBR Salary Tax Calculator</li>
+<li>Monthly Tax Calculator Pakistan</li>
+
+<li>Income Tax on Rs.100,000 Salary</li>
+
+<li>Income Tax on Rs.150,000 Salary</li>
         </ul>
       </div>
 

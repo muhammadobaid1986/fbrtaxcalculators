@@ -127,6 +127,10 @@ export default function sitemap() {
   lastModified: new Date(),
 },
 
+{
+  url: "https://fbrtaxcalculators.com/monthly-tax-calculator-pakistan",
+  lastModified: new Date(),
+},
   ];
   
 }

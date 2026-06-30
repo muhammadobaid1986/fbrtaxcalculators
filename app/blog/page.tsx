@@ -79,6 +79,10 @@ const posts = [
   link: "/income-tax-on-150000-salary-pakistan"
 },
 
+{
+  title: "Monthly Tax Calculator Pakistan",
+  link: "/monthly-tax-calculator-pakistan"
+},
 ];
 
 export default function Blog() {
