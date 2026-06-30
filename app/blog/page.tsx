@@ -83,6 +83,11 @@ const posts = [
   title: "Monthly Tax Calculator Pakistan",
   link: "/monthly-tax-calculator-pakistan"
 },
+
+{
+  title: "Income Tax on Rs.200,000 Salary in Pakistan",
+  link: "/income-tax-on-200000-salary-pakistan"
+},
 ];
 
 export default function Blog() {
