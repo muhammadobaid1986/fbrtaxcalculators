@@ -13,6 +13,43 @@ export const metadata = {
   },
   description:
   "Free Income Tax Calculator Pakistan 2025-26. Calculate salary income tax for tax years 2021-2026 using official FBR tax slabs.",
+    keywords: [
+    "Income Tax Calculator Pakistan",
+    "FBR Tax Calculator",
+    "Salary Tax Calculator",
+    "Monthly Tax Calculator Pakistan",
+    "Income Tax Pakistan 2025-26",
+    "Zakat Calculator",
+    "Withholding Tax Calculator"
+  ],
+  openGraph: {
+    title: "FBR Tax Calculators Pakistan",
+    description:
+      "Calculate Pakistan income tax, salary tax, zakat and withholding tax using free online calculators.",
+    url: "https://fbrtaxcalculators.com",
+    siteName: "FBR Tax Calculators",
+    locale: "en_PK",
+    type: "website",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "FBR Tax Calculators",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FBR Tax Calculators Pakistan",
+    description:
+      "Free Pakistan Income Tax Calculator based on FBR tax slabs.",
+    images: ["/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
