@@ -566,7 +566,37 @@ const seconds = now ? now.getSeconds() : 0;
 <li>Income Tax on Rs.150,000 Salary</li>
         </ul>
       </div>
+{/* Popular Salary Guides */}
 
+<div className="mt-16 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
+  <h2 className="text-2xl font-bold mb-6">
+    Popular Salary Tax Guides
+  </h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+    <a href="/income-tax-on-100000-salary-pakistan" className="text-green-700 hover:underline">
+      Income Tax on Rs.100,000 Salary
+    </a>
+
+    <a href="/income-tax-on-150000-salary-pakistan" className="text-green-700 hover:underline">
+      Income Tax on Rs.150,000 Salary
+    </a>
+
+    <a href="/income-tax-on-200000-salary-pakistan" className="text-green-700 hover:underline">
+      Income Tax on Rs.200,000 Salary
+    </a>
+
+    <a href="/income-tax-on-250000-salary-pakistan" className="text-green-700 hover:underline">
+      Income Tax on Rs.250,000 Salary
+    </a>
+
+    <a href="/income-tax-on-300000-salary-pakistan" className="text-green-700 hover:underline">
+      Income Tax on Rs.300,000 Salary
+    </a>
+
+  </div>
+</div>
       {/* FAQ SECTION */}
       <div className="mt-12 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
         <h2 className="text-2xl font-bold mb-6">

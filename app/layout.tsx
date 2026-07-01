@@ -238,7 +238,10 @@ export default function RootLayout({
           name: "FBR Tax Calculators",
           description:
             "Income Tax Calculator Pakistan, Zakat Calculator, Withholding Tax Calculator and FBR Tax Guides.",
-          inLanguage: "en"
+          inLanguage: "en",potentialAction: {
+  "@type": "SearchAction",
+  target: "https://fbrtaxcalculators.com/search?q={search_term_string}",
+  "query-input": "required name=search_term_string"}
         },
         {
           "@type": "Organization",
