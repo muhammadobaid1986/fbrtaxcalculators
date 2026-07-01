@@ -400,15 +400,7 @@ const seconds = now ? now.getSeconds() : 0;
   </div>
 
 </div>
-{/* POPULAR TOOLS */}
-<div className="max-w-5xl mx-auto mt-16">
 
-  <h2 className="text-3xl font-bold text-center mb-10">
-    Popular Tax Calculators
-  </h2>
-
-  ...
-</div>
       {/* WHY CHOOSE US */}
 <div className="max-w-5xl mx-auto mt-16">
 
@@ -463,38 +455,6 @@ const seconds = now ? now.getSeconds() : 0;
 </div>
 
       {/* SEO CONTENT SECTION */}
-      <div className="mt-16 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
-        <h2 className="text-2xl font-bold mb-4">
-          Income Tax Calculator Pakistan – Complete Guide
-        </h2>
-
-        <p className="mb-4 text-gray-700">
-          Use our free income tax calculator Pakistan to calculate salary tax
-          for tax years 2021 to 2026. This tool helps salaried individuals
-          estimate monthly and yearly tax based on official FBR tax slabs.
-        </p>
-
-        <h3 className="text-xl font-semibold mt-6 mb-2">
-          How to Calculate Income Tax in Pakistan?
-        </h3>
-
-        <p className="mb-4 text-gray-700">
-          Income tax in Pakistan is calculated on annual income. The government
-          defines different tax slabs each year. As your income increases, the
-          tax rate increases according to marginal slab rules.
-        </p>
-
-        <h3 className="text-xl font-semibold mt-6 mb-2">
-          Who Should Use This Calculator?
-        </h3>
-
-        <p className="text-gray-700">
-          This calculator is designed for salaried individuals who want to
-          estimate their salary income tax instantly without manual calculation.
-        </p>
-      </div>
-
-        {/* SEO CONTENT SECTION */}
       <div className="mt-16 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow">
         <h2 className="text-2xl font-bold mb-4">
           Income Tax Calculator Pakistan 2025-26
@@ -553,17 +513,20 @@ const seconds = now ? now.getSeconds() : 0;
           <li>Income Tax Calculator 2022-23</li>
           <li>Income Tax Calculator 2021-22</li>
           <li>Income Tax Calculator Pakistan</li>
-<li>Salary Tax Calculator Pakistan</li>
-<li>FBR Tax Calculator Pakistan</li>
-<li>Monthly Tax Calculator Pakistan</li>
-<li>Pakistan Salary Tax Calculator</li>
-<li>Online Tax Calculator Pakistan</li>
-<li>FBR Salary Tax Calculator</li>
-<li>Monthly Tax Calculator Pakistan</li>
-
-<li>Income Tax on Rs.100,000 Salary</li>
-
-<li>Income Tax on Rs.150,000 Salary</li>
+          <li>Salary Tax Calculator Pakistan</li>
+          <li>FBR Tax Calculator Pakistan</li>
+          <li>Monthly Tax Calculator Pakistan</li>
+          <li>Pakistan Salary Tax Calculator</li>
+          <li>Online Tax Calculator Pakistan</li>
+          <li>FBR Salary Tax Calculator</li>
+          <li>Monthly Tax Calculator Pakistan</li>
+          <li>Income Tax on Rs.100,000 Salary</li>
+          <li>Income Tax on Rs.150,000 Salary</li>
+          <li>Income Tax on Rs.200,000 Salary</li>
+          <li>Income Tax on Rs.250,000 Salary</li>
+          <li>Income Tax on Rs.300,000 Salary</li>
+          <li>Salary After Tax Calculator</li>
+          <li>Tax Slab Finder Pakistan</li>
         </ul>
       </div>
 {/* Popular Salary Guides */}
