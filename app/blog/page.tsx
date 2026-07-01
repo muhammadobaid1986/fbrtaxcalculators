@@ -93,6 +93,11 @@ const posts = [
   title: "Income Tax on Rs.250,000 Salary in Pakistan",
   link: "/income-tax-on-250000-salary-pakistan"
 },
+
+{
+  title: "Tax Slab Finder Pakistan",
+  link: "/tax-slab-finder-pakistan"
+},
 ];
 
 export default function Blog() {

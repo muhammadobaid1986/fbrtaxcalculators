@@ -141,6 +141,11 @@ export default function sitemap() {
   url: "https://fbrtaxcalculators.com/income-tax-on-250000-salary-pakistan",
   lastModified: new Date(),
 },
+
+{
+  url: "https://fbrtaxcalculators.com/tax-slab-finder-pakistan",
+  lastModified: new Date(),
+},
   ];
   
 }
