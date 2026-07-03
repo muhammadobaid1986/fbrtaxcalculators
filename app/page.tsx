@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import SectionTitle from "../components/SectionTitle";
 import moment from "moment-hijri";
 type Slab = {
   min: number;
@@ -404,9 +405,10 @@ const seconds = now ? now.getSeconds() : 0;
       {/* WHY CHOOSE US */}
 <div className="max-w-5xl mx-auto mt-16">
 
-  <h2 className="text-3xl font-bold text-center mb-10">
-    Why Choose FBR Tax Calculators?
-  </h2>
+  <SectionTitle
+  title="Why Choose FBR Tax Calculators?"
+  subtitle="Free tax calculators and practical guides to help individuals in Pakistan understand taxes and estimate liabilities."
+/>
 
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
