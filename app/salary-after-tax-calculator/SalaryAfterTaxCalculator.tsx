@@ -6,7 +6,7 @@ import { calculateSalaryTax } from "../lib/tax";
 
 export default function SalaryAfterTaxCalculator() {
   const [salary, setSalary] = useState("");
-  const [result, setResult] = useState<number | null>(null);
+  const [result, setResult] = useState<ReturnType<typeof calculateSalaryTax> | null>(null);
 
   const calculate = () => {
   const monthlySalary = Number(salary);
@@ -18,7 +18,7 @@ export default function SalaryAfterTaxCalculator() {
 
   const tax = calculateSalaryTax(monthlySalary);
 
-setResult(tax.monthlyTakeHome);
+setResult(tax);
 };
 
   return (
@@ -59,7 +59,7 @@ setResult(tax.monthlyTakeHome);
             Your Estimated Take-Home Salary
           </p>
           <p className="text-4xl font-extrabold text-green-700">
-            Rs {result.toLocaleString()}
+            Rs {result.monthlyTakeHome.toLocaleString()}
           </p>
           <p className="text-sm text-gray-500 mt-4">
             *This is an estimated calculation based on standard tax slabs.
