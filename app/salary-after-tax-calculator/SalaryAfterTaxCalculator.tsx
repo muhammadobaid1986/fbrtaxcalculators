@@ -53,19 +53,51 @@ setResult(tax);
         </button>
       </div>
 
-      {result !== null && (
-        <div className="mt-8 p-6 bg-green-50 rounded-2xl border border-green-100 text-center">
-          <p className="font-semibold text-gray-700 mb-2 text-lg">
-            Your Estimated Take-Home Salary
-          </p>
-          <p className="text-4xl font-extrabold text-green-700">
-            Rs {result.monthlyTakeHome.toLocaleString()}
-          </p>
-          <p className="text-sm text-gray-500 mt-4">
-            *This is an estimated calculation based on standard tax slabs.
-          </p>
-        </div>
-      )}
+      {result && (
+  <div className="mt-8 bg-green-50 border border-green-100 rounded-2xl p-6">
+
+    <h2 className="text-2xl font-bold text-center mb-6">
+      Salary Breakdown
+    </h2>
+
+    <div className="space-y-3">
+
+      <div className="flex justify-between">
+        <span>Monthly Salary</span>
+        <span>Rs {Number(salary).toLocaleString()}</span>
+      </div>
+
+      <div className="flex justify-between">
+        <span>Annual Salary</span>
+        <span>Rs {result.annualIncome.toLocaleString()}</span>
+      </div>
+
+      <div className="flex justify-between">
+        <span>Monthly Tax</span>
+        <span>Rs {result.monthlyTax.toLocaleString()}</span>
+      </div>
+
+      <div className="flex justify-between">
+        <span>Yearly Tax</span>
+        <span>Rs {result.yearlyTax.toLocaleString()}</span>
+      </div>
+
+      <hr />
+
+      <div className="flex justify-between font-bold text-green-700">
+        <span>Monthly Take Home</span>
+        <span>Rs {result.monthlyTakeHome.toLocaleString()}</span>
+      </div>
+
+      <div className="flex justify-between font-bold text-green-700">
+        <span>Yearly Take Home</span>
+        <span>Rs {result.yearlyTakeHome.toLocaleString()}</span>
+      </div>
+
+    </div>
+
+  </div>
+)}
       
       <div className="mt-12">
         <h2 className="text-2xl font-bold mb-4">Related Calculators & Guides</h2>
