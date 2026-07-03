@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import RelatedLinks from "../../components/RelatedLinks";
 
 export default function ZakatCalculator() {
   const [amount, setAmount] = useState("");
@@ -39,6 +40,27 @@ export default function ZakatCalculator() {
           </p>
         </div>
       )}
+<RelatedLinks
+  links={[
+    {
+      title: "Income Tax Calculator Pakistan",
+      href: "/",
+    },
+    {
+      title: "Salary After Tax Calculator",
+      href: "/salary-after-tax-calculator",
+    },
+    {
+      title: "Tax Slab Finder Pakistan",
+      href: "/tax-slab-finder-pakistan",
+    },
+    {
+      title: "Benefits of Being a Filer",
+      href: "/benefits-of-being-filer-pakistan",
+    },
+  ]}
+/>
+
     </div>
   );
 }
