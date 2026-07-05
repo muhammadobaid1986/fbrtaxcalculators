@@ -13,6 +13,7 @@ export const taxData: Record<string, Slab[]> = {
     { min: 2400000, max: 3600000, rate: 0.25, fixed: 186000 },
     { min: 3600000, max: Infinity, rate: 0.35, fixed: 486000 },
   ],
+    
 };
 
 export function calculateSalaryTax(
