@@ -33,6 +33,8 @@ export function calculateSalaryTax(
     }
   }
 
+  
+
   return {
     annualIncome,
     yearlyTax,
@@ -40,4 +42,35 @@ export function calculateSalaryTax(
     monthlyTakeHome: monthlySalary - yearlyTax / 12,
     yearlyTakeHome: annualIncome - yearlyTax,
   };
+
+  
+}
+
+export function findTaxSlab(
+  monthlySalary: number,
+  year: string = "2025-26"
+) {
+  const annualIncome = monthlySalary * 12;
+
+  const slabs = taxData[year];
+
+  for (const slab of slabs) {
+    if (annualIncome > slab.min && annualIncome <= slab.max) {
+      return slab;
+    }
+  }
+
+  return null;
+}
+export function getEffectiveTaxRate(
+  monthlySalary: number,
+  year: string = "2025-26"
+) {
+  const tax = calculateSalaryTax(monthlySalary, year);
+
+  if (tax.annualIncome === 0) {
+    return 0;
+  }
+
+  return (tax.yearlyTax / tax.annualIncome) * 100;
 }
