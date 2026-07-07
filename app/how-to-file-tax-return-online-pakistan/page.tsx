@@ -1,3 +1,4 @@
+import GuideFooter from "../../components/GuideFooter";
 export const metadata = {
   title: "How to File Tax Return Online in Pakistan (2025 Guide)",
   description:
@@ -113,44 +114,7 @@ export default function Page() {
         penalties according to applicable rules.
       </p>
 
-      <div className="mt-8">
-        <h2 className="text-2xl font-bold mb-4">
-          Related Guides
-        </h2>
-
-        <ul className="list-disc pl-6 space-y-2">
-          <li>
-            <a href="/how-to-become-a-filer" className="text-green-600">
-              How to Become a Filer
-            </a>
-          </li>
-
-          <li>
-            <a href="/how-to-register-on-fbr-iris" className="text-green-600">
-              How to Register on FBR IRIS
-            </a>
-          </li>
-
-          <li>
-            <a href="/atl-status-check-pakistan" className="text-green-600">
-              ATL Status Check
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div className="mt-8 p-6 bg-green-50 rounded-xl text-center">
-        <h3 className="text-xl font-semibold mb-3">
-          Estimate Your Tax First
-        </h3>
-
-        <a
-          href="/"
-          className="inline-block px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition"
-        >
-          Use Income Tax Calculator
-        </a>
-      </div>
+      <GuideFooter />
 
     </div>
   );
