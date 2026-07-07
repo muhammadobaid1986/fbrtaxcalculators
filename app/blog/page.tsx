@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RelatedLinks from "../../components/RelatedLinks";
 
 export const metadata = {
   title: "Pakistan Tax Guides & Articles | FBR Tax Calculators",
@@ -153,7 +154,27 @@ export default function Blog() {
     announced so readers can access current information.
   </p>
 </div>
-
+<RelatedLinks
+  title="Popular Tax Tools"
+  links={[
+    {
+      title: "Income Tax Calculator Pakistan",
+      href: "/",
+    },
+    {
+      title: "Salary After Tax Calculator",
+      href: "/salary-after-tax-calculator",
+    },
+    {
+      title: "Monthly Tax Calculator Pakistan",
+      href: "/monthly-tax-calculator-pakistan",
+    },
+    {
+      title: "Tax Slab Finder Pakistan",
+      href: "/tax-slab-finder-pakistan",
+    },
+  ]}
+/>
     </div>
   );
 }
