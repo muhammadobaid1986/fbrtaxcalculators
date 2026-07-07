@@ -1,7 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Tax Guides & Articles | FBR Tax Calculators",
+  title: "Pakistan Tax Guides & Articles | FBR Tax Calculators",
+  description:
+    "Read detailed guides about Pakistan income tax, FBR, filer status, tax returns, property tax, freelancers, prize bonds, salary tax and more.",
 };
 
 const posts = [
@@ -111,6 +113,12 @@ export default function Blog() {
       <h1 className="text-4xl font-bold text-center mb-12">
         Tax Guides & Articles
       </h1>
+      <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
+  Explore our collection of practical Pakistan tax guides covering
+  income tax, FBR registration, filer status, salary tax, withholding
+  tax, property tax and other financial topics. All articles are written
+  to help individuals understand tax rules more easily.
+</p>
 
       <div className="grid md:grid-cols-2 gap-8">
         {posts.map((post, index) => (
@@ -131,6 +139,24 @@ export default function Blog() {
           </div>
         ))}
       </div>
+<div className="mt-16 bg-white rounded-2xl shadow p-8">
+  <h2 className="text-2xl font-bold mb-4">
+    Why Read Our Tax Guides?
+  </h2>
+
+  <p className="text-gray-700 mb-4">
+    Our guides explain Pakistan tax rules in simple language with
+    practical examples. Whether you want to become a filer, calculate
+    salary tax or understand the latest FBR updates, these articles are
+    designed to help.
+  </p>
+
+  <p className="text-gray-700">
+    We regularly update our content whenever important tax changes are
+    announced so readers can access accurate and useful information.
+  </p>
+</div>
+
     </div>
   );
 }
