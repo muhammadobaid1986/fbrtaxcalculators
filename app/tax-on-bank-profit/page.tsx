@@ -1,3 +1,5 @@
+
+import RelatedLinks from "../../components/RelatedLinks";
 export const metadata = {
   title: "Tax on Bank Profit in Pakistan 2025",
   description:
@@ -85,33 +87,33 @@ export default function Article() {
         Yes. Filers generally benefit from lower withholding tax rates compared
         to non-filers.
       </p>
+      <p className="mt-8 text-gray-700">
+Bank profit tax rates may change after annual budget announcements.
+Always verify the latest applicable rates through official FBR
+notifications before making financial decisions.
+</p>
 
-      <div className="mt-8">
-        <h2 className="text-2xl font-bold mb-4">
-          Related Guides
-        </h2>
-
-        <ul className="list-disc pl-6 space-y-2">
-          <li>
-            <a href="/how-to-become-a-filer" className="text-green-600">
-              How to Become a Filer
-            </a>
-          </li>
-
-          <li>
-            <a href="/benefits-of-being-filer-pakistan" className="text-green-600">
-              Benefits of Being a Filer
-            </a>
-          </li>
-
-          <li>
-            <a href="/tax-on-remittances-pakistan" className="text-green-600">
-              Tax on Foreign Remittances
-            </a>
-          </li>
-        </ul>
-      </div>
-
+      <RelatedLinks
+  title="Related Tax Guides"
+  links={[
+    {
+      title: "How to Become a Filer",
+      href: "/how-to-become-a-filer",
+    },
+    {
+      title: "Benefits of Being a Filer",
+      href: "/benefits-of-being-filer-pakistan",
+    },
+    {
+      title: "Tax on Foreign Remittances",
+      href: "/tax-on-remittances-pakistan",
+    },
+    {
+      title: "Income Tax Calculator Pakistan",
+      href: "/",
+    },
+  ]}
+/>
     </div>
   );
 }
