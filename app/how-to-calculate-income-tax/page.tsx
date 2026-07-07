@@ -1,3 +1,4 @@
+import GuideFooter from "../../components/GuideFooter";
 export const metadata = {
   title: "How to Calculate Income Tax in Pakistan",
   description:
@@ -41,25 +42,7 @@ export default function Page() {
         Apply the slab rate to the taxable portion of income.
       </p>
 
-      <div className="mt-8">
-        <h2 className="text-2xl font-bold mb-4">
-          Related Guides
-        </h2>
-
-        <ul className="list-disc pl-6 space-y-2">
-          <li>
-            <a href="/" className="text-green-600">
-              Income Tax Calculator
-            </a>
-          </li>
-
-          <li>
-            <a href="/how-to-become-a-filer" className="text-green-600">
-              How to Become a Filer
-            </a>
-          </li>
-        </ul>
-      </div>
+      <GuideFooter />
 
     </div>
   );
