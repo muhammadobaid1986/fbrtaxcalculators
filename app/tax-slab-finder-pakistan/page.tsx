@@ -2,34 +2,37 @@
 
 import { useState } from "react";
 
-type Slab = {
-  min: number;
-  max: number;
-  rate: number;
-  fixed: number;
-};
+import {
+  findTaxSlab,
+  calculateSalaryTax,
+} from "../lib/tax";
 
-const slabs: Slab[] = [
-  { min: 0, max: 600000, rate: 0, fixed: 0 },
-  { min: 600000, max: 1200000, rate: 0.01, fixed: 0 },
-  { min: 1200000, max: 2400000, rate: 0.15, fixed: 6000 },
-  { min: 2400000, max: 3600000, rate: 0.25, fixed: 186000 },
-  { min: 3600000, max: Infinity, rate: 0.35, fixed: 486000 },
-];
 
 export default function TaxSlabFinder() {
   const [salary, setSalary] = useState("");
-  const [result, setResult] = useState<Slab | null>(null);
+  const [result, setResult] = useState<any>(null);
 
-  const findSlab = () => {
-    const annualIncome = Number(salary) * 12;
+  const [taxResult, setTaxResult] = useState<any>(null);
 
-    const slab = slabs.find(
-      (s) => annualIncome > s.min && annualIncome <= s.max
-    );
+const findSlab = () => {
+  const monthlySalary = Number(salary);
 
-    setResult(slab || null);
-  };
+  if (!monthlySalary) {
+    setResult(null);
+    setTaxResult(null);
+    return;
+  }
+
+  const slab = findTaxSlab(monthlySalary);
+
+  if (slab) {
+    setResult(slab);
+    setTaxResult(calculateSalaryTax(monthlySalary));
+  } else {
+    setResult(null);
+    setTaxResult(null);
+  }
+};
 
   return (
     <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8 mt-10">
