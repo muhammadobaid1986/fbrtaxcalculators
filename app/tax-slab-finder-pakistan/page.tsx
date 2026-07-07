@@ -89,6 +89,41 @@ const findSlab = () => {
             Rs {result.fixed.toLocaleString()}
           </p>
 
+          {taxResult && (
+  <>
+    <hr className="my-6" />
+
+    <div className="space-y-3">
+
+      <div className="flex justify-between">
+        <span>Annual Salary</span>
+        <span>Rs {taxResult.annualIncome.toLocaleString()}</span>
+      </div>
+
+      <div className="flex justify-between">
+        <span>Monthly Tax</span>
+        <span>Rs {taxResult.monthlyTax.toLocaleString()}</span>
+      </div>
+
+      <div className="flex justify-between">
+        <span>Yearly Tax</span>
+        <span>Rs {taxResult.yearlyTax.toLocaleString()}</span>
+      </div>
+
+      <div className="flex justify-between font-semibold text-green-700">
+        <span>Monthly Take Home</span>
+        <span>Rs {taxResult.monthlyTakeHome.toLocaleString()}</span>
+      </div>
+
+      <div className="flex justify-between font-semibold text-green-700">
+        <span>Yearly Take Home</span>
+        <span>Rs {taxResult.yearlyTakeHome.toLocaleString()}</span>
+      </div>
+
+    </div>
+  </>
+)}
+
         </div>
       )}
 
