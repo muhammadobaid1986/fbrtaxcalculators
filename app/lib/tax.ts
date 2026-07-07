@@ -13,6 +13,7 @@ export const taxData: Record<string, Slab[]> = {
     { min: 2400000, max: 3600000, rate: 0.25, fixed: 186000 },
     { min: 3600000, max: Infinity, rate: 0.35, fixed: 486000 },
   ],
+    
 };
 
 export function calculateSalaryTax(
@@ -33,6 +34,8 @@ export function calculateSalaryTax(
     }
   }
 
+  
+
   return {
     annualIncome,
     yearlyTax,
@@ -40,4 +43,35 @@ export function calculateSalaryTax(
     monthlyTakeHome: monthlySalary - yearlyTax / 12,
     yearlyTakeHome: annualIncome - yearlyTax,
   };
+
+  
+}
+
+export function findTaxSlab(
+  monthlySalary: number,
+  year: string = "2025-26"
+) {
+  const annualIncome = monthlySalary * 12;
+
+  const slabs = taxData[year];
+
+  for (const slab of slabs) {
+    if (annualIncome > slab.min && annualIncome <= slab.max) {
+      return slab;
+    }
+  }
+
+  return null;
+}
+export function getEffectiveTaxRate(
+  monthlySalary: number,
+  year: string = "2025-26"
+) {
+  const tax = calculateSalaryTax(monthlySalary, year);
+
+  if (tax.annualIncome === 0) {
+    return 0;
+  }
+
+  return (tax.yearlyTax / tax.annualIncome) * 100;
 }
