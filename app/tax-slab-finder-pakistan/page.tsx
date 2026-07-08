@@ -5,6 +5,7 @@ import { useState } from "react";
 import {
   findTaxSlab,
   calculateSalaryTax,
+  getEffectiveTaxRate,
 } from "../lib/tax";
 
 
@@ -13,7 +14,7 @@ export default function TaxSlabFinder() {
   const [result, setResult] = useState<any>(null);
 
   const [taxResult, setTaxResult] = useState<any>(null);
-
+const [effectiveRate, setEffectiveRate] = useState<number | null>(null);
 const findSlab = () => {
   const monthlySalary = Number(salary);
 
@@ -26,12 +27,14 @@ const findSlab = () => {
   const slab = findTaxSlab(monthlySalary);
 
   if (slab) {
-    setResult(slab);
-    setTaxResult(calculateSalaryTax(monthlySalary));
-  } else {
-    setResult(null);
-    setTaxResult(null);
-  }
+  setResult(slab);
+  setTaxResult(calculateSalaryTax(monthlySalary));
+  setEffectiveRate(getEffectiveTaxRate(monthlySalary));
+} else {
+  setResult(null);
+  setTaxResult(null);
+  setEffectiveRate(null);
+}
 };
 
   return (
@@ -110,7 +113,7 @@ const findSlab = () => {
         <span>Rs {taxResult.yearlyTax.toLocaleString()}</span>
       </div>
 
-      <div className="flex justify-between font-semibold text-green-700">
+        <div className="flex justify-between font-semibold text-green-700">
         <span>Monthly Take Home</span>
         <span>Rs {taxResult.monthlyTakeHome.toLocaleString()}</span>
       </div>
@@ -118,7 +121,15 @@ const findSlab = () => {
       <div className="flex justify-between font-semibold text-green-700">
         <span>Yearly Take Home</span>
         <span>Rs {taxResult.yearlyTakeHome.toLocaleString()}</span>
+      {effectiveRate !== null && (
+  <div className="flex justify-between font-bold text-blue-700">
+    <span>Effective Tax Rate</span>
+    <span>{effectiveRate.toFixed(2)}%</span>
+  </div>
+)}
+      
       </div>
+
 
     </div>
   </>
