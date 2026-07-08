@@ -397,6 +397,17 @@ const seconds = now ? now.getSeconds() : 0;
     Estimate monthly salary tax instantly.
   </p>
 </a>
+<a href="/tax-slab-finder-pakistan">
+  <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+    <div className="text-4xl mb-4">📊</div>
+    <h3 className="text-xl font-bold mb-2">
+      Tax Slab Finder
+    </h3>
+    <p className="text-gray-600">
+      Instantly check your FBR tax slab.
+    </p>
+  </div>
+</a>
 
   </div>
 
@@ -430,17 +441,7 @@ const seconds = now ? now.getSeconds() : 0;
       <p className="text-gray-600 text-sm">
         Calculate monthly and yearly income tax instantly.
       </p>
-      <a href="/tax-slab-finder-pakistan">
-  <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
-    <div className="text-4xl mb-4">📊</div>
-    <h3 className="text-xl font-bold mb-2">
-      Tax Slab Finder
-    </h3>
-    <p className="text-gray-600">
-      Instantly check your FBR tax slab.
-    </p>
-  </div>
-</a>
+      
     </div>
 
     <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
