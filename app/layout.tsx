@@ -166,6 +166,15 @@ export default function RootLayout({
         </Link>
       </li>
 
+      <li>
+  <a
+    href="/tax-slab-finder-pakistan"
+    className="text-green-600"
+  >
+    Tax Slab Finder
+  </a>
+</li>
+
     </ul>
 
   </div>

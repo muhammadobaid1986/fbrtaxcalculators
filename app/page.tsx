@@ -393,6 +393,22 @@ const seconds = now ? now.getSeconds() : 0;
     Monthly Tax Calculator
   </h3>
 
+  <a href="/tax-slab-finder-pakistan">
+  <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+
+    <div className="text-4xl mb-4">📊</div>
+
+    <h3 className="text-xl font-bold mb-2">
+      Tax Slab Finder
+    </h3>
+
+    <p className="text-gray-600">
+      Instantly check your FBR tax slab.
+    </p>
+
+  </div>
+</a>
+
   <p className="text-gray-600 text-sm mt-2">
     Estimate monthly salary tax instantly.
   </p>
