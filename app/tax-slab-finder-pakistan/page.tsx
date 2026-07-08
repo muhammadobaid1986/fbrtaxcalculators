@@ -1,45 +1,43 @@
 "use client";
 
 import { useState } from "react";
-
 import {
   findTaxSlab,
   calculateSalaryTax,
   getEffectiveTaxRate,
 } from "../lib/tax";
 
-
 export default function TaxSlabFinder() {
   const [salary, setSalary] = useState("");
   const [result, setResult] = useState<any>(null);
-
   const [taxResult, setTaxResult] = useState<any>(null);
-const [effectiveRate, setEffectiveRate] = useState<number | null>(null);
-const findSlab = () => {
-  const monthlySalary = Number(salary);
+  const [effectiveRate, setEffectiveRate] = useState<number | null>(null);
 
-  if (!monthlySalary) {
-    setResult(null);
-    setTaxResult(null);
-    return;
-  }
+  const findSlab = () => {
+    const monthlySalary = Number(salary);
 
-  const slab = findTaxSlab(monthlySalary);
+    if (!monthlySalary) {
+      setResult(null);
+      setTaxResult(null);
+      setEffectiveRate(null);
+      return;
+    }
 
-  if (slab) {
-  setResult(slab);
-  setTaxResult(calculateSalaryTax(monthlySalary));
-  setEffectiveRate(getEffectiveTaxRate(monthlySalary));
-} else {
-  setResult(null);
-  setTaxResult(null);
-  setEffectiveRate(null);
-}
-};
+    const slab = findTaxSlab(monthlySalary);
+
+    if (slab) {
+      setResult(slab);
+      setTaxResult(calculateSalaryTax(monthlySalary));
+      setEffectiveRate(getEffectiveTaxRate(monthlySalary));
+    } else {
+      setResult(null);
+      setTaxResult(null);
+      setEffectiveRate(null);
+    }
+  };
 
   return (
     <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8 mt-10">
-
       <h1 className="text-4xl font-bold mb-4">
         Tax Slab Finder Pakistan
       </h1>
@@ -65,7 +63,6 @@ const findSlab = () => {
 
       {result && (
         <div className="mt-8 bg-green-50 rounded-2xl p-6">
-
           <h2 className="text-2xl font-bold mb-4">
             Your Tax Slab
           </h2>
@@ -83,8 +80,7 @@ const findSlab = () => {
           </p>
 
           <p>
-            <strong>Tax Rate:</strong>{" "}
-            {result.rate * 100}%
+            <strong>Tax Rate:</strong> {result.rate * 100}%
           </p>
 
           <p>
@@ -93,59 +89,53 @@ const findSlab = () => {
           </p>
 
           {taxResult && (
-  <>
-    <hr className="my-6" />
+            <>
+              <hr className="my-6" />
 
-    <div className="space-y-3">
+              <div className="space-y-3">
+                <div className="flex justify-between">
+                  <span>Annual Salary</span>
+                  <span>Rs {taxResult.annualIncome.toLocaleString()}</span>
+                </div>
 
-      <div className="flex justify-between">
-        <span>Annual Salary</span>
-        <span>Rs {taxResult.annualIncome.toLocaleString()}</span>
-      </div>
+                <div className="flex justify-between">
+                  <span>Monthly Tax</span>
+                  <span>Rs {taxResult.monthlyTax.toLocaleString()}</span>
+                </div>
 
-      <div className="flex justify-between">
-        <span>Monthly Tax</span>
-        <span>Rs {taxResult.monthlyTax.toLocaleString()}</span>
-      </div>
+                <div className="flex justify-between">
+                  <span>Yearly Tax</span>
+                  <span>Rs {taxResult.yearlyTax.toLocaleString()}</span>
+                </div>
 
-      <div className="flex justify-between">
-        <span>Yearly Tax</span>
-        <span>Rs {taxResult.yearlyTax.toLocaleString()}</span>
-      </div>
+                <div className="flex justify-between font-semibold text-green-700">
+                  <span>Monthly Take Home</span>
+                  <span>Rs {taxResult.monthlyTakeHome.toLocaleString()}</span>
+                </div>
 
-        <div className="flex justify-between font-semibold text-green-700">
-        <span>Monthly Take Home</span>
-        <span>Rs {taxResult.monthlyTakeHome.toLocaleString()}</span>
-      </div>
+                <div className="flex justify-between font-semibold text-green-700">
+                  <span>Yearly Take Home</span>
+                  <span>Rs {taxResult.yearlyTakeHome.toLocaleString()}</span>
+                </div>
 
-      <div className="flex justify-between font-semibold text-green-700">
-        <span>Yearly Take Home</span>
-        <span>Rs {taxResult.yearlyTakeHome.toLocaleString()}</span>
-      {effectiveRate !== null && (
-  <div className="flex justify-between font-bold text-blue-700">
-    <span>Effective Tax Rate</span>
-    <span>{effectiveRate.toFixed(2)}%</span>
-  </div>
-)}
-      
-      </div>
-
-
-    </div>
-  </>
-)}
-
+                {effectiveRate !== null && (
+                  <div className="flex justify-between font-bold text-blue-700">
+                    <span>Effective Tax Rate</span>
+                    <span>{effectiveRate.toFixed(2)}%</span>
+                  </div>
+                )}
+              </div>
+            </>
+          )}
         </div>
       )}
 
       <div className="mt-10">
-
         <h2 className="text-2xl font-bold mb-4">
           Related Tools
         </h2>
 
         <ul className="list-disc pl-6 space-y-2">
-
           <li>
             <a href="/" className="text-green-600">
               Income Tax Calculator
@@ -169,11 +159,8 @@ const findSlab = () => {
               Salary After Tax Calculator
             </a>
           </li>
-
         </ul>
-
       </div>
-
     </div>
   );
 }
