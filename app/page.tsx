@@ -399,7 +399,7 @@ const seconds = now ? now.getSeconds() : 0;
 </a>
 
 <a href="/tax-slab-finder-pakistan">
-  <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl hover:-translate-y-1 transition">
+  <div className="bg-white rounded-2xl shadow-lg p-6 min-h-[230px] hover:shadow-xl transition transform hover:-translate-y-1">
     <div className="text-5xl mb-4">📊</div>
     <h3 className="font-bold text-lg">
       Tax Slab Finder
