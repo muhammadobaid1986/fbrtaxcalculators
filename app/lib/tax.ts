@@ -47,12 +47,15 @@ export const taxData: Record<string, Slab[]> = {
     { min: 3600000, max: Infinity, rate: 0.35, fixed: 486000 },
   ],
   "2026-27": [
-    { min: 0, max: 600000, rate: 0, fixed: 0 },
-    { min: 600000, max: 1200000, rate: 0.01, fixed: 0 },
-    { min: 1200000, max: 2400000, rate: 0.15, fixed: 6000 },
-    { min: 2400000, max: 3600000, rate: 0.25, fixed: 186000 },
-    { min: 3600000, max: Infinity, rate: 0.35, fixed: 486000 },
-  ],
+  { min: 0, max: 600000, rate: 0, fixed: 0 },
+  { min: 600000, max: 1200000, rate: 0.01, fixed: 0 },
+  { min: 1200000, max: 2200000, rate: 0.11, fixed: 6000 },
+  { min: 2200000, max: 3200000, rate: 0.20, fixed: 116000 },
+  { min: 3200000, max: 4100000, rate: 0.25, fixed: 316000 },
+  { min: 4100000, max: 5600000, rate: 0.29, fixed: 541000 },
+  { min: 5600000, max: 7000000, rate: 0.32, fixed: 976000 },
+  { min: 7000000, max: Infinity, rate: 0.35, fixed: 1424000 },
+],
 };
 
 // Dropdown ke liye years export kar rahay hain (Latest first)
