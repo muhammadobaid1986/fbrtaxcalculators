@@ -1,3 +1,11 @@
+export const metadata = {
+  title: "FBR Tax Calculator Pakistan 2021-2027 | Income Tax Slabs & Salary Tax",
+  description:
+    "Calculate Pakistan income tax online. View FBR tax slabs from 2021 to 2027, compare yearly changes, and check salary tax instantly.",
+  keywords:
+    "FBR tax calculator Pakistan, income tax slabs 2025-26, tax slabs 2026-27 Pakistan, salary tax calculator Pakistan",
+};
+
 "use client";
 
 import { useEffect, useState } from "react";
@@ -50,6 +58,15 @@ const taxData: Record<string, Slab[]> = {
     { min: 2400000, max: 3600000, rate: 0.25, fixed: 186000 },
     { min: 3600000, max: Infinity, rate: 0.35, fixed: 486000 },
   ],
+   "2026-27": [
+  { min: 0, max: 600000, rate: 0, fixed: 0 },
+  { min: 600000, max: 1200000, rate: 0.01, fixed: 0 },
+  { min: 1200000, max: 2400000, rate: 0.15, fixed: 6000 },
+  { min: 2400000, max: 3600000, rate: 0.25, fixed: 186000 },
+  { min: 3600000, max: Infinity, rate: 0.35, fixed: 486000 },
+],
+
+
 };
 
 export default function Home() {
@@ -410,6 +427,18 @@ const seconds = now ? now.getSeconds() : 0;
     </h3>
     <p className="text-gray-600 text-sm mt-2">
       Instantly check your FBR tax slab.
+    </p>
+  </div>
+</a>
+
+<a href="/tax-slab-comparison-pakistan">
+  <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+    <div className="text-4xl mb-4">📊</div>
+    <h3 className="text-xl font-bold mb-2">
+      Tax Slab Comparison
+    </h3>
+    <p className="text-gray-600">
+      Compare FBR tax slabs year by year.
     </p>
   </div>
 </a>
