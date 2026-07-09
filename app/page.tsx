@@ -9,7 +9,7 @@ import { calculateSalaryTax, taxData } from "./lib/tax";
 export default function Home() {
   
   const [salary, setSalary] = useState("");
-  const [year, setYear] = useState("2025-26");
+  const [year, setYear] = useState("2026-27");
   const [tax, setTax] = useState<number | null>(null);
   const [now, setNow] = useState<Date | null>(null);
   const [hijriDate, setHijriDate] = useState("");
@@ -251,7 +251,9 @@ const seconds = now ? now.getSeconds() : 0;
                         ? `Above Rs ${slab.min.toLocaleString()}`
                         : `Rs ${slab.min.toLocaleString()} - Rs ${slab.max.toLocaleString()}`}
                     </td>
-                    <td className="border p-2">{slab.rate * 100}%</td>
+                    <td className="border p-2">
+  {(slab.rate * 100).toFixed(2).replace(".00", "")}%
+</td>
                   </tr>
                 ))}
               </tbody>

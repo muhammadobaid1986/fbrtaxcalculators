@@ -40,8 +40,8 @@ export default function TaxComparison() {
                       : `Rs ${slab.max.toLocaleString()}`}
                   </td>
                   <td className="p-4 font-bold">
-                    {slab.rate * 100}%
-                  </td>
+  {(slab.rate * 100).toFixed(2).replace(".00", "")}%
+</td>
                 </tr>
               ))}
             </tbody>
