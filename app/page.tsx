@@ -5,64 +5,7 @@
 import { useEffect, useState } from "react";
 import SectionTitle from "../components/SectionTitle";
 import moment from "moment-hijri";
-type Slab = {
-  min: number;
-  max: number;
-  rate: number;
-  fixed: number;
-};
-
-const taxData: Record<string, Slab[]> = {
-  "2021-22": [
-    { min: 0, max: 600000, rate: 0, fixed: 0 },
-    { min: 600000, max: 1200000, rate: 0.05, fixed: 0 },
-    { min: 1200000, max: 1800000, rate: 0.1, fixed: 30000 },
-    { min: 1800000, max: 2500000, rate: 0.15, fixed: 90000 },
-    { min: 2500000, max: Infinity, rate: 0.2, fixed: 195000 },
-  ],
-
-  "2022-23": [
-    { min: 0, max: 600000, rate: 0, fixed: 0 },
-    { min: 600000, max: 1200000, rate: 0.025, fixed: 0 },
-    { min: 1200000, max: 2400000, rate: 0.125, fixed: 15000 },
-    { min: 2400000, max: 3600000, rate: 0.2, fixed: 165000 },
-    { min: 3600000, max: Infinity, rate: 0.25, fixed: 405000 },
-  ],
-
-  "2023-24": [
-    { min: 0, max: 600000, rate: 0, fixed: 0 },
-    { min: 600000, max: 1200000, rate: 0.025, fixed: 0 },
-    { min: 1200000, max: 2400000, rate: 0.125, fixed: 15000 },
-    { min: 2400000, max: 3600000, rate: 0.2, fixed: 165000 },
-    { min: 3600000, max: Infinity, rate: 0.25, fixed: 405000 },
-  ],
-
-  "2024-25": [
-    { min: 0, max: 600000, rate: 0, fixed: 0 },
-    { min: 600000, max: 1200000, rate: 0.05, fixed: 0 },
-    { min: 1200000, max: 2400000, rate: 0.15, fixed: 30000 },
-    { min: 2400000, max: 3600000, rate: 0.25, fixed: 210000 },
-    { min: 3600000, max: Infinity, rate: 0.3, fixed: 510000 },
-  ],
-
-  "2025-26": [
-    { min: 0, max: 600000, rate: 0, fixed: 0 },
-    { min: 600000, max: 1200000, rate: 0.01, fixed: 0 },
-    { min: 1200000, max: 2400000, rate: 0.15, fixed: 6000 },
-    { min: 2400000, max: 3600000, rate: 0.25, fixed: 186000 },
-    { min: 3600000, max: Infinity, rate: 0.35, fixed: 486000 },
-  ],
-   "2026-27": [
-  { min: 0, max: 600000, rate: 0, fixed: 0 },
-  { min: 600000, max: 1200000, rate: 0.01, fixed: 0 },
-  { min: 1200000, max: 2400000, rate: 0.15, fixed: 6000 },
-  { min: 2400000, max: 3600000, rate: 0.25, fixed: 186000 },
-  { min: 3600000, max: Infinity, rate: 0.35, fixed: 486000 },
-],
-
-
-};
-
+import { calculateSalaryTax, taxData } from "./lib/tax";
 export default function Home() {
   
   const [salary, setSalary] = useState("");
@@ -89,21 +32,12 @@ export default function Home() {
 }, []);
 
   const calculateTax = () => {
-    const monthlyIncome = Number(salary);
-    const annualIncome = monthlyIncome * 12;
+  const monthlyIncome = Number(salary);
+  if (!monthlyIncome) return;
 
-    const slabs = taxData[year];
-    let yearlyTax = 0;
-
-    for (let slab of slabs) {
-      if (annualIncome > slab.min && annualIncome <= slab.max) {
-        yearlyTax = slab.fixed + (annualIncome - slab.min) * slab.rate;
-        break;
-      }
-    }
-
-    setTax(Math.max(0, yearlyTax));
-  };
+  const result = calculateSalaryTax(monthlyIncome, year);
+  setTax(result.yearlyTax);
+};
 
   const monthlyIncome = Number(salary) || 0;
   const annualIncome = monthlyIncome * 12;

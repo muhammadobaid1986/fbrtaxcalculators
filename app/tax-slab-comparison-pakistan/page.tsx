@@ -1,9 +1,11 @@
 import { taxData } from "../lib/tax";
 
 export const metadata = {
-  title: "Pakistan Tax Slab Comparison (2021-2027) | FBR Rate Changes",
+  title: "Pakistan Income Tax Slab Comparison 2021-2027 | FBR Tax Changes",
   description:
-    "Compare Pakistan income tax slabs year by year from 2021 to 2027. See how FBR tax rates changed over time.",
+    "Compare Pakistan income tax slabs from 2021 to 2027. See how FBR tax rates changed year by year for salaried individuals.",
+  keywords:
+    "tax slab comparison Pakistan, FBR tax changes 2025-26, income tax slabs 2026-27 Pakistan",
 };
 
 export default function TaxComparison() {
