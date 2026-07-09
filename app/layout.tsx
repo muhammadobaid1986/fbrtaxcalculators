@@ -136,46 +136,55 @@ export default function RootLayout({
 
     <ul className="space-y-4 text-sm">
 
-      <li>
-        <Link href="/" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
-          💰 Income Tax Calculator
-        </Link>
-      </li>
+  <li>
+    <Link href="/" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+      💰 Income Tax Calculator
+    </Link>
+  </li>
 
-      <li>
-        <Link href="/zakat-calculator" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
-          🕌 Zakat Calculator
-        </Link>
-      </li>
+  <li>
+    <Link href="/monthly-tax-calculator-pakistan" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+      📅 Monthly Tax Calculator
+    </Link>
+  </li>
 
-            <li>
-        <Link href="/salary-after-tax-calculator" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
-          💸 Salary After Tax
-        </Link>
-      </li>
+  <li>
+    <Link href="/salary-after-tax-calculator" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+      💸 Salary After Tax
+    </Link>
+  </li>
 
-      <li>
-        <Link href="/withholding-tax-calculator" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
-          📊 Withholding Tax
-        </Link>
-      </li>
+  <li>
+    <Link href="/tax-slab-finder-pakistan" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+      📊 Tax Slab Finder
+    </Link>
+  </li>
 
-      <li>
-        <Link href="/blog" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
-          📘 Tax Guides
-        </Link>
-      </li>
+  <li>
+    <Link href="/tax-slab-comparison-pakistan" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+      📈 Tax Slab Comparison
+    </Link>
+  </li>
 
-      <li>
-  <a
-    href="/tax-slab-finder-pakistan"
-    className="flex items-center gap-2 text-gray-700 hover:text-green-600"
-  >
-    📊 Tax Slab Finder
-  </a>
-</li>
+  <li>
+    <Link href="/withholding-tax-calculator" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+      🧾 Withholding Tax
+    </Link>
+  </li>
 
-    </ul>
+  <li>
+    <Link href="/zakat-calculator" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+      🕌 Zakat Calculator
+    </Link>
+  </li>
+
+  <li>
+    <Link href="/blog" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+      📘 Tax Guides
+    </Link>
+  </li>
+
+</ul>
 
   </div>
 </aside>
