@@ -1,10 +1,4 @@
-export const metadata = {
-  title: "FBR Tax Calculator Pakistan 2021-2027 | Income Tax Slabs & Salary Tax",
-  description:
-    "Calculate Pakistan income tax online. View FBR tax slabs from 2021 to 2027, compare yearly changes, and check salary tax instantly.",
-  keywords:
-    "FBR tax calculator Pakistan, income tax slabs 2025-26, tax slabs 2026-27 Pakistan, salary tax calculator Pakistan",
-};
+
 
 "use client";
 
