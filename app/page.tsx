@@ -315,14 +315,18 @@ const seconds = now ? now.getSeconds() : 0;
         </div>
       </div>
 
-      <div className="mt-12 p-6 bg-amber-50 border-l-4 border-amber-400 rounded-xl max-w-xl mx-auto">
-        <h3 className="text-lg font-bold mb-2">Tax Year 2026‑27 Update</h3>
-        
-        <p className="text-sm text-gray-700">
-          The official income tax slabs for 2026‑27 will be updated here once
-          the Federal Budget is passed by Parliament.
-        </p>
-      </div>
+      <div className="mt-8 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl">
+  <h3 className="text-lg font-bold mb-2">
+    Tax Year 2026-27 Update
+  </h3>
+  <p className="text-gray-700">
+    The official Pakistan income tax slabs for 2026-27 will be updated here immediately after the Federal Budget 2026 is announced by the Government of Pakistan.
+  </p>
+  <p className="text-gray-600 mt-2">
+    Bookmark this page to stay updated with the latest FBR tax rates and slab changes.
+  </p>
+</div>
+
 {/* POPULAR TOOLS */}
 <div className="max-w-5xl mx-auto mt-16">
 
