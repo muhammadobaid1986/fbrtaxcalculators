@@ -352,19 +352,7 @@ const seconds = now ? now.getSeconds() : 0;
 <a href="/tax-slab-comparison-pakistan">
   <div className="bg-white rounded-2xl shadow-lg p-6 text-center min-h-[230px] hover:shadow-xl transition transform hover:-translate-y-1">
     <div className="text-5xl mb-4">📊</div>
-    <h3 className="font-bold text-lg">
-      Tax Slab Comparison
-    </h3>
-    <p className="text-gray-600 text-sm mt-2">
-      Compare FBR tax slabs year by year.
-    </p>
-  </div>
-</a>
-
-<a href="/tax-slab-comparison-pakistan">
-  <div className="bg-white rounded-2xl shadow-lg p-6 text-center min-h-[230px] hover:shadow-xl transition transform hover:-translate-y-1">
-    <div className="text-5xl mb-4">📊</div>
-    <h3 className="font-bold text-lg">
+    <h3 className="font-bold text-lg leading-tight">
       Tax Slab Comparison
     </h3>
     <p className="text-gray-600 text-sm mt-2">
