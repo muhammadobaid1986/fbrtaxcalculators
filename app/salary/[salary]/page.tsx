@@ -79,6 +79,11 @@ export default async function Page({ params }: any) {
       </tr>
     </tbody>
   </table>
+  <div className="mt-6 text-right">
+  <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold">
+    Effective Tax Rate: {((result.yearlyTax / (monthlySalary * 12)) * 100).toFixed(2)}%
+  </span>
+</div>
 </div>
 
 <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-xl">
