@@ -8,9 +8,9 @@ export default function Page() {
   return (
     <div className="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow mt-10">
 
-      <h1 className="text-4xl font-bold mb-6">
-        Income Tax on Rs.100,000 Salary in Pakistan
-      </h1>
+      <h1 className="text-3xl font-bold mb-6">
+  Income Tax on 100000 Salary in Pakistan (2026-27 FBR Slabs)
+</h1>
 
       <p className="mb-4 text-gray-700">
         If your monthly salary is Rs.100,000, your estimated yearly income is
@@ -54,12 +54,30 @@ export default function Page() {
       <h2 className="text-2xl font-semibold mt-8 mb-4">
         How is Tax Calculated?
       </h2>
+      
 
       <p className="mb-4 text-gray-700">
         Income tax is calculated on annual taxable income according to the
         official FBR tax slabs. The tax is then divided into monthly values for
         easier understanding.
       </p>
+
+      <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-xl mt-6">
+  <h2 className="text-xl font-bold mb-2">
+    What is the Tax on 100000 Salary in Pakistan?
+  </h2>
+
+  <p className="text-gray-700">
+    If your monthly salary is Rs 100,000, your annual income becomes Rs 1,200,000.
+    Under the latest FBR tax slabs 2026-27, this income falls within the lower
+    taxable bracket and is taxed according to the marginal tax structure.
+  </p>
+
+  <p className="text-gray-700">
+    The first Rs 600,000 is tax-free. The remaining income is taxed as per the
+    applicable slab rate defined in the Finance Act.
+  </p>
+</div>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">
         Frequently Asked Questions
