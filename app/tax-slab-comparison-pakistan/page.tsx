@@ -16,6 +16,16 @@ export default function TaxComparison() {
       <h1 className="text-4xl font-bold mb-8 text-center">
         Pakistan Income Tax Slab Comparison (2021-2027)
       </h1>
+      <div className="bg-green-50 border-l-4 border-green-600 p-6 rounded-xl mb-10">
+  <h2 className="text-xl font-bold mb-2">
+    What is the Latest Income Tax Slab in Pakistan (2026-27)?
+  </h2>
+  <p className="text-gray-700">
+    The latest Pakistan income tax slabs for 2026-27 range from 0% for annual income up to Rs 600,000 
+    to 35% for income above Rs 7,000,000. Middle income brackets are taxed between 1% and 32% 
+    under the revised FBR marginal tax structure.
+  </p>
+</div>
 
       {years.map((year) => (
         <div key={year} className="mb-10 border rounded-2xl overflow-hidden">
@@ -48,6 +58,34 @@ export default function TaxComparison() {
           </table>
         </div>
       ))}
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the latest tax slab in Pakistan for 2026-27?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The latest tax slabs range from 0% for income up to Rs 600,000 and go up to 35% for income above Rs 7,000,000."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are income tax slabs calculated in Pakistan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Income tax in Pakistan is calculated using a marginal tax system where each income bracket is taxed at a specific rate."
+          }
+        }
+      ]
+    })
+  }}
+/>
+
     </div>
   );
 }
