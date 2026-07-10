@@ -96,6 +96,27 @@ export default async function Page({ params }: any) {
     according to the latest Finance Act.
   </p>
 </div>
+<div className="mt-10 border-t pt-6">
+  <h3 className="font-bold mb-4">Explore Other Salary Tax Pages</h3>
+
+  <div className="grid grid-cols-2 gap-4 text-green-600 font-medium">
+    <a href="/salary/100000" className="hover:underline">
+      Income Tax on 100000 Salary
+    </a>
+
+    <a href="/salary/150000" className="hover:underline">
+      Income Tax on 150000 Salary
+    </a>
+
+    <a href="/salary/200000" className="hover:underline">
+      Income Tax on 200000 Salary
+    </a>
+
+    <a href="/salary/250000" className="hover:underline">
+      Income Tax on 250000 Salary
+    </a>
+  </div>
+</div>
     </div>
   );
 }
