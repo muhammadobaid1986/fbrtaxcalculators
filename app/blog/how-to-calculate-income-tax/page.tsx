@@ -139,4 +139,13 @@ export default function Article() {
   >
     Calculate Now
   </a>
+  <div className="mt-10 border-t pt-6">
+  <p className="text-gray-700">
+    For detailed slab comparison and salary breakdown,
+    visit our
+    <a href="/tax-slab-comparison-pakistan" className="text-green-600 font-semibold">
+      Tax Slab Comparison Tool
+    </a>.
+  </p>
+</div>
 </div>

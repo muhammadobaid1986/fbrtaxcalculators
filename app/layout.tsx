@@ -8,7 +8,7 @@ export const metadata = {
 },  
   metadataBase: new URL("https://fbrtaxcalculators.com"),
   title: {
-    default: "FBR Tax Calculators Pakistan | Income Tax, Zakat & WHT Tools",
+  default: "Income Tax Calculator Pakistan 2026-27 | FBR Salary Tax Slabs & Comparison",
     template: "%s | FBR Tax Calculators",
   },
   description:
@@ -25,7 +25,7 @@ export const metadata = {
   openGraph: {
     title: "FBR Tax Calculators Pakistan",
     description:
-      "Calculate Pakistan income tax, salary tax, zakat and withholding tax using free online calculators.",
+  "Calculate income tax in Pakistan for 2026-27 using official FBR tax slabs. View salary tax breakdown, slab comparison, and filer benefits instantly.",
     url: "https://fbrtaxcalculators.com",
     siteName: "FBR Tax Calculators",
     locale: "en_PK",

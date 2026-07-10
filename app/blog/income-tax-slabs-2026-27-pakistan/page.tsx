@@ -41,6 +41,15 @@ export default function Page() {
         check salary-specific pages like 
         <a href="/salary/180000" className="text-green-600 font-semibold"> Tax on 180000 Salary</a>.
       </p>
+      <div className="mt-10 border-t pt-6">
+  <p className="text-gray-700">
+    For detailed slab comparison and salary breakdown,
+    visit our
+    <a href="/tax-slab-comparison-pakistan" className="text-green-600 font-semibold">
+      Tax Slab Comparison Tool
+    </a>.
+  </p>
+</div>
     </div>
   );
 }
