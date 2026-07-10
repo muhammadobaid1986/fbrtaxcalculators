@@ -137,6 +137,13 @@ const seconds = now ? now.getSeconds() : 0;
     <h1 className="text-3xl md:text-5xl font-extrabold text-gray-800">
       Income Tax Calculator Pakistan 2025-26
     </h1>
+    <p className="mt-6 text-gray-700">
+  For a complete understanding of tax slabs, filer benefits, and salary tax rules,
+  read our
+  <a href="/blog/pakistan-income-tax-guide" className="text-green-600 font-semibold">
+    Pakistan Income Tax Complete Guide
+  </a>.
+</p>
 
     <p className="text-gray-600 mt-6 text-lg">
       Calculate salary income tax online in Pakistan for tax year 2025-26 using official FBR tax slabs. Get monthly tax, yearly tax and take-home salary instantly.
