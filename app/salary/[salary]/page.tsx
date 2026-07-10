@@ -1,0 +1,96 @@
+import { calculateSalaryTax } from "../../lib/tax";
+
+export default async function Page({ params }: any) {
+  const resolvedParams = await params;
+  const salaryValue = resolvedParams.salary;
+
+  if (!salaryValue) {
+    return <div className="p-10 text-center">Salary not provided</div>;
+  }
+
+  const monthlySalary = Number(salaryValue);
+
+  if (isNaN(monthlySalary)) {
+    return <div className="p-10 text-center">Invalid salary</div>;
+  }
+
+  const result = calculateSalaryTax(monthlySalary, "2026-27");
+
+  return (
+    <div className="max-w-4xl mx-auto p-10 bg-white rounded-2xl shadow mt-10">
+      <h1 className="text-3xl font-bold mb-6">
+        Income Tax on Rs {monthlySalary.toLocaleString()} Salary
+      </h1>
+
+      <div className="bg-gradient-to-r from-green-600 to-green-700 text-white p-8 rounded-2xl shadow mb-8">
+  <h1 className="text-3xl font-bold mb-4">
+    Income Tax on Rs {monthlySalary.toLocaleString()} Salary (2026-27)
+  </h1>
+  <p className="text-lg">
+    Annual Income: Rs {(monthlySalary * 12).toLocaleString()}
+  </p>
+</div>
+
+<div className="bg-white rounded-2xl shadow p-6 mb-10">
+  <h2 className="text-xl font-bold mb-6">Salary & Tax Breakdown</h2>
+
+  <table className="w-full text-left border-collapse">
+    <tbody>
+      <tr className="border-b">
+        <td className="p-3 font-semibold">Monthly Salary</td>
+        <td className="p-3">Rs {monthlySalary.toLocaleString()}</td>
+      </tr>
+
+      <tr className="border-b">
+        <td className="p-3 font-semibold">Yearly Salary</td>
+        <td className="p-3">Rs {(monthlySalary * 12).toLocaleString()}</td>
+      </tr>
+
+      <tr className="border-b">
+        <td className="p-3 font-semibold text-red-600">Monthly Tax</td>
+        <td className="p-3 text-red-600">
+          Rs {result.monthlyTax.toLocaleString()}
+        </td>
+      </tr>
+
+      <tr className="border-b">
+        <td className="p-3 font-semibold text-red-600">Yearly Tax</td>
+        <td className="p-3 text-red-600">
+          Rs {result.yearlyTax.toLocaleString()}
+        </td>
+      </tr>
+
+      <tr className="border-b bg-green-50">
+        <td className="p-3 font-bold text-green-700">
+          Monthly Take‑Home Salary
+        </td>
+        <td className="p-3 font-bold text-green-700">
+          Rs {result.monthlyTakeHome.toLocaleString()}
+        </td>
+      </tr>
+
+      <tr className="bg-green-50">
+        <td className="p-3 font-bold text-green-700">
+          Yearly Take‑Home Salary
+        </td>
+        <td className="p-3 font-bold text-green-700">
+          Rs {result.yearlyTakeHome.toLocaleString()}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-xl">
+  <h2 className="text-xl font-bold mb-2">
+    How is Income Tax Calculated in Pakistan?
+  </h2>
+  <p className="text-gray-700">
+    Income tax is calculated using a marginal tax system defined by FBR.
+    Different portions of your annual income are taxed at different rates
+    according to the latest Finance Act.
+  </p>
+</div>
+    </div>
+  );
+}
