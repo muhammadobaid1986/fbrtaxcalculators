@@ -82,6 +82,36 @@ export default async function Page({ params }: any) {
       </tr>
     </tbody>
   </table>
+
+    <div className="mt-10 prose max-w-none">
+  <h2>How Much Tax on {monthlySalary.toLocaleString()} Salary in Pakistan?</h2>
+
+  <p>
+    If your monthly salary is Rs {monthlySalary.toLocaleString()}, your annual income becomes
+    Rs {(monthlySalary * 12).toLocaleString()}. According to the 2026-27 FBR tax slabs,
+    income tax is calculated using a marginal tax system.
+  </p>
+
+  <p>
+    The first Rs 600,000 is tax-free. The remaining income is taxed at
+    applicable slab rates depending on your annual bracket.
+  </p>
+
+  <h3>Is {monthlySalary.toLocaleString()} Salary Taxable?</h3>
+
+  <p>
+    Yes, if your annual income exceeds the tax-free limit of Rs 600,000,
+    you are required to pay income tax according to FBR rules.
+  </p>
+
+  <p>
+    You can compare different salary brackets using our
+    <a href="/tax-slab-comparison-pakistan" className="text-green-600 font-semibold">
+      Tax Slab Comparison Tool
+    </a>.
+  </p>
+</div>
+
   <div className="mt-6 text-right">
   <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold">
     Effective Tax Rate: {((result.yearlyTax / (monthlySalary * 12)) * 100).toFixed(2)}%
