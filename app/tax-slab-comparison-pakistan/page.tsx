@@ -86,6 +86,23 @@ export default function TaxComparison() {
   }}
 />
 
+<div className="mt-16 prose max-w-none">
+  <h2>Which Tax Year is Better for Salaried Individuals?</h2>
+
+  <p>
+    Comparing tax slabs from 2021 to 2027 helps identify how tax policies
+    changed over time. Middle-income earners saw adjustments in slab rates
+    during 2026-27.
+  </p>
+
+  <p>
+    You can also check salary-specific tax pages like
+    <a href="/salary/180000" className="text-green-600 font-semibold">
+      Tax on 180000 Salary
+    </a>.
+  </p>
+</div>
+
     </div>
   );
 }
