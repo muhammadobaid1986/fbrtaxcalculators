@@ -139,15 +139,22 @@ const seconds = now ? now.getSeconds() : 0;
 </h1>
     <p className="mt-6 text-gray-700">
   For a complete understanding of tax slabs, filer benefits, and salary tax rules,
-  read our
-  <a href="/blog/pakistan-income-tax-guide" className="text-green-600 font-semibold">
-  <p className="mt-2 text-gray-700">
-  Check current 
-  <a href="/blog/tax-free-salary-pakistan" className="text-green-600 font-semibold">
-    Tax Free Salary Limit
+  read our{" "}
+  <a
+    href="/blog/pakistan-income-tax-guide"
+    className="text-green-600 font-semibold"
+  >
+    Pakistan Income Tax Complete Guide
   </a>.
 </p>
-    Pakistan Income Tax Complete Guide
+
+<p className="mt-2 text-gray-700">
+  Check current{" "}
+  <a
+    href="/blog/tax-free-salary-pakistan"
+    className="text-green-600 font-semibold"
+  >
+    Tax Free Salary Limit
   </a>.
 </p>
 
