@@ -432,6 +432,15 @@ const seconds = now ? now.getSeconds() : 0;
           official FBR tax slabs. This calculator supports tax years 2021-22 to
           2025-26 and provides accurate salary tax estimation.
         </p>
+        <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-xl mt-6">
+  <h2 className="text-xl font-bold mb-2">
+    What is the Current Tax-Free Salary in Pakistan?
+  </h2>
+  <p className="text-gray-700">
+    The current tax-free annual salary limit in Pakistan is Rs 600,000. 
+    Salaried individuals earning below this threshold do not pay income tax under FBR rules.
+  </p>
+</div>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">
           How Income Tax Is Calculated in Pakistan?
