@@ -243,7 +243,7 @@ export default function RootLayout({
         </footer>
 
         {/* Schema Markup */}
-        <script
+<script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
@@ -252,27 +252,42 @@ export default function RootLayout({
         {
           "@type": "WebSite",
           "@id": "https://fbrtaxcalculators.com/#website",
-          url: "https://fbrtaxcalculators.com",
-          name: "FBR Tax Calculators",
-          description:
+          "url": "https://fbrtaxcalculators.com",
+          "name": "FBR Tax Calculators",
+          "description":
             "Income Tax Calculator Pakistan, Zakat Calculator, Withholding Tax Calculator and FBR Tax Guides.",
-          inLanguage: "en",potentialAction: {
-  "@type": "SearchAction",
-  target: "https://fbrtaxcalculators.com/search?q={search_term_string}",
-  "query-input": "required name=search_term_string"}
+          "inLanguage": "en",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target":
+              "https://fbrtaxcalculators.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
         },
         {
           "@type": "Organization",
           "@id": "https://fbrtaxcalculators.com/#organization",
-          name: "FBR Tax Calculators",
-          url: "https://fbrtaxcalculators.com",
-          logo: {
+          "name": "FBR Tax Calculators",
+          "url": "https://fbrtaxcalculators.com",
+          "logo": {
             "@type": "ImageObject",
-            url: "https://fbrtaxcalculators.com/favicon.ico"
+            "url": "https://fbrtaxcalculators.com/favicon.ico"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://fbrtaxcalculators.com/#software",
+          "name": "Income Tax Calculator Pakistan",
+          "operatingSystem": "All",
+          "applicationCategory": "FinanceApplication",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "PKR"
           }
         }
       ]
-    }),
+    })
   }}
 />
     </body>
