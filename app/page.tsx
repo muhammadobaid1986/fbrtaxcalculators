@@ -141,12 +141,18 @@ const seconds = now ? now.getSeconds() : 0;
   For a complete understanding of tax slabs, filer benefits, and salary tax rules,
   read our
   <a href="/blog/pakistan-income-tax-guide" className="text-green-600 font-semibold">
+  <p className="mt-2 text-gray-700">
+  Check current 
+  <a href="/blog/tax-free-salary-pakistan" className="text-green-600 font-semibold">
+    Tax Free Salary Limit
+  </a>.
+</p>
     Pakistan Income Tax Complete Guide
   </a>.
 </p>
 
     <p className="text-gray-600 mt-6 text-lg">
-      Calculate salary income tax online in Pakistan for tax year 2025-26 using official FBR tax slabs. Get monthly tax, yearly tax and take-home salary instantly.
+      Calculate salary income tax online in Pakistan for tax year 2026-27 using official FBR tax slabs. Get monthly tax, yearly tax and take-home salary instantly.
     </p>
 
     <div className="flex flex-wrap justify-center gap-3 mt-6">
@@ -155,14 +161,15 @@ const seconds = now ? now.getSeconds() : 0;
       </span>
 
       <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold">
-        📅 Updated 2025-26
+        📅 Updated 2026-27
       </span>
 
       <span className="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm font-semibold">
         ⚡ Free Calculator
       </span>
     </div>
-
+<link rel="prefetch" href="/salary/100000" />
+<link rel="prefetch" href="/tax-slab-comparison-pakistan" />
   </div>
 </div>
 
