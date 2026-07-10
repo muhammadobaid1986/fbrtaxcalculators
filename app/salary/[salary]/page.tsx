@@ -19,8 +19,11 @@ export default async function Page({ params }: any) {
   return (
     <div className="max-w-4xl mx-auto p-10 bg-white rounded-2xl shadow mt-10">
       <h1 className="text-3xl font-bold mb-6">
-        Income Tax on Rs {monthlySalary.toLocaleString()} Salary
+        Income Tax on Rs {monthlySalary.toLocaleString()} Salary in Pakistan (2026-27)
       </h1>
+      <p className="text-gray-600 mb-6">
+  Calculate monthly and yearly income tax on Rs {monthlySalary.toLocaleString()} salary according to official FBR tax slabs.
+</p>
 
       <div className="bg-gradient-to-r from-green-600 to-green-700 text-white p-8 rounded-2xl shadow mb-8">
   <h1 className="text-3xl font-bold mb-4">
