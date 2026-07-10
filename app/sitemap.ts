@@ -1,156 +1,58 @@
-export default function sitemap() {
-  return [
-    {
-      url: "https://fbrtaxcalculators.com",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/income-tax-calculator-2025-26",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/income-tax-calculator-2024-25",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/income-tax-calculator-2023-24",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/income-tax-calculator-2022-23",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/income-tax-calculator-2021-22",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/blog",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/zakat-calculator",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/withholding-tax-calculator",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/about",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/contact",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/privacy-policy",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/disclaimer",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/filer-vs-non-filer-2025",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/how-to-become-a-filer",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/how-to-file-tax-return-online-pakistan",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/property-tax-in-pakistan",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/tax-on-bank-profit",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/tax-on-car-registration",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://fbrtaxcalculators.com/latest-budget-2025-26-tax-slabs",
-      lastModified: new Date(),
-    },
+import { MetadataRoute } from "next";
 
-    {
-  url: "https://fbrtaxcalculators.com/tax-on-prize-bonds-pakistan",
-  lastModified: new Date(),
-},
-{
-  url: "https://fbrtaxcalculators.com/tax-on-freelancers-pakistan",
-  lastModified: new Date(),
-},
-{
-  url: "https://fbrtaxcalculators.com/benefits-of-being-filer-pakistan",
-  lastModified: new Date(),
-},
-{
-  url: "https://fbrtaxcalculators.com/atl-status-check-pakistan",
-  lastModified: new Date(),
-},
-{
-  url: "https://fbrtaxcalculators.com/how-to-register-on-fbr-iris",
-  lastModified: new Date(),
-},
-{
-  url: "https://fbrtaxcalculators.com/tax-on-remittances-pakistan",
-  lastModified: new Date(),
-},
-{
-  url: "https://fbrtaxcalculators.com/how-to-check-filer-status-pakistan",
-  lastModified: new Date(),
-},
-{
-  url: "https://fbrtaxcalculators.com/salary-after-tax-calculator",
-  lastModified: new Date(),
-},
-{
-  url: "https://fbrtaxcalculators.com/how-to-calculate-income-tax",
-  lastModified: new Date(),
-},
-{
-  url: "https://fbrtaxcalculators.com/income-tax-on-100000-salary-pakistan",
-  lastModified: new Date(),
-},
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://fbrtaxcalculators.com";
 
-{
-  url: "https://fbrtaxcalculators.com/income-tax-on-150000-salary-pakistan",
-  lastModified: new Date(),
-},
-
-{
-  url: "https://fbrtaxcalculators.com/monthly-tax-calculator-pakistan",
-  lastModified: new Date(),
-},
-
-{
-  url: "https://fbrtaxcalculators.com/income-tax-on-200000-salary-pakistan",
-  lastModified: new Date(),
-},
-
-{
-  url: "https://fbrtaxcalculators.com/income-tax-on-250000-salary-pakistan",
-  lastModified: new Date(),
-},
-
-{
-  url: "https://fbrtaxcalculators.com/tax-slab-finder-pakistan",
-  lastModified: new Date(),
-},
-
-{
-  url: "https://fbrtaxcalculators.com/income-tax-on-300000-salary-pakistan",
-  lastModified: new Date(),
-},
+  const staticPages = [
+    "",
+    "/income-tax-calculator-2025-26",
+    "/income-tax-calculator-2024-25",
+    "/income-tax-calculator-2023-24",
+    "/income-tax-calculator-2022-23",
+    "/income-tax-calculator-2021-22",
+    "/blog",
+    "/zakat-calculator",
+    "/withholding-tax-calculator",
+    "/about",
+    "/contact",
+    "/privacy-policy",
+    "/disclaimer",
+    "/filer-vs-non-filer-2025",
+    "/how-to-become-a-filer",
+    "/how-to-file-tax-return-online-pakistan",
+    "/property-tax-in-pakistan",
+    "/tax-on-bank-profit",
+    "/tax-on-car-registration",
+    "/latest-budget-2025-26-tax-slabs",
+    "/tax-on-prize-bonds-pakistan",
+    "/tax-on-freelancers-pakistan",
+    "/benefits-of-being-filer-pakistan",
+    "/atl-status-check-pakistan",
+    "/how-to-register-on-fbr-iris",
+    "/tax-on-remittances-pakistan",
+    "/how-to-check-filer-status-pakistan",
+    "/salary-after-tax-calculator",
+    "/how-to-calculate-income-tax",
+    "/income-tax-on-100000-salary-pakistan",
+    "/income-tax-on-150000-salary-pakistan",
+    "/income-tax-on-200000-salary-pakistan",
+    "/income-tax-on-250000-salary-pakistan",
+    "/income-tax-on-300000-salary-pakistan",
+    "/tax-slab-finder-pakistan",
+    "/monthly-tax-calculator-pakistan",
+    "/tax-slab-comparison-pakistan",
   ];
-  
+
+  // ✅ Dynamic Salary Pages (/salary/50000 → /salary/2500000)
+  const dynamicSalaryPages = Array.from({ length: 50 }, (_, i) => {
+    const salary = (i + 1) * 50000; // 50k increments
+    return `/salary/${salary}`;
+  });
+
+  const allPages = [...staticPages, ...dynamicSalaryPages];
+
+  return allPages.map((path) => ({
+    url: `${baseUrl}${path}`,
+    lastModified: new Date(),
+  }));
 }
