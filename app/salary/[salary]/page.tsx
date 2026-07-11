@@ -87,6 +87,19 @@ export default async function Page({ params }: any) {
       </tr>
     </tbody>
   </table>
+  <div className="mt-10 prose max-w-none">
+  <h2>What is 250k a Year Monthly in Pakistan?</h2>
+
+  <p>
+    If your yearly salary is Rs 3,000,000 (250,000 per month), your monthly take-home
+    salary after taxes depends on the applicable FBR tax slab.
+  </p>
+
+  <p>
+    After income tax deductions under the 2026-27 tax slabs, your monthly net salary
+    will be shown above in the breakdown table.
+  </p>
+</div>
 
     <div className="mt-10 prose max-w-none">
   <h2>How Much Tax on {monthlySalary.toLocaleString()} Salary in Pakistan?</h2>
