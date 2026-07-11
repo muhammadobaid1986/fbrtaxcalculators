@@ -51,6 +51,10 @@ export default function Page() {
       Tax Slab Comparison Tool
     </a>.
   </p>
+  <p>
+  Try our <a href="/" className="text-green-600 font-semibold">
+  FBR Tax Calculator</a> to calculate your salary tax instantly.
+</p>
 </div>
     </div>
   );
