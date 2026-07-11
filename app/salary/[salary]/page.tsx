@@ -88,16 +88,17 @@ export default async function Page({ params }: any) {
     </tbody>
   </table>
   <div className="mt-10 prose max-w-none">
-  <h2>What is 250k a Year Monthly in Pakistan?</h2>
+  <h2>Income Tax on 150000 Salary in 2026-27</h2>
 
   <p>
-    If your yearly salary is Rs 3,000,000 (250,000 per month), your monthly take-home
-    salary after taxes depends on the applicable FBR tax slab.
+    If you earn Rs 150,000 per month in Pakistan, your yearly income becomes
+    Rs 1,800,000. Under the 2026-27 FBR tax slabs, this income falls within
+    the applicable marginal tax bracket.
   </p>
 
   <p>
-    After income tax deductions under the 2026-27 tax slabs, your monthly net salary
-    will be shown above in the breakdown table.
+    Many people search for "150000/26 tax" or "150000 salary tax 2026".
+    This page shows your exact monthly tax, yearly tax, and take-home salary.
   </p>
 </div>
 
