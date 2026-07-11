@@ -1,5 +1,6 @@
-
 "use client";
+
+import React from "react";
 import { taxData } from "../lib/tax";
 import {
   Chart as ChartJS,
@@ -25,6 +26,8 @@ ChartJS.register(
 
 export default function TaxComparison() {
   const years = Object.keys(taxData);
+  
+  const [selectedYear, setSelectedYear] = React.useState("2026-27");
 
   return (
     <div className="max-w-6xl mx-auto p-8">
@@ -76,26 +79,57 @@ export default function TaxComparison() {
     Tax Rate Comparison (2026-27)
   </h2>
 
+<div className="mb-6 text-center">
+  <select
+    value={selectedYear}
+    onChange={(e) => setSelectedYear(e.target.value)}
+    className="border p-2 rounded-lg"
+  >
+    {years.map((year) => (
+      <option key={year} value={year}>
+        Tax Year {year}
+      </option>
+    ))}
+  </select>
+  <div className="mt-16 bg-white p-6 rounded-2xl shadow">
+  <h2 className="text-2xl font-bold mb-6 text-center">
+    Tax Rate Comparison ({selectedYear})
+  </h2>
+
+  <div className="mb-6 text-center">
+    <select
+      value={selectedYear}
+      onChange={(e) => setSelectedYear(e.target.value)}
+      className="border p-2 rounded-lg"
+    >
+      {years.map((year) => (
+        <option key={year} value={year}>
+          Tax Year {year}
+        </option>
+      ))}
+    </select>
+  </div>
+
   <Bar
     data={{
-      labels: [
-        "Up to 600k",
-        "1.2M",
-        "2.2M",
-        "3.2M",
-        "4.1M",
-        "5.6M",
-        "7M+",
-      ],
+      labels: taxData[selectedYear].map((slab) =>
+        slab.max === Infinity
+          ? `Above ${slab.min / 100000}L`
+          : `${slab.min / 100000}L - ${slab.max / 100000}L`
+      ),
       datasets: [
         {
           label: "Tax Rate (%)",
-          data: [0, 1, 11, 20, 25, 29, 35],
+          data: taxData[selectedYear].map((slab) => slab.rate * 100),
           backgroundColor: "rgba(34,197,94,0.6)",
         },
       ],
     }}
   />
+</div>
+</div>
+
+  
 </div>
         </div>
       ))}
