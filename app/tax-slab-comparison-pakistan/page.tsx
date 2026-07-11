@@ -34,6 +34,12 @@ export default function TaxComparison() {
       <h1 className="text-4xl font-bold mb-8 text-center">
         Pakistan Income Tax Slab Comparison (2021-2027)
       </h1>
+      <p>
+  See salary example:
+  <a href="/salary/180000" className="text-green-600 font-semibold">
+    Income Tax on 180000 Salary
+  </a>
+</p>
       <div className="bg-green-50 border-l-4 border-green-600 p-6 rounded-xl mb-10">
   <h2 className="text-xl font-bold mb-2">
     What is the Latest Income Tax Slab in Pakistan (2026-27)?

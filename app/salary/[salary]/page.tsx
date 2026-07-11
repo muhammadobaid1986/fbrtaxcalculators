@@ -19,8 +19,13 @@ export default async function Page({ params }: any) {
   return (
     <div className="max-w-4xl mx-auto p-10 bg-white rounded-2xl shadow mt-10">
       <h1 className="text-3xl font-bold mb-6">
-        Income Tax on Rs {monthlySalary.toLocaleString()} Salary in Pakistan (2026-27)
-      </h1>
+  Income Tax on Rs {monthlySalary.toLocaleString()} Salary in Pakistan (2026-27 FBR Slabs)
+</h1>
+<p className="text-gray-700 mb-6">
+  If you are earning Rs {monthlySalary.toLocaleString()} per month,
+  this page explains exactly how much income tax you will pay in Pakistan
+  according to 2026-27 FBR tax slabs.
+</p>
       <p className="text-gray-600 mb-6">
   Calculate monthly and yearly income tax on Rs {monthlySalary.toLocaleString()} salary according to official FBR tax slabs.
 </p>
