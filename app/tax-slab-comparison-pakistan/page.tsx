@@ -1,12 +1,27 @@
-import { taxData } from "../lib/tax";
 
-export const metadata = {
-  title: "Pakistan Income Tax Slab Comparison 2021-2027 | FBR Tax Changes",
-  description:
-    "Compare Pakistan income tax slabs from 2021 to 2027. See how FBR tax rates changed year by year for salaried individuals.",
-  keywords:
-    "tax slab comparison Pakistan, FBR tax changes 2025-26, income tax slabs 2026-27 Pakistan",
-};
+"use client";
+import { taxData } from "../lib/tax";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import { Bar } from "react-chartjs-2";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+
 
 export default function TaxComparison() {
   const years = Object.keys(taxData);
@@ -56,6 +71,32 @@ export default function TaxComparison() {
               ))}
             </tbody>
           </table>
+          <div className="mt-16 bg-white p-6 rounded-2xl shadow">
+  <h2 className="text-2xl font-bold mb-6 text-center">
+    Tax Rate Comparison (2026-27)
+  </h2>
+
+  <Bar
+    data={{
+      labels: [
+        "Up to 600k",
+        "1.2M",
+        "2.2M",
+        "3.2M",
+        "4.1M",
+        "5.6M",
+        "7M+",
+      ],
+      datasets: [
+        {
+          label: "Tax Rate (%)",
+          data: [0, 1, 11, 20, 25, 29, 35],
+          backgroundColor: "rgba(34,197,94,0.6)",
+        },
+      ],
+    }}
+  />
+</div>
         </div>
       ))}
       <script
