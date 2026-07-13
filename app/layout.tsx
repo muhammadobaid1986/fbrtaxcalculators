@@ -232,6 +232,11 @@ export default function RootLayout({
                 <li><Link href="/privacy-policy" className="hover:text-green-400 transition">Privacy Policy</Link></li>
                 <li><Link href="/disclaimer" className="hover:text-green-400 transition">Disclaimer</Link></li>
                 <li><Link href="/contact" className="hover:text-green-400 transition">Contact</Link></li>
+                <li>
+                <Link href="/about" className="hover:text-green-400 transition">
+                About
+                </Link>
+              </li>
               </ul>
             </div>
 
