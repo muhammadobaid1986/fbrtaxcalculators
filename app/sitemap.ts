@@ -44,7 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // ✅ Dynamic Salary Pages (/salary/50000 → /salary/2500000)
-  const dynamicSalaryPages = Array.from({ length: 1000 }, (_, i) => {
+  const dynamicSalaryPages = Array.from({ length: 2000 }, (_, i) => {
     const salary = (i + 1) * 50000; // 50k increments
     return `/salary/${salary}`;
   });
