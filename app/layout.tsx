@@ -129,6 +129,7 @@ export default function RootLayout({
         <div className="max-w-7xl mx-auto px-3 md:px-4 py-6 md:py-10 flex flex-col md:flex-row gap-8">
 
   {/* SIDEBAR */}
+  <div className="hidden lg:block">
   <aside className="w-full md:w-72">
   <div className="bg-white/80 backdrop-blur-md rounded-3xl shadow-xl p-6 sticky top-28 border border-gray-100 hover:shadow-2xl transition">
 
@@ -190,7 +191,8 @@ export default function RootLayout({
 
   </div>
 </aside>
-<div className="my-6 text-center" style={{ minHeight: "250px" }}>
+</div>
+<div className="my-6 text-center" style={{ minHeight: "120px" }}>
   <ins
     className="adsbygoogle"
     style={{ display: "block" }}
