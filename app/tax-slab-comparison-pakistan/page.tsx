@@ -18,7 +18,7 @@ export default function TaxComparison() {
       </h1>
 
       {years.map((year) => (
-        <div key={year} className="mb-10 border rounded-2xl overflow-hidden">
+        <div key={year} className="mb-10 border rounded-2xl overflow-hidden hover:shadow-lg transition duration-300">
           <div className="bg-gray-100 p-4 font-bold">
             Tax Year {year}
           </div>
@@ -32,7 +32,10 @@ export default function TaxComparison() {
             </thead>
             <tbody>
               {taxData[year].map((slab, index) => (
-                <tr key={index} className="border-b">
+                <tr
+  key={index}
+  className="border-b hover:bg-green-50 transition duration-300"
+>
                   <td className="p-4 border-r">
                     Rs {slab.min.toLocaleString()} -{" "}
                     {slab.max === Infinity
