@@ -20,12 +20,8 @@ const Bar = dynamic(
   { ssr: false }
 );
 
-
-
-
-
 export default function TaxComparison() {
-  
+
   React.useEffect(() => {
   ChartJS.register(
     CategoryScale,

@@ -26,7 +26,7 @@ export default function Home() {
 
   updateTime();
 
-  const timer = setInterval(updateTime, 1000);
+  const timer = setInterval(updateTime, 3000);
 
   return () => clearInterval(timer);
 }, []);
@@ -134,7 +134,7 @@ const seconds = now ? now.getSeconds() : 0;
 
       {/* HERO SECTION */}
 <div className="mt-16 mb-16 max-w-4xl mx-auto">
-  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl p-10 text-center border border-gray-100 hover:shadow-3xl transition">
+  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg p-10 text-center border border-gray-100">
 
     <h1 className="text-3xl md:text-5xl font-extrabold text-gray-800">
   FBR Tax Calculator Pakistan 2026-27 | Income & Salary Tax Slabs
