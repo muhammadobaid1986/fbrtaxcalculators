@@ -49,6 +49,17 @@ export default function TaxComparison() {
               ))}
             </tbody>
           </table>
+
+          <div className="my-8 text-center" style={{ minHeight: "250px" }}>
+  <ins
+    className="adsbygoogle"
+    style={{ display: "block" }}
+    data-ad-client="ca-pub-1040104111900400"
+    data-ad-slot="3333333333"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+</div>
         </div>
       ))}
 

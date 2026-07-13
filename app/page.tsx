@@ -162,6 +162,17 @@ const seconds = now ? now.getSeconds() : 0;
   </a>
 </div>
 
+<div className="my-8 text-center" style={{ minHeight: "250px" }}>
+  <ins
+    className="adsbygoogle"
+    style={{ display: "block" }}
+    data-ad-client="ca-pub-1040104111900400"
+    data-ad-slot="1111111111"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+</div>
+
 <p className="mt-2 text-gray-700">
   Check current{" "}
   <a
