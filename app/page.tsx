@@ -137,7 +137,7 @@ const seconds = now ? now.getSeconds() : 0;
   <div className="bg-white rounded-3xl shadow-sm">
 
     <h1 className="text-3xl md:text-5xl font-extrabold text-gray-800">
-  FBR Tax Calculator Pakistan 2026-27 | Income & Salary Tax Slabs
+  FBR Income Tax Calculator Pakistan 2026-27 | Salary & Slab Comparison
 </h1>
 <p className="mt-4 text-gray-700 text-lg">
   Use our FBR Tax Calculator to calculate income tax in Pakistan

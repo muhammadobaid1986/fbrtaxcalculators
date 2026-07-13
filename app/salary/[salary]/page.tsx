@@ -40,7 +40,7 @@ export default async function Page({ params }: any) {
 
       <div className="bg-green-600 text-white p-6 rounded-2xl shadow mb-8">
   <h1 className="text-3xl font-bold mb-4">
-    Income Tax on Rs {monthlySalary.toLocaleString()} Salary (2026-27)
+    Income Tax on Rs {monthlySalary.toLocaleString()} Salary in Pakistan 2026-27 | Monthly & Yearly Breakdown
   </h1>
   <p className="text-lg">
     Annual Income: Rs {(monthlySalary * 12).toLocaleString()}
