@@ -118,27 +118,7 @@ export default async function Page({ params }: any) {
     </tbody>
   </table>
   
-  <div className="my-8 text-center" style={{ minHeight: "250px" }}>
-  <ins
-    className="adsbygoogle"
-    style={{ display: "block" }}
-    data-ad-client="ca-pub-1040104111900400"
-    data-ad-slot="1234567890"
-    data-ad-format="auto"
-    data-full-width-responsive="true"
-  ></ins>
-</div>
-
-  <div className="my-6 text-center" style={{ minHeight: "250px" }}>
-  <ins
-    className="adsbygoogle"
-    style={{ display: "block" }}
-    data-ad-client="ca-pub-1040104111900400"
-    data-ad-slot="1234567890"
-    data-ad-format="auto"
-    data-full-width-responsive="true"
-  ></ins>
-</div>
+  
   
   <div className="mt-10 prose max-w-none">
   <h2>How Much Tax on {monthlySalary.toLocaleString()} Salary in Pakistan?</h2>
@@ -303,6 +283,28 @@ export default async function Page({ params }: any) {
   >
     🔥 Try Main Tax Calculator
   </a>
+</div>
+
+<div className="my-8 text-center" style={{ minHeight: "250px" }}>
+  <ins
+    className="adsbygoogle"
+    style={{ display: "block" }}
+    data-ad-client="ca-pub-1040104111900400"
+    data-ad-slot="1234567890"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+</div>
+
+  <div className="my-6 text-center" style={{ minHeight: "250px" }}>
+  <ins
+    className="adsbygoogle"
+    style={{ display: "block" }}
+    data-ad-client="ca-pub-1040104111900400"
+    data-ad-slot="1234567890"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
 </div>
 
     </div>
