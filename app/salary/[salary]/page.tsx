@@ -1,4 +1,11 @@
 import { calculateSalaryTax } from "../../lib/tax";
+
+export async function generateStaticParams() {
+  return Array.from({ length: 200 }, (_, i) => ({
+    salary: String((i + 1) * 10000),
+  }));
+}
+
 export async function generateMetadata({ params }: any) {
   const resolvedParams = await params;
   const salary = Number(resolvedParams.salary);

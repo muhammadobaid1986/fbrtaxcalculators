@@ -217,6 +217,17 @@ export default function RootLayout({
 
 </div>
 
+<div className="my-8 text-center" style={{ minHeight: "250px" }}>
+  <ins
+    className="adsbygoogle"
+    style={{ display: "block" }}
+    data-ad-client="ca-pub-1040104111900400"
+    data-ad-slot="9876543210"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+</div>
+
         {/* FOOTER */}
         <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-300 mt-24 pt-14 pb-8">
           
