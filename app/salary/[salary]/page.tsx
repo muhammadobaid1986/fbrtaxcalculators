@@ -39,7 +39,7 @@ export default async function Page({ params }: any) {
   </p>
 </div>
 
-<div className="bg-white rounded-2xl shadow p-6 mb-10">
+<div className="bg-white rounded-2xl shadow-xl p-6 mb-10 border border-gray-100">
   <h2 className="text-xl font-bold mb-6">Salary & Tax Breakdown</h2>
 
   <table className="w-full text-left border-collapse">

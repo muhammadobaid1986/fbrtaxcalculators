@@ -134,7 +134,7 @@ const seconds = now ? now.getSeconds() : 0;
 
       {/* HERO SECTION */}
 <div className="mt-16 mb-16 max-w-4xl mx-auto">
-  <div className="bg-white rounded-3xl shadow-2xl p-10 text-center">
+  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl p-10 text-center border border-gray-100 hover:shadow-3xl transition">
 
     <h1 className="text-3xl md:text-5xl font-extrabold text-gray-800">
   FBR Tax Calculator Pakistan 2026-27 | Income & Salary Tax Slabs
@@ -157,7 +157,7 @@ const seconds = now ? now.getSeconds() : 0;
 <div className="mt-8 flex justify-center">
   <a
     href="/salary/180000"
-    className="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow hover:scale-105 transition"
+    className="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition duration-300"
   >
     🔥 Try Salary Tax Example
   </a>

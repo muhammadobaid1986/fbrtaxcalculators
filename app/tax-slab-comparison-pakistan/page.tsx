@@ -32,7 +32,7 @@ export default function TaxComparison() {
   const [selectedYear, setSelectedYear] = React.useState("2026-27");
 
   return (
-    <div className="max-w-6xl mx-auto p-8">
+    <div className="max-w-6xl mx-auto p-8 bg-gradient-to-b from-white to-gray-50 rounded-3xl shadow-xl border border-gray-100">
       <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl mb-10">
   <strong>Tip:</strong> Use the comparison tool below to see how tax rates changed between 2021 and 2027.
 </div>
