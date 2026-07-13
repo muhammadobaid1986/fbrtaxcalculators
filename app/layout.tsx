@@ -8,11 +8,12 @@ export const metadata = {
 },  
   metadataBase: new URL("https://fbrtaxcalculators.com"),
   title: {
-  default: "Income Tax Calculator Pakistan 2026-27 | FBR Salary Tax Slabs & Comparison",
-    template: "%s | FBR Tax Calculators",
-  },
+  default: "FBR Tax Calculator Pakistan 2026-27 | Salary & Income Tax Slabs",
+  template: "%s | FBR Tax Calculators",
+},
   description:
-  "Free Income Tax Calculator Pakistan 2025-26. Calculate salary income tax for tax years 2021-2026 using official FBR tax slabs.",
+  
+  "Calculate income tax in Pakistan for 2026-27 using official FBR tax slabs. Check salary tax, comparison charts, and dynamic salary breakdown instantly.",
     keywords: [
     "Income Tax Calculator Pakistan",
     "FBR Tax Calculator",
