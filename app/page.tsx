@@ -64,7 +64,7 @@ const seconds = now ? now.getSeconds() : 0;
       <link rel="prefetch" href="/tax-slab-comparison-pakistan" />
       {/* Pakistan Date & Clock Card */}
 
-<div className="max-w-4xl mx-auto mb-12 bg-gradient-to-r from-green-700 to-green-600 text-white p-8 rounded-3xl shadow-2xl">
+<div className="max-w-4xl mx-auto mb-12 bg-gradient-to-r from-green-700 to-green-600 text-white p-8 rounded-3xl shadow-lg">
 
   <h2 className="text-3xl font-bold mb-4 text-center">
     🇵🇰 Pakistan Current Time
