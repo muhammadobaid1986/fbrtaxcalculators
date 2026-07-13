@@ -1,5 +1,13 @@
 import { calculateSalaryTax } from "../../lib/tax";
+export async function generateMetadata({ params }: any) {
+  const resolvedParams = await params;
+  const salary = Number(resolvedParams.salary);
 
+  return {
+    title: `Income Tax on ${salary.toLocaleString()} Salary in Pakistan (2026-27)`,
+    description: `Calculate income tax and take-home salary for Rs ${salary.toLocaleString()} per month in Pakistan.`,
+  };
+}
 export default async function Page({ params }: any) {
   const resolvedParams = await params;
   const salaryValue = resolvedParams.salary;
@@ -87,6 +95,33 @@ export default async function Page({ params }: any) {
       </tr>
     </tbody>
   </table>
+  
+  <div className="mt-10 prose max-w-none">
+  <h2>How Much Tax on {monthlySalary.toLocaleString()} Salary in Pakistan?</h2>
+
+  <p>
+    If you earn Rs {monthlySalary.toLocaleString()} per month in Pakistan,
+    your annual income becomes Rs {(monthlySalary * 12).toLocaleString()}.
+    According to the 2026-27 FBR tax slabs, your income tax is calculated
+    using a marginal tax structure.
+  </p>
+
+  <p>
+    This means different portions of your income are taxed at different rates
+    depending on the slab.
+  </p>
+
+  <h3>Related Salary Pages</h3>
+
+  <div className="grid grid-cols-2 gap-3 text-green-600 font-medium">
+    {[100000,150000,200000,250000,300000].map((amt) => (
+      <a key={amt} href={`/salary/${amt}`} className="hover:underline">
+        Income Tax on {amt.toLocaleString()} Salary
+      </a>
+    ))}
+  </div>
+</div>
+
   <div className="mt-10 prose max-w-none">
   <h2>Income Tax on 150000 Salary in 2026-27</h2>
 
@@ -196,6 +231,29 @@ export default async function Page({ params }: any) {
     })
   }}
 />
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": `How much tax on ${monthlySalary} salary in Pakistan?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `The yearly tax on Rs ${monthlySalary} salary is Rs ${result.yearlyTax}.`
+          }
+        }
+      ]
+    })
+  }}
+
+  
+/>
+
+
     </div>
   );
 }
