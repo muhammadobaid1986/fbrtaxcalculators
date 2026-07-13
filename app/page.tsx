@@ -134,7 +134,7 @@ const seconds = now ? now.getSeconds() : 0;
 
       {/* HERO SECTION */}
 <div className="mt-8 mb-8 max-w-4xl mx-auto">
-  <div className="bg-white rounded-3xl shadow-sm">
+  <div className="bg-white rounded-2xl shadow-md p-8 text-center border border-gray-100">
 
     <h1 className="text-3xl md:text-5xl font-extrabold text-gray-800">
   FBR Income Tax Calculator Pakistan 2026-27 | Salary & Slab Comparison

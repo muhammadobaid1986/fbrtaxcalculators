@@ -45,7 +45,7 @@ export default async function Page({ params }: any) {
   Calculate monthly and yearly income tax on Rs {monthlySalary.toLocaleString()} salary according to official FBR tax slabs.
 </p>
 
-      <div className="bg-green-600 text-white p-6 rounded-2xl shadow mb-8">
+      <div className="bg-green-600 text-white hover:bg-green-700 transition duration-300">
   <h1 className="text-3xl font-bold mb-4">
     Income Tax on Rs {monthlySalary.toLocaleString()} Salary in Pakistan 2026-27 | Monthly & Yearly Breakdown
   </h1>
@@ -64,7 +64,7 @@ export default async function Page({ params }: any) {
   </p>
 </div>
 
-<div className="bg-white rounded-2xl shadow-xl p-6 mb-10 border border-gray-100">
+<div className="bg-white rounded-2xl shadow-lg p-6 mb-10 border border-gray-200">
   <h2 className="text-xl font-bold mb-6">Salary & Tax Breakdown</h2>
 
   <table className="w-full text-left border-collapse">
