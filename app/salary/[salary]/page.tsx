@@ -117,6 +117,7 @@ export default async function Page({ params }: any) {
       </tr>
     </tbody>
   </table>
+  
   <div className="my-8 text-center" style={{ minHeight: "250px" }}>
   <ins
     className="adsbygoogle"
