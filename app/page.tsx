@@ -60,6 +60,8 @@ const seconds = now ? now.getSeconds() : 0;
   return (
     
     <main className="min-h-screen p-3 md:p-6 bg-gray-50">
+      <link rel="prefetch" href="/salary/100000" />
+      <link rel="prefetch" href="/tax-slab-comparison-pakistan" />
       {/* Pakistan Date & Clock Card */}
 
 <div className="max-w-4xl mx-auto mb-12 bg-gradient-to-r from-green-700 to-green-600 text-white p-8 rounded-3xl shadow-2xl">
