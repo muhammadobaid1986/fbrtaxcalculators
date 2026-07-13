@@ -1,21 +1,34 @@
 export const metadata = {
-  title: "About Us | FBR Tax Calculators",
+  title: "About FBR Tax Calculators Pakistan",
+  description:
+    "Learn about FBR Tax Calculators, a free online platform for Pakistan income tax and salary tax tools.",
 };
 
-export default function About() {
+export default function Page() {
   return (
-    <div className="bg-white p-8 rounded-xl shadow mt-6">
-      <h1 className="text-3xl font-bold mb-4">About Us</h1>
+    <div className="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow mt-10">
+      <h1 className="text-3xl font-bold mb-6">
+        About FBR Tax Calculators
+      </h1>
 
-      <p className="mb-4">
-        FBR Tax Calculators is an independent platform providing free
-        income tax calculation tools for Pakistan.
-        Created By Muhammad Obaid Ullah
+      <p className="mb-4 text-gray-700">
+        FBR Tax Calculators is an independent online platform providing
+        accurate income tax, salary tax, zakat, and withholding tax tools
+        for individuals in Pakistan.
       </p>
 
-      <p>
-        Our goal is to simplify tax calculations and provide accurate
-        estimates based on publicly available tax slabs.
+      <p className="mb-4 text-gray-700">
+        Our calculators are based on official FBR tax slabs and updated
+        according to the latest Finance Act.
+      </p>
+
+      <p className="mb-4 text-gray-700">
+        We aim to simplify complex tax rules and help salaried individuals
+        calculate their take-home salary instantly.
+      </p>
+
+      <p className="text-gray-600 text-sm">
+        Disclaimer: This website is not affiliated with the Federal Board of Revenue (FBR).
       </p>
     </div>
   );
