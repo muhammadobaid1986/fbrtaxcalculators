@@ -38,7 +38,7 @@ export default async function Page({ params }: any) {
   Calculate monthly and yearly income tax on Rs {monthlySalary.toLocaleString()} salary according to official FBR tax slabs.
 </p>
 
-      <div className="bg-gradient-to-r from-green-600 to-green-700 text-white p-8 rounded-2xl shadow mb-8">
+      <div className="bg-green-600 text-white p-6 rounded-2xl shadow mb-8">
   <h1 className="text-3xl font-bold mb-4">
     Income Tax on Rs {monthlySalary.toLocaleString()} Salary (2026-27)
   </h1>

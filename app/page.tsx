@@ -26,7 +26,7 @@ export default function Home() {
 
   updateTime();
 
-  const timer = setInterval(updateTime, 3000);
+  const timer = setInterval(updateTime, 1000);
 
   return () => clearInterval(timer);
 }, []);
@@ -64,7 +64,7 @@ const seconds = now ? now.getSeconds() : 0;
       <link rel="prefetch" href="/tax-slab-comparison-pakistan" />
       {/* Pakistan Date & Clock Card */}
 
-<div className="max-w-4xl mx-auto mb-12 bg-gradient-to-r from-green-700 to-green-600 text-white p-8 rounded-3xl shadow-lg">
+<div className="max-w-4xl mx-auto mb-12 bg-gradient-to-r from-green-700 to-green-600 text-white p-6 rounded-3xl shadow-lg">
 
   <h2 className="text-3xl font-bold mb-4 text-center">
     🇵🇰 Pakistan Current Time
@@ -133,8 +133,8 @@ const seconds = now ? now.getSeconds() : 0;
 </div>
 
       {/* HERO SECTION */}
-<div className="mt-16 mb-16 max-w-4xl mx-auto">
-  <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-lg p-10 text-center border border-gray-100">
+<div className="mt-8 mb-8 max-w-4xl mx-auto">
+  <div className="bg-white rounded-3xl shadow-sm">
 
     <h1 className="text-3xl md:text-5xl font-extrabold text-gray-800">
   FBR Tax Calculator Pakistan 2026-27 | Income & Salary Tax Slabs
@@ -157,7 +157,7 @@ const seconds = now ? now.getSeconds() : 0;
 <div className="mt-8 flex justify-center">
   <a
     href="/salary/180000"
-    className="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition duration-300"
+    className="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg transition duration-300"
   >
     🔥 Try Salary Tax Example
   </a>
