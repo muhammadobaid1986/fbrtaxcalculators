@@ -152,6 +152,15 @@ const seconds = now ? now.getSeconds() : 0;
   </a>.
 </p>
 
+<div className="mt-8 flex justify-center">
+  <a
+    href="/salary/180000"
+    className="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow hover:scale-105 transition"
+  >
+    🔥 Try Salary Tax Example
+  </a>
+</div>
+
 <p className="mt-2 text-gray-700">
   Check current{" "}
   <a

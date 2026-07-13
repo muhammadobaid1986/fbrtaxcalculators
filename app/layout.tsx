@@ -188,6 +188,14 @@ export default function RootLayout({
 
   </div>
 </aside>
+<div className="my-6 text-center">
+  <ins className="adsbygoogle"
+       style={{ display: "block" }}
+       data-ad-client="ca-pub-1040104111900400"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+</div>
 
   {/* MAIN CONTENT */}
   <main className="flex-1 min-w-0">

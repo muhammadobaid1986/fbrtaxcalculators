@@ -1,3 +1,5 @@
+
+
 "use client";
 
 import React from "react";
@@ -31,6 +33,9 @@ export default function TaxComparison() {
 
   return (
     <div className="max-w-6xl mx-auto p-8">
+      <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl mb-10">
+  <strong>Tip:</strong> Use the comparison tool below to see how tax rates changed between 2021 and 2027.
+</div>
       <h1 className="text-4xl font-bold mb-8 text-center">
         Pakistan Income Tax Slab Comparison (2021-2027)
       </h1>
