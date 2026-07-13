@@ -49,6 +49,34 @@ export default function TaxComparison() {
         </div>
       ))}
 
+      <div className="mt-16 bg-white p-6 rounded-2xl shadow">
+  <h2 className="text-2xl font-bold mb-6 text-center">
+    Visual Tax Rate Comparison (2026-27)
+  </h2>
+
+  <div className="space-y-4">
+    {taxData["2026-27"].map((slab, index) => (
+      <div key={index}>
+        <div className="flex justify-between text-sm font-semibold mb-1">
+          <span>
+            {slab.max === Infinity
+              ? `Above Rs ${slab.min.toLocaleString()}`
+              : `Rs ${slab.min.toLocaleString()} - Rs ${slab.max.toLocaleString()}`}
+          </span>
+          <span>{(slab.rate * 100).toFixed(2).replace(".00", "")}%</span>
+        </div>
+
+        <div className="w-full bg-gray-200 rounded-full h-3">
+          <div
+            className="bg-green-600 h-3 rounded-full"
+            style={{ width: `${slab.rate * 100}%` }}
+          ></div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
     </div>
   );
 }
