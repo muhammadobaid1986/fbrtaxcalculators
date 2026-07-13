@@ -5,6 +5,7 @@ import { calculateSalaryTax } from "../lib/tax";
 
 
 export default function SalaryAfterTaxCalculator() {
+  const [year, setYear] = useState("2026-27");
   const [salary, setSalary] = useState("");
   const [result, setResult] = useState<ReturnType<typeof calculateSalaryTax> | null>(null);
 
@@ -16,7 +17,7 @@ export default function SalaryAfterTaxCalculator() {
     return;
   }
 
-  const tax = calculateSalaryTax(monthlySalary);
+  const tax = calculateSalaryTax(monthlySalary, year);
 
 setResult(tax);
 };
@@ -36,6 +37,18 @@ setResult(tax);
           <label className="block text-sm font-semibold text-gray-700 mb-2">
             Enter Monthly Salary (PKR)
           </label>
+          <label className="block text-sm font-semibold text-gray-700 mb-2">
+  Select Tax Year
+</label>
+
+<select
+  value={year}
+  onChange={(e) => setYear(e.target.value)}
+  className="w-full border border-gray-300 p-3 rounded-xl mb-4"
+>
+  <option value="2026-27">Tax Year 2026-27</option>
+  <option value="2025-26">Tax Year 2025-26</option>
+</select>
           <input
             type="number"
             placeholder="e.g. 100000"
