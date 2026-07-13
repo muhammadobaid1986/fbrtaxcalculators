@@ -11,6 +11,14 @@ export default function Page() {
         Pakistan Income Tax Complete Guide (2026-27)
       </h1>
 
+      <p>
+  Try our 
+  <a href="/" className="text-green-600 font-semibold">
+    Income Tax Calculator Pakistan
+  </a>
+  to instantly calculate your salary tax.
+</p>
+
       <p className="mb-4 text-gray-700">
         This complete guide explains Pakistan income tax slabs,
         marginal tax system, filer status, and salary tax calculation

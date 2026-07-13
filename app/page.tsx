@@ -635,7 +635,25 @@ const seconds = now ? now.getSeconds() : 0;
     })
   }}
 />
-
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How to calculate income tax in Pakistan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Income tax in Pakistan is calculated using FBR marginal tax slabs based on annual income."
+          }
+        }
+      ]
+    })
+  }}
+/>
 
     </main>
   );

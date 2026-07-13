@@ -41,6 +41,11 @@ export default async function Page({ params }: any) {
   this page explains exactly how much income tax you will pay in Pakistan
   according to 2026-27 FBR tax slabs.
 </p>
+<p className="text-gray-600">
+  Many users search for income tax on {monthlySalary.toLocaleString()} salary in Pakistan.
+  This page shows the exact monthly and yearly tax calculation.
+</p>
+
       <p className="text-gray-600 mb-6">
   Calculate monthly and yearly income tax on Rs {monthlySalary.toLocaleString()} salary according to official FBR tax slabs.
 </p>
