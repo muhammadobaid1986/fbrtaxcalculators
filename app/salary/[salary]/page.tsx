@@ -42,6 +42,16 @@ export default async function Page({ params }: any) {
   <h1 className="text-3xl font-bold mb-4">
     Income Tax on Rs {monthlySalary.toLocaleString()} Salary in Pakistan 2026-27 | Monthly & Yearly Breakdown
   </h1>
+  <h2 className="mt-12 text-2xl font-bold">
+  Popular Salary Tax Searches
+</h2>
+
+<ul className="mt-4 space-y-2 text-green-600">
+  <li><a href="/salary/100000">Income Tax on 100000 Salary Pakistan</a></li>
+  <li><a href="/salary/150000">Income Tax on 150000 Salary Pakistan</a></li>
+  <li><a href="/salary/200000">Income Tax on 200000 Salary Pakistan</a></li>
+  <li><a href="/salary/300000">Income Tax on 300000 Salary Pakistan</a></li>
+</ul>
   <p className="text-lg">
     Annual Income: Rs {(monthlySalary * 12).toLocaleString()}
   </p>
