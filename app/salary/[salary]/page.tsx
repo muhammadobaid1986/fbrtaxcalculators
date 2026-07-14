@@ -34,7 +34,7 @@ export default async function Page({ params }: any) {
   return (
     <div className="max-w-4xl mx-auto px-4 md:px-6">
       <h1 className="text-3xl font-bold mb-6">
-  Income Tax on Rs {monthlySalary.toLocaleString()} Salary in Pakistan (2026-27 FBR Slabs)
+  Income Tax on Rs {monthlySalary.toLocaleString()} Salary in Pakistan 2026-27 | After Tax Breakdown
 </h1>
 <p className="text-gray-700 mb-6">
   If you are earning Rs {monthlySalary.toLocaleString()} per month,
@@ -109,7 +109,16 @@ export default async function Page({ params }: any) {
     </tbody>
   </table>
   
-  
+  <div className="my-10 text-center" style={{ minHeight: "250px" }}>
+  <ins
+    className="adsbygoogle"
+    style={{ display: "block" }}
+    data-ad-client="ca-pub-1040104111900400"
+    data-ad-slot="4444444444"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+</div>
   
   <div className="mt-10 prose max-w-none">
   <h2>How Much Tax on {monthlySalary.toLocaleString()} Salary in Pakistan?</h2>
