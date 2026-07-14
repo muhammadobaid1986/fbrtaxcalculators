@@ -136,9 +136,15 @@ const seconds = now ? now.getSeconds() : 0;
 <div className="mt-8 mb-8 max-w-4xl mx-auto">
   <div className="bg-white rounded-2xl shadow-md p-8 text-center border border-gray-100">
 
-    <h1 className="text-3xl md:text-5xl font-extrabold text-gray-800">
-  Income Tax Calculator Pakistan 2026-27 | FBR Tax Calculator & Salary Slabs
+    <h1 className="text-2xl md:text-4xl font-bold">
+  FBR Tax Calculator Pakistan 2026-27 | Income & Salary Tax Slabs
 </h1>
+
+<p className="mt-4 text-gray-700">
+  Use our FBR tax calculator in Pakistan to calculate income tax, salary tax,
+  and yearly tax instantly according to official FBR slabs.
+</p>
+
 <p className="mt-4 text-gray-700 text-lg">
   Use our FBR tax calculator in Pakistan to calculate income tax on your monthly salary according to official 2026-27 slabs.
 </p>
