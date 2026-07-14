@@ -1,8 +1,8 @@
+
+
 import { calculateSalaryTax } from "../../lib/tax";
-import SalarySlider from "./SalarySlider";
-import CountUp from "react-countup";
-
-
+import CompareSalary from "../CompareSalary";
+import SalarySlider from "../SalarySlider";
 
 export async function generateStaticParams() {
   return Array.from({ length: 200 }, (_, i) => ({
@@ -382,11 +382,9 @@ export default async function Page({ params }: any) {
   <h3 className="text-xl font-bold mb-4">
     🔄 Compare Another Salary
   </h3>
-
-  
 </div>
 
-
+<CompareSalary />
     </div>
   );
 }

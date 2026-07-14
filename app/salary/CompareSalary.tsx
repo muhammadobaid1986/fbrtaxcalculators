@@ -3,7 +3,6 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-
 export default function CompareSalary() {
   const [value, setValue] = useState("");
   const router = useRouter();
@@ -32,10 +31,6 @@ export default function CompareSalary() {
       >
         Compare
       </button>
-
-       <CompareSalary />     
-
-
     </div>
   );
 }
