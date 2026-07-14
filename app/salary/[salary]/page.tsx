@@ -72,7 +72,8 @@ export default async function Page({ params }: any) {
   <h2 className="text-xl font-bold mb-6">Salary & Tax Breakdown</h2>
 
   <table className="w-full text-left border-collapse">
-    <tbody>
+
+      <tbody>
       <tr className="border-b">
         <td className="p-3 font-semibold">Monthly Salary</td>
         <td className="p-3">Rs {monthlySalary.toLocaleString()}</td>
@@ -116,6 +117,33 @@ export default async function Page({ params }: any) {
       </tr>
     </tbody>
   </table>
+
+  <button
+  onClick={() => {
+    navigator.clipboard.writeText(
+      `Monthly Salary: Rs ${monthlySalary}
+Yearly Salary: Rs ${monthlySalary * 12}
+Monthly Tax: Rs ${result.monthlyTax}
+Yearly Tax: Rs ${result.yearlyTax}`
+    );
+    alert("Salary breakdown copied!");
+  }}
+  className="mt-6 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+>
+  📋 Copy Salary Breakdown
+</button>
+
+    <div className="my-8 text-center" style={{ minHeight: "200px" }}>
+  <ins
+    className="adsbygoogle"
+    style={{ display: "block" }}
+    data-ad-client="ca-pub-1040104111900400"
+    data-ad-slot="5555555555"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+</div>
+
 
     <div className="mt-10 bg-yellow-50 p-6 rounded-xl">
   <h3 className="font-bold mb-2">💡 Tax Saving Tip</h3>
@@ -346,6 +374,14 @@ export default async function Page({ params }: any) {
   </ul>
 </div>
 
+  <div className="fixed bottom-6 left-6">
+  <a
+    href="/"
+    className="bg-green-600 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-700 transition"
+  >
+    🧮 Main Tax Calculator
+  </a>
+</div>
 
     </div>
   );
