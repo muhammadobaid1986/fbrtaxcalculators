@@ -162,6 +162,15 @@ const seconds = now ? now.getSeconds() : 0;
   </a>
 </div>
 
+<div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-xl mt-6">
+  <h2 className="text-xl font-bold mb-2">
+    What is the Tax-Free Salary in Pakistan?
+  </h2>
+  <p>
+    The current tax-free annual salary limit in Pakistan is Rs 600,000.
+    Salaried individuals earning below this amount do not pay income tax.
+  </p>
+</div>
 
 
 <p className="mt-2 text-gray-700">

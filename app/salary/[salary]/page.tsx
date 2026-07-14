@@ -32,7 +32,7 @@ export default async function Page({ params }: any) {
   const result = calculateSalaryTax(monthlySalary, "2026-27");
 
   return (
-    <div className="max-w-4xl mx-auto p-10 bg-white rounded-2xl shadow mt-10">
+    <div className="max-w-4xl mx-auto px-4 md:px-6">
       <h1 className="text-3xl font-bold mb-6">
   Income Tax on Rs {monthlySalary.toLocaleString()} Salary in Pakistan (2026-27 FBR Slabs)
 </h1>
@@ -50,21 +50,12 @@ export default async function Page({ params }: any) {
   Calculate monthly and yearly income tax on Rs {monthlySalary.toLocaleString()} salary according to official FBR tax slabs.
 </p>
 
-      <div className="bg-green-600 text-white hover:bg-green-700 transition duration-300">
-  <h1 className="text-3xl font-bold mb-4">
-    Income Tax on Rs {monthlySalary.toLocaleString()} Salary in Pakistan 2026-27 | Monthly & Yearly Breakdown
+      <div className="bg-green-600 text-white p-6 md:p-8 rounded-2xl shadow-md mb-8">
+  <h1 className="text-xl md:text-3xl font-bold leading-snug">
+    Income Tax on Rs {monthlySalary.toLocaleString()} Salary
   </h1>
-  <h2 className="mt-12 text-2xl font-bold">
-  Popular Salary Tax Searches
-</h2>
 
-<ul className="mt-4 space-y-2 text-green-600">
-  <li><a href="/salary/100000">Income Tax on 100000 Salary Pakistan</a></li>
-  <li><a href="/salary/150000">Income Tax on 150000 Salary Pakistan</a></li>
-  <li><a href="/salary/200000">Income Tax on 200000 Salary Pakistan</a></li>
-  <li><a href="/salary/300000">Income Tax on 300000 Salary Pakistan</a></li>
-</ul>
-  <p className="text-lg">
+  <p className="mt-3 text-sm md:text-base">
     Annual Income: Rs {(monthlySalary * 12).toLocaleString()}
   </p>
 </div>
