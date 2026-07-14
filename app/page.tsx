@@ -139,6 +139,10 @@ const seconds = now ? now.getSeconds() : 0;
     <h1 className="text-2xl md:text-4xl font-bold">
  FBR Tax Calculator Pakistan 2026-27 | Income & Salary Tax Slabs
 </h1>
+<p className="mt-4 text-gray-700 text-lg">
+  Our FBR tax calculator in Pakistan helps you calculate income tax,
+  salary tax, and take-home pay using official 2026-27 tax slabs.
+</p>
 
 <p className="mt-4 text-gray-700 text-lg">
   Use our FBR tax calculator in Pakistan to calculate income tax on your monthly salary instantly.

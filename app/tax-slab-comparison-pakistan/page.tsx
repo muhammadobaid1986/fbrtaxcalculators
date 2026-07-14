@@ -18,7 +18,7 @@ export default function TaxComparison() {
       </h1>
 
       <p className="text-gray-600 mb-6">
-  Compare Pakistan income tax slabs from 2021 to 2027 using official FBR data.
+  Compare Pakistan income tax slabs from 2021 to 2027 and see how FBR rates changed over time.
 </p>
 
       {years.map((year) => (

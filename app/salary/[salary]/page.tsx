@@ -42,6 +42,11 @@ export default async function Page({ params }: any) {
 </h1>
 
 <p className="text-gray-600 mb-6">
+  Searching for income tax on {monthlySalary.toLocaleString()} salary in Pakistan?
+  This page shows exact monthly and yearly after-tax breakdown.
+</p>
+
+<p className="text-gray-600 mb-6">
   Many users search for income tax on {monthlySalary.toLocaleString()} salary in Pakistan.
   This page provides an exact monthly and yearly after-tax breakdown.
 </p>
