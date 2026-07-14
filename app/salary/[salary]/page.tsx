@@ -1,4 +1,5 @@
 import { calculateSalaryTax } from "../../lib/tax";
+import SalarySlider from "./SalarySlider";
 
 export async function generateStaticParams() {
   return Array.from({ length: 200 }, (_, i) => ({
@@ -55,9 +56,14 @@ export default async function Page({ params }: any) {
     Income Tax on Rs {monthlySalary.toLocaleString()} Salary
   </h1>
 
+  <SalarySlider salary={monthlySalary} />
+
   <p className="mt-3 text-sm md:text-base">
     Annual Income: Rs {(monthlySalary * 12).toLocaleString()}
   </p>
+
+    
+
 </div>
 
 <div className="bg-white rounded-2xl shadow-lg p-6 mb-10 border border-gray-200">
@@ -108,6 +114,15 @@ export default async function Page({ params }: any) {
       </tr>
     </tbody>
   </table>
+
+    <div className="mt-10 bg-yellow-50 p-6 rounded-xl">
+  <h3 className="font-bold mb-2">💡 Tax Saving Tip</h3>
+  <p>
+    Filing your income tax return on time may help reduce withholding taxes
+    and improve your compliance status with FBR.
+  </p>
+</div>
+
 
     <h2 className="mt-10 text-xl font-bold">
   300,000 Salary After Taxes in Pakistan
@@ -201,9 +216,9 @@ export default async function Page({ params }: any) {
 </div>
 
   <div className="mt-6 text-right">
-  <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold">
-    Effective Tax Rate: {((result.yearlyTax / (monthlySalary * 12)) * 100).toFixed(2)}%
-  </span>
+  <span className="animate-pulse">
+  Rs {result.yearlyTax.toLocaleString()}
+</span>
 </div>
 </div>
 
@@ -316,6 +331,19 @@ export default async function Page({ params }: any) {
     data-full-width-responsive="true"
   ></ins>
 </div>
+
+  <div className="mt-12">
+  <h3 className="text-xl font-bold mb-4">
+    🔎 People Also Searched
+  </h3>
+
+  <ul className="list-disc pl-6 text-green-600 space-y-2">
+    <li><a href="/salary/150000">Income Tax on 150000 Salary</a></li>
+    <li><a href="/salary/250000">Income Tax on 250000 Salary</a></li>
+    <li><a href="/tax-slab-comparison-pakistan">Tax Slab Comparison</a></li>
+  </ul>
+</div>
+
 
     </div>
   );
