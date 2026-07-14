@@ -104,6 +104,52 @@ export default function Home() {
         )}
       </div>
 
+      {/* SEO CONTENT SECTION */}
+<div className="max-w-4xl mx-auto mt-12 bg-white p-8 rounded-2xl shadow">
+  <h2 className="text-2xl font-bold mb-4">
+    Income Tax Calculator Pakistan 2026-27
+  </h2>
+
+  <p className="mb-4 text-gray-700">
+    Our FBR income tax calculator helps salaried individuals calculate
+    monthly and yearly income tax instantly according to official tax slabs.
+  </p>
+
+  <p className="mb-4 text-gray-700">
+    Pakistan follows a marginal tax system. Different income brackets are taxed
+    at different rates defined by the Federal Board of Revenue.
+  </p>
+
+  <h3 className="text-xl font-semibold mt-6 mb-2">
+    Supported Tax Years
+  </h3>
+
+  <ul className="list-disc pl-6 text-gray-700 space-y-2">
+    <li>Income Tax Calculator 2026-27</li>
+    <li>Income Tax Calculator 2025-26</li>
+    <li>Income Tax Calculator 2024-25</li>
+  </ul>
+</div>
+
+{/* FAQ SECTION */}
+<div className="max-w-4xl mx-auto mt-12 bg-white p-8 rounded-2xl shadow">
+  <h2 className="text-2xl font-bold mb-6">
+    Frequently Asked Questions
+  </h2>
+
+  <div className="space-y-4 text-gray-700">
+    <p>
+      <strong>What is the tax-free salary in Pakistan?</strong><br />
+      Annual income up to Rs 600,000 is tax-free.
+    </p>
+
+    <p>
+      <strong>How is income tax calculated?</strong><br />
+      Income tax is calculated using marginal FBR slabs based on annual income.
+    </p>
+  </div>
+</div>
+
       {/* CLOCK (below fold) */}
       <div className="max-w-4xl mx-auto mt-10 bg-green-600 text-white p-6 rounded-xl shadow">
         <h2 className="text-xl font-bold mb-2">
@@ -127,7 +173,7 @@ export default function Home() {
         </p>
         <p>Islamic Date: {hijriDate}</p>
       </div>
-
+      
     </main>
   );
 }
