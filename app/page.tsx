@@ -488,6 +488,18 @@ const seconds = now ? now.getSeconds() : 0;
           official FBR tax slabs. This calculator supports tax years 2021-22 to
           2025-26 and provides accurate salary tax estimation.
         </p>
+
+        <div className="my-8 text-center" style={{ minHeight: "200px" }}>
+  <ins
+    className="adsbygoogle"
+    style={{ display: "block" }}
+    data-ad-client="ca-pub-1040104111900400"
+    data-ad-slot="6666666666"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+</div>
+
         <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-xl mt-6">
   <h2 className="text-xl font-bold mb-2">
     What is the Current Tax-Free Salary in Pakistan?
