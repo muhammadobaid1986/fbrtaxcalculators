@@ -39,6 +39,13 @@ export default async function Page({ params }: any) {
       <h1 className="text-3xl font-bold mb-6">
   Income Tax on Rs {monthlySalary.toLocaleString()} Salary in Pakistan 2026-27 | After Tax Breakdown
 </h1>
+
+<p className="text-gray-600 mb-6">
+  Many users search for income tax on {monthlySalary.toLocaleString()} salary in Pakistan.
+  This page provides an exact monthly and yearly after-tax breakdown.
+</p>
+
+
 <p className="text-gray-700 mb-6">
   If you are earning Rs {monthlySalary.toLocaleString()} per month,
   this page explains exactly how much income tax you will pay in Pakistan
