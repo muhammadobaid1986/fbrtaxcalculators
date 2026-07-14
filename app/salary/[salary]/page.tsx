@@ -1,5 +1,7 @@
-import { calculateSalaryTax } from "../../lib/tax";
+
 import SalarySlider from "./SalarySlider";
+import { calculateSalaryTax } from "../../lib/tax";
+
 
 export async function generateStaticParams() {
   return Array.from({ length: 200 }, (_, i) => ({
