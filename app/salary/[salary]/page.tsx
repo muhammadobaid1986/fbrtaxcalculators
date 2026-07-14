@@ -1,6 +1,7 @@
-
-import SalarySlider from "./SalarySlider";
 import { calculateSalaryTax } from "../../lib/tax";
+import SalarySlider from "./SalarySlider";
+import CountUp from "react-countup";
+
 
 
 export async function generateStaticParams() {
@@ -125,20 +126,7 @@ export default async function Page({ params }: any) {
     </tbody>
   </table>
 
-  <button
-  onClick={() => {
-    navigator.clipboard.writeText(
-      `Monthly Salary: Rs ${monthlySalary}
-Yearly Salary: Rs ${monthlySalary * 12}
-Monthly Tax: Rs ${result.monthlyTax}
-Yearly Tax: Rs ${result.yearlyTax}`
-    );
-    alert("Salary breakdown copied!");
-  }}
-  className="mt-6 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
->
-  📋 Copy Salary Breakdown
-</button>
+  
 
     <div className="my-8 text-center" style={{ minHeight: "200px" }}>
   <ins
@@ -389,6 +377,15 @@ Yearly Tax: Rs ${result.yearlyTax}`
     🧮 Main Tax Calculator
   </a>
 </div>
+
+  <div className="mt-16 bg-white p-6 rounded-2xl shadow">
+  <h3 className="text-xl font-bold mb-4">
+    🔄 Compare Another Salary
+  </h3>
+
+  
+</div>
+
 
     </div>
   );
