@@ -105,7 +105,7 @@ export default function Home() {
       </div>
 
       {/* SEO CONTENT SECTION */}
-<div className="max-w-4xl mx-auto mt-12 bg-white p-8 rounded-2xl shadow">
+<div className="max-w-4xl mx-auto mt-12 bg-white p-6 rounded-2xl shadow">
   <h2 className="text-2xl font-bold mb-4">
     Income Tax Calculator Pakistan 2026-27
   </h2>
@@ -131,26 +131,7 @@ export default function Home() {
   </ul>
 </div>
 
-{/* FAQ SECTION */}
-<div className="max-w-4xl mx-auto mt-12 bg-white p-8 rounded-2xl shadow">
-  <h2 className="text-2xl font-bold mb-6">
-    Frequently Asked Questions
-  </h2>
-
-  <div className="space-y-4 text-gray-700">
-    <p>
-      <strong>What is the tax-free salary in Pakistan?</strong><br />
-      Annual income up to Rs 600,000 is tax-free.
-    </p>
-
-    <p>
-      <strong>How is income tax calculated?</strong><br />
-      Income tax is calculated using marginal FBR slabs based on annual income.
-    </p>
-  </div>
-</div>
-
-      {/* CLOCK (below fold) */}
+ {/* CLOCK (below fold) */}
       <div className="max-w-4xl mx-auto mt-10 bg-green-600 text-white p-6 rounded-xl shadow">
         <h2 className="text-xl font-bold mb-2">
           🇵🇰 Pakistan Current Time
@@ -173,6 +154,27 @@ export default function Home() {
         </p>
         <p>Islamic Date: {hijriDate}</p>
       </div>
+
+{/* FAQ SECTION */}
+<div className="max-w-4xl mx-auto mt-12 bg-white p-8 rounded-2xl shadow">
+  <h2 className="text-2xl font-bold mb-6">
+    Frequently Asked Questions
+  </h2>
+
+  <div className="space-y-4 text-gray-700">
+    <p>
+      <strong>What is the tax-free salary in Pakistan?</strong><br />
+      Annual income up to Rs 600,000 is tax-free.
+    </p>
+
+    <p>
+      <strong>How is income tax calculated?</strong><br />
+      Income tax is calculated using marginal FBR slabs based on annual income.
+    </p>
+  </div>
+</div>
+
+     
       
     </main>
   );
