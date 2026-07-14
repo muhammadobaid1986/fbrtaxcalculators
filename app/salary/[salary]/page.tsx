@@ -108,6 +108,16 @@ export default async function Page({ params }: any) {
       </tr>
     </tbody>
   </table>
+
+    <h2 className="mt-10 text-xl font-bold">
+  300,000 Salary After Taxes in Pakistan
+</h2>
+
+<p className="text-gray-700">
+  If your salary is Rs 300,000 per month, your take-home salary after taxes
+  depends on the applicable FBR tax slab.
+</p>
+
   
   <div className="my-10 text-center" style={{ minHeight: "250px" }}>
   <ins
