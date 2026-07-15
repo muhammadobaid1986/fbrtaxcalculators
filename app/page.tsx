@@ -46,102 +46,95 @@ export default function Home() {
   return (
     <main className="min-h-screen p-3 md:p-6 bg-gray-50">
 
-      {/* Pakistan Time Card */}
-      <div className="max-w-4xl mx-auto mb-12 bg-gradient-to-r from-green-700 to-green-600 text-white p-6 rounded-3xl shadow-lg">
-        <h2 className="text-3xl font-bold mb-4 text-center">
-          🇵🇰 Pakistan Current Time
+      {/* Premium Pakistan Time Card */}
+<div className="max-w-6xl mx-auto mb-8 rounded-3xl shadow-2xl overflow-hidden">
+
+  <div className="bg-gradient-to-br from-[#0f3f2f] via-[#0c5a40] to-[#083122] text-white p-3 md:p-4">
+
+    <div className="grid md:grid-cols-2 gap-6 items-center">
+
+      {/* LEFT SIDE */}
+      <div>
+
+        <h2 className="text-xl md:text-2xl font-bold mb-4">
+          Pakistan Current Time
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="text-center md:text-left">
-            <p className="text-lg mb-2">
-              {now &&
-                now.toLocaleDateString("en-PK", {
-                  timeZone: "Asia/Karachi",
-                  weekday: "long",
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-            </p>
-
-            <p className="text-xl font-semibold mb-2">
-              {now &&
-                now.toLocaleTimeString("en-PK", {
-                  timeZone: "Asia/Karachi",
-                })}
-            </p>
-
-            <p className="text-lg">
-              Islamic Date: {hijriDate}
-            </p>
-          </div>
-
-          <div className="flex justify-center">
-            <div className="relative w-48 h-48 rounded-full bg-white border-8 border-green-200 shadow-xl overflow-hidden">
-              <div className="absolute top-1/2 left-1/2 w-4 h-4 bg-green-800 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"></div>
-
-                {/* Top Brand Text - FBR */}
-<div className="absolute left-1/2 text-[10px] font-bold text-green-800 -translate-x-1/2"
-     style={{ top: "30%" }}>
-  FBR
-</div>
-
-{/* Bottom Brand Text - TAXCALCULATORS.COM */}
-<div className="absolute left-1/2 text-[8px] font-semibold text-green-800 -translate-x-1/2 text-center"
-     style={{ bottom: "30%" }}>
-  TAXCALCULATORS.COM
-</div>
-
-              <div
-                className="absolute top-1/2 left-1/2 w-2 h-14 bg-black origin-bottom"
-                style={{ transform: `translate(-50%, -100%) rotate(${hourDeg}deg)` }}
-              ></div>
-
-              <div
-                className="absolute top-1/2 left-1/2 w-1 h-20 bg-green-700 origin-bottom"
-                style={{ transform: `translate(-50%, -100%) rotate(${minuteDeg}deg)` }}
-              ></div>
-
-              <div
-                className="absolute top-1/2 left-1/2 w-0.5 h-24 bg-red-500 origin-bottom"
-                style={{ transform: `translate(-50%, -100%) rotate(${secondDeg}deg)` }}
-              ></div>
-
-                {/* Hydration-Safe Static Clock Numbers */}
-<span className="absolute top-2 left-1/2 -translate-x-1/2 text-sm font-semibold">12</span>
-<span className="absolute top-1/4 right-5 text-sm font-semibold">1</span>
-<span className="absolute top-1/2 right-2 -translate-y-1/2 text-sm font-semibold">3</span>
-<span className="absolute bottom-1/4 right-5 text-sm font-semibold">5</span>
-<span className="absolute bottom-2 left-1/2 -translate-x-1/2 text-sm font-semibold">6</span>
-<span className="absolute bottom-1/4 left-5 text-sm font-semibold">7</span>
-<span className="absolute top-1/2 left-2 -translate-y-1/2 text-sm font-semibold">9</span>
-<span className="absolute top-1/4 left-5 text-sm font-semibold">11</span>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* HERO */}
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-md p-8 border border-gray-100 mb-8 text-center">
-        <h1 className="text-2xl md:text-4xl font-bold">
-          FBR Tax Calculator Pakistan 2026-27 | Income & Salary Tax Slabs
-        </h1>
-
-        <p className="mt-4 text-gray-700">
-          Use our FBR tax calculator in Pakistan to calculate income tax,
-          salary tax and yearly tax instantly according to official FBR slabs.
+        <p className="text-green-300 tracking-wide mb-6">
+          LIVE & ACCURATE TIME
         </p>
 
-        <div className="mt-8 flex justify-center">
-          <a
-            href="/salary/180000"
-            className="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transition"
-          >
-            🔥 Try Salary Tax Example
-          </a>
+        {/* Date */}
+        <div className="inline-flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full mb-8 text-sm">
+          📅
+          {now &&
+            now.toLocaleDateString("en-PK", {
+              timeZone: "Asia/Karachi",
+              weekday: "long",
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
         </div>
+
+        {/* Digital Time */}
+        <div className="text-2xl md:text-3xl font-extrabold tracking-widest mb-6">
+          {now &&
+            now.toLocaleTimeString("en-PK", {
+              timeZone: "Asia/Karachi",
+              hour12: true,
+            })}
+        </div>
+
+        {/* Live */}
+        <div className="flex items-center gap-3 mb-6">
+          <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
+          <span className="text-green-300 text-sm font-semibold">LIVE</span>
+          <div className="flex-1 h-[1px] bg-green-400/40 ml-4"></div>
+        </div>
+
+        {/* Islamic Date */}
+        <div className="bg-white/10 px-4 py-2 rounded-2xl text-sm">
+          🌙 Islamic Date: {hijriDate}
+        </div>
+
+      </div>
+
+      {/* RIGHT SIDE CLOCK */}
+      <div className="flex justify-center">
+
+        <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full bg-white border-[12px] border-green-300 shadow-xl">
+
+          {/* Center Dot */}
+          <div className="absolute top-1/2 left-1/2 w-3 h-3 bg-green-700 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"></div>
+
+          {/* Hour Hand */}
+          <div
+            className="absolute top-1/2 left-1/2 w-[3px] h-10 bg-black origin-bottom rounded"
+            style={{ transform: `translate(-50%, -100%) rotate(${hourDeg}deg)` }}
+          ></div>
+
+          {/* Minute Hand */}
+          <div
+            className="absolute top-1/2 left-1/2 w-[2px] h-14 bg-green-700 origin-bottom rounded"
+            style={{ transform: `translate(-50%, -100%) rotate(${minuteDeg}deg)` }}
+          ></div>
+
+          {/* Second Hand */}
+          <div
+            className="absolute top-1/2 left-1/2 w-[1px] h-16 bg-red-500 origin-bottom"
+            style={{ transform: `translate(-50%, -100%) rotate(${secondDeg}deg)` }}
+          ></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>        
 
       {/* CALCULATOR SECTION */}
       <div className="max-w-xl mx-auto bg-white p-8 rounded-3xl shadow-xl border border-gray-100 mb-12">
@@ -268,7 +261,7 @@ export default function Home() {
           Popular Tax Calculators
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
           <a
             href="/"
@@ -350,8 +343,8 @@ export default function Home() {
 
         </div>
       </div>
-
-      </div>
+              
+      
             {/* WHY CHOOSE SECTION */}
       <div className="max-w-5xl mx-auto mb-16">
         <SectionTitle
