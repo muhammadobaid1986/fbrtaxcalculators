@@ -300,11 +300,7 @@ export default async function Page({ params }: any) {
   </p>
 </div>
 
-  <div className="mt-6 text-right">
-  <span className="animate-pulse">
-  Rs {result.yearlyTax.toLocaleString()}
-</span>
-</div>
+  
 </div>
 
 <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-xl">
@@ -431,11 +427,7 @@ export default async function Page({ params }: any) {
   </a>
 </div>
 
-  <div className="mt-16 bg-white p-6 rounded-2xl shadow">
-  <h3 className="text-xl font-bold mb-4">
-    🔄 Compare Another Salary
-  </h3>
-</div>
+  
 
 {/* RELATED SALARY LINKS BOOST */}
 <div className="mt-16 border-t pt-8">
