@@ -1,3 +1,4 @@
+import Script from "next/script";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -54,11 +55,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1040104111900400"
-        crossOrigin="anonymous"
-      ></script>
+      <Script
+  strategy="afterInteractive"
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1040104111900400"
+  crossOrigin="anonymous"
+/>
     </head>
       <body className="bg-gray-50 text-gray-900">
 
