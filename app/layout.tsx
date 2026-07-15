@@ -14,15 +14,7 @@ export const metadata = {
   description:
   
   "Calculate income tax in Pakistan for 2026-27 using official FBR tax slabs. Check salary tax, comparison charts, and dynamic salary breakdown instantly.",
-    keywords: [
-    "Income Tax Calculator Pakistan",
-    "FBR Tax Calculator",
-    "Salary Tax Calculator",
-    "Monthly Tax Calculator Pakistan",
-    "Income Tax Pakistan 2025-26",
-    "Zakat Calculator",
-    "Withholding Tax Calculator"
-  ],
+    
   openGraph: {
     title: "FBR Tax Calculators Pakistan",
     description:
