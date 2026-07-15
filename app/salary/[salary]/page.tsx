@@ -37,9 +37,27 @@ export default async function Page({ params }: any) {
 
   return (
     <div className="max-w-4xl mx-auto px-4 md:px-6">
-      <h1 className="text-3xl font-bold mb-6">
-  Income Tax on Rs {monthlySalary.toLocaleString()} Salary in Pakistan 2026-27 | Monthly & Yearly Breakdown
-</h1>
+      <div className="bg-gradient-to-r from-green-600 to-green-700 text-white p-8 rounded-3xl shadow-lg mb-10">
+  <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
+    Income Tax on Rs {monthlySalary.toLocaleString()} Salary in Pakistan 2026-27
+  </h1>
+
+  <p className="text-lg opacity-90">
+    Get exact monthly tax, yearly tax and take-home salary based on official FBR tax slabs.
+  </p>
+
+  <div className="flex flex-wrap gap-3 mt-6 text-sm font-semibold">
+    <span className="bg-white text-green-700 px-4 py-2 rounded-full">
+      ✅ Official FBR Slabs
+    </span>
+    <span className="bg-white text-green-700 px-4 py-2 rounded-full">
+      ⚡ Instant Calculation
+    </span>
+    <span className="bg-white text-green-700 px-4 py-2 rounded-full">
+      📅 Updated 2026-27
+    </span>
+  </div>
+</div>
 
 <p className="text-gray-600 mb-6">
   Searching for income tax on {monthlySalary.toLocaleString()} salary in Pakistan?
