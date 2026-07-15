@@ -108,25 +108,15 @@ export default function Home() {
                 style={{ transform: `translate(-50%, -100%) rotate(${secondDeg}deg)` }}
               ></div>
 
-                {/* Perfect Clock Numbers */}
-{[...Array(12)].map((_, i) => {
-  const angle = ((i * 30) - 90) * (Math.PI / 180); // rotate start from top
-  const radius = 75; // distance from center (adjusted for w-48)
-
-  return (
-    <div
-      key={i}
-      className="absolute text-sm font-semibold text-gray-800"
-      style={{
-        left: `calc(50% + ${radius * Math.cos(angle)}px)`,
-        top: `calc(50% + ${radius * Math.sin(angle)}px)`,
-        transform: "translate(-50%, -50%)",
-      }}
-    >
-      {i === 0 ? 12 : i}
-    </div>
-  );
-})}
+                {/* Hydration-Safe Static Clock Numbers */}
+<span className="absolute top-2 left-1/2 -translate-x-1/2 text-sm font-semibold">12</span>
+<span className="absolute top-1/4 right-5 text-sm font-semibold">1</span>
+<span className="absolute top-1/2 right-2 -translate-y-1/2 text-sm font-semibold">3</span>
+<span className="absolute bottom-1/4 right-5 text-sm font-semibold">5</span>
+<span className="absolute bottom-2 left-1/2 -translate-x-1/2 text-sm font-semibold">6</span>
+<span className="absolute bottom-1/4 left-5 text-sm font-semibold">7</span>
+<span className="absolute top-1/2 left-2 -translate-y-1/2 text-sm font-semibold">9</span>
+<span className="absolute top-1/4 left-5 text-sm font-semibold">11</span>
 
             </div>
           </div>
