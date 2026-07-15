@@ -78,8 +78,20 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center">
-            <div className="relative w-48 h-48 rounded-full bg-white border-8 border-green-200 shadow-xl">
+            <div className="relative w-48 h-48 rounded-full bg-white border-8 border-green-200 shadow-xl overflow-hidden">
               <div className="absolute top-1/2 left-1/2 w-4 h-4 bg-green-800 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"></div>
+
+                {/* Top Brand Text - FBR */}
+<div className="absolute left-1/2 text-[10px] font-bold text-green-800 -translate-x-1/2"
+     style={{ top: "30%" }}>
+  FBR
+</div>
+
+{/* Bottom Brand Text - TAXCALCULATORS.COM */}
+<div className="absolute left-1/2 text-[8px] font-semibold text-green-800 -translate-x-1/2 text-center"
+     style={{ bottom: "30%" }}>
+  TAXCALCULATORS.COM
+</div>
 
               <div
                 className="absolute top-1/2 left-1/2 w-2 h-14 bg-black origin-bottom"
@@ -95,6 +107,27 @@ export default function Home() {
                 className="absolute top-1/2 left-1/2 w-0.5 h-24 bg-red-500 origin-bottom"
                 style={{ transform: `translate(-50%, -100%) rotate(${secondDeg}deg)` }}
               ></div>
+
+                {/* Perfect Clock Numbers */}
+{[...Array(12)].map((_, i) => {
+  const angle = ((i * 30) - 90) * (Math.PI / 180); // rotate start from top
+  const radius = 75; // distance from center (adjusted for w-48)
+
+  return (
+    <div
+      key={i}
+      className="absolute text-sm font-semibold text-gray-800"
+      style={{
+        left: `calc(50% + ${radius * Math.cos(angle)}px)`,
+        top: `calc(50% + ${radius * Math.sin(angle)}px)`,
+        transform: "translate(-50%, -50%)",
+      }}
+    >
+      {i === 0 ? 12 : i}
+    </div>
+  );
+})}
+
             </div>
           </div>
         </div>
