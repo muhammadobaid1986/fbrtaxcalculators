@@ -386,14 +386,7 @@ export default async function Page({ params }: any) {
 
   
 />
-<div className="fixed bottom-4 right-4 hidden md:block">
-  <a
-    href="/"
-    className="bg-green-600 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-700 transition"
-  >
-    🔥 Try Main Tax Calculator
-  </a>
-</div>
+
 
 <div className="my-8 text-center" style={{ minHeight: "250px" }}>
   <ins
