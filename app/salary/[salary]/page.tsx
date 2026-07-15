@@ -131,6 +131,43 @@ export default async function Page({ params }: any) {
     </tbody>
   </table>
 
+  <div className="mt-12 prose max-w-none">
+  <h2>
+    Detailed Income Tax Explanation for Rs {monthlySalary.toLocaleString()} Salary
+  </h2>
+
+  <p>
+    If you earn Rs {monthlySalary.toLocaleString()} per month in Pakistan,
+    your yearly income becomes Rs {(monthlySalary * 12).toLocaleString()}.
+    According to the official 2026-27 FBR tax slabs, income tax is calculated
+    using a progressive system.
+  </p>
+
+  <p>
+    This means different portions of your income are taxed at different rates.
+    The first Rs 600,000 is tax-free, and the remaining income is taxed
+    according to the applicable slab.
+  </p>
+
+  <h3>
+    Monthly Tax on Rs {monthlySalary.toLocaleString()} Salary
+  </h3>
+
+  <p>
+    Your estimated monthly tax deduction is Rs {result.monthlyTax.toLocaleString()},
+    which is automatically calculated using official slab data.
+  </p>
+
+  <h3>
+    Yearly Tax on Rs {monthlySalary.toLocaleString()} Salary
+  </h3>
+
+  <p>
+    Your total yearly tax liability is Rs {result.yearlyTax.toLocaleString()}.
+    This amount is deducted gradually across 12 months by your employer.
+  </p>
+</div>
+
   
 
     <div className="my-8 text-center" style={{ minHeight: "200px" }}>
