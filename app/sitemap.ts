@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default function sitemap() {
   const baseUrl = "https://fbrtaxcalculators.com";
 
   const staticPages = [
@@ -43,16 +43,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tax-slab-comparison-pakistan",
   ];
 
-  // ✅ Dynamic Salary Pages (/salary/50000 → /salary/2500000)
-  const dynamicSalaryPages = Array.from({ length: 2000 }, (_, i) => {
-    const salary = (i + 1) * 50000; // 50k increments
-    return `/salary/${salary}`;
-  });
+  // ✅ Smart Salary Range Strategy
 
-  const allPages = [...staticPages, ...dynamicSalaryPages];
+const dynamicSalaryPages: string[] = [];
 
-  return allPages.map((path) => ({
-    url: `${baseUrl}${path}`,
-    lastModified: new Date(),
-  }));
+// 10,000 se 500,000 tak har 10,000 increment
+for (let i = 10000; i <= 500000; i += 10000) {
+  dynamicSalaryPages.push(`/salary/${i}`);
+}
+
+// 550,000 se 2,000,000 tak har 50,000 increment
+for (let i = 550000; i <= 2000000; i += 50000) {
+  dynamicSalaryPages.push(`/salary/${i}`);
+}
 }
