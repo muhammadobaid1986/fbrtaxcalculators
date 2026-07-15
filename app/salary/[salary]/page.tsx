@@ -474,6 +474,17 @@ export default async function Page({ params }: any) {
 
 
 <CompareSalary />
+
+{/* Sticky Main Calculator CTA */}
+<div className="fixed bottom-5 right-5 z-50">
+  <a
+    href="/"
+    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full shadow-xl transition duration-300"
+  >
+    🔥 Try Main Tax Calculator
+  </a>
+</div>
+
     </div>
   );
 }
