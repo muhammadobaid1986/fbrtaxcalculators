@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import SectionTitle from "../components/SectionTitle";
+import Image from "next/image";
 import moment from "moment-hijri";
 import { calculateSalaryTax, taxData } from "./lib/tax";
 
@@ -47,16 +48,16 @@ export default function Home() {
     <main className="min-h-screen bg-white">
 
       {/* Premium Pakistan Time Card */}
-<div className="max-w-3xl mx-auto mt-4 mb-6 px-4 rounded-3X1 shadow-md overflow-hidden">
+<div className="max-w-3xl mx-auto mt-4 mb-6 px-4 rounded-3xl shadow-md overflow-hidden">
 
-  <div className="bg-gradient-to-br from-[#115e45] via-[#0f5138] to-[#0c3f2e] text-white p-3 md:p-4 rounded-[30px]">
+  <div className="bg-gradient-to-br from-[#115e45] via-[#0f5138] to-[#0c3f2e] text-white p-2 md:p-3 rounded-[30px]">
 
     <div className="grid md:grid-cols-2 gap-3 items-center">
 
       {/* LEFT SIDE */}
       <div>
 
-        <h2 className="text-lg md:text-xl font-bold mb-4">
+        <h2 className="text-base md:text-lg font-bold mb-4">
           Pakistan Current Time
         </h2>
 
@@ -77,10 +78,9 @@ export default function Home() {
             })}
         </div>
 
-        <div className="h-10"></div>
-
+        
         {/* Digital Time */}
-        <div className="text-xl md:text-2xl font-extrabold tracking-widest mb-6">
+        <div className="text-lg md:text-xl font-extrabold tracking-widest mb-6">
           {now &&
             now.toLocaleTimeString("en-PK", {
               timeZone: "Asia/Karachi",
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
 
         {/* Live */}
-        <div className="flex items-center gap-3 mb-6">
+        <div className="flex items-center gap-2 mb-6">
           <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
           <span className="text-green-300 text-sm font-semibold">LIVE</span>
           <div className="flex-1 h-[1px] bg-green-400/40 ml-4"></div>
@@ -105,7 +105,16 @@ export default function Home() {
       {/* RIGHT SIDE CLOCK */}
       <div className="flex justify-center">
 
-        <div className="relative w-50 h-50 md:w-54 md:h-54 rounded-full bg-white border-[12px] border-green-300 shadow-xl">
+        <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full bg-white border-[10px] border-green-300 shadow-md">
+
+            {/* Pakistan Map Background */}
+<Image
+  src="/pakistan.svg"
+  alt="Pakistan Map"
+  width={90}
+  height={90}
+  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-500"
+/>
 
           {/* Center Dot */}
           <div className="absolute top-1/2 left-1/2 w-3 h-3 bg-green-700 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"></div>
