@@ -263,7 +263,37 @@ export default async function Page({ params }: any) {
   </p>
 </div>
 
-  
+  {/* Auto Related Salary Links */}
+<div className="mt-12 border-t pt-6">
+
+  <h3 className="font-bold mb-4 text-lg">
+    Explore Nearby Salary Ranges
+  </h3>
+
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-green-600 font-medium">
+
+    {[
+      monthlySalary - 50000,
+      monthlySalary - 25000,
+      monthlySalary + 25000,
+      monthlySalary + 50000,
+      monthlySalary + 100000,
+      monthlySalary + 200000,
+    ]
+      .filter((amt) => amt > 0)
+      .map((amt) => (
+        <a
+          key={amt}
+          href={`/salary/${amt}`}
+          className="hover:underline"
+        >
+          Income Tax on Rs {amt.toLocaleString()}
+        </a>
+      ))}
+
+  </div>
+
+</div>
 
     <div className="my-8 text-center" style={{ minHeight: "200px" }}>
   <ins
