@@ -158,11 +158,21 @@ export default function Home() {
 
   <div className="mt-8 flex justify-center">
     <a
-      href="/salary/180000"
-      className="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-md transition"
-    >
-      🔥 Try Salary Tax Example
-    </a>
+  href="/salary/180000"
+  className="relative inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full font-semibold text-white 
+             bg-gradient-to-r from-green-600 via-green-700 to-green-800 
+             shadow-lg hover:shadow-2xl 
+             transition-all duration-300 ease-in-out 
+             hover:scale-105 active:scale-95 overflow-hidden"
+>
+  {/* Glow effect */}
+  <span className="absolute inset-0 bg-white/20 opacity-0 hover:opacity-30 transition duration-300"></span>
+
+  <span className="relative flex items-center gap-2">
+    🔥
+    Try Salary Tax Example
+  </span>
+</a>
   </div>
 
 </div>
