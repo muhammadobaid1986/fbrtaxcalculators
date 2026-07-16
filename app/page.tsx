@@ -108,12 +108,10 @@ export default function Home() {
         <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full bg-white border-[10px] border-green-300 shadow-md">
 
             {/* Pakistan Map Background */}
-<Image
+<img
   src="/pakistan.svg"
   alt="Pakistan Map"
-  width={70}
-  height={70}
-  className="absolute top-1/2 left-1/2 w-24 -translate-x-1/2 -translate-y-1/2 opacity-100 pointer-events-none"
+  className="absolute top-1/2 left-1/2 w-16 h-16 -translate-x-1/2 -translate-y-1/2 opacity-100 pointer-events-none"
 />
 
           {/* Center Dot */}
