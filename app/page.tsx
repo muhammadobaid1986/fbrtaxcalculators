@@ -44,19 +44,19 @@ export default function Home() {
   const secondDeg = seconds * 6;
 
   return (
-    <main className="min-h-screen p-3 md:p-6 bg-gray-50">
+    <main className="min-h-screen bg-white">
 
       {/* Premium Pakistan Time Card */}
-<div className="max-w-6xl mx-auto mb-8 rounded-3xl shadow-2xl overflow-hidden">
+<div className="max-w-3xl mx-auto mt-4 mb-6 px-4 rounded-3X1 shadow-md overflow-hidden">
 
-  <div className="bg-gradient-to-br from-[#0f3f2f] via-[#0c5a40] to-[#083122] text-white p-3 md:p-4">
+  <div className="bg-gradient-to-br from-[#115e45] via-[#0f5138] to-[#0c3f2e] text-white p-3 md:p-4 rounded-[30px]">
 
-    <div className="grid md:grid-cols-2 gap-6 items-center">
+    <div className="grid md:grid-cols-2 gap-3 items-center">
 
       {/* LEFT SIDE */}
       <div>
 
-        <h2 className="text-xl md:text-2xl font-bold mb-4">
+        <h2 className="text-lg md:text-xl font-bold mb-4">
           Pakistan Current Time
         </h2>
 
@@ -77,8 +77,10 @@ export default function Home() {
             })}
         </div>
 
+        <div className="h-10"></div>
+
         {/* Digital Time */}
-        <div className="text-2xl md:text-3xl font-extrabold tracking-widest mb-6">
+        <div className="text-xl md:text-2xl font-extrabold tracking-widest mb-6">
           {now &&
             now.toLocaleTimeString("en-PK", {
               timeZone: "Asia/Karachi",
@@ -103,26 +105,26 @@ export default function Home() {
       {/* RIGHT SIDE CLOCK */}
       <div className="flex justify-center">
 
-        <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full bg-white border-[12px] border-green-300 shadow-xl">
+        <div className="relative w-50 h-50 md:w-54 md:h-54 rounded-full bg-white border-[12px] border-green-300 shadow-xl">
 
           {/* Center Dot */}
           <div className="absolute top-1/2 left-1/2 w-3 h-3 bg-green-700 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"></div>
 
           {/* Hour Hand */}
           <div
-            className="absolute top-1/2 left-1/2 w-[3px] h-10 bg-black origin-bottom rounded"
+            className="absolute top-1/2 left-1/2 w-[3px] h-15 bg-black origin-bottom rounded"
             style={{ transform: `translate(-50%, -100%) rotate(${hourDeg}deg)` }}
           ></div>
 
           {/* Minute Hand */}
           <div
-            className="absolute top-1/2 left-1/2 w-[2px] h-14 bg-green-700 origin-bottom rounded"
+            className="absolute top-1/2 left-1/2 w-[2px] h-20 bg-green-700 origin-bottom rounded"
             style={{ transform: `translate(-50%, -100%) rotate(${minuteDeg}deg)` }}
           ></div>
 
           {/* Second Hand */}
           <div
-            className="absolute top-1/2 left-1/2 w-[1px] h-16 bg-red-500 origin-bottom"
+            className="absolute top-1/2 left-1/2 w-[1px] h-20 bg-red-500 origin-bottom"
             style={{ transform: `translate(-50%, -100%) rotate(${secondDeg}deg)` }}
           ></div>
 
@@ -134,10 +136,35 @@ export default function Home() {
 
   </div>
 
+  <div className="mb-12"></div>
+            {/* HERO SECTION */}
+<div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-none p-10 border border-gray-200 mb-0 text-center">
+
+  <h1 className="text-1xl md:text-2xl font-extrabold leading-tight">
+    FBR Tax Calculator Pakistan 2026-27 | Income & Salary Tax Slabs
+  </h1>
+
+  <p className="mt-6 text-gray-600 text-lg">
+    Use our FBR tax calculator in Pakistan to calculate income tax,
+    salary tax and yearly tax instantly according to official FBR slabs.
+  </p>
+
+  <div className="mt-8 flex justify-center">
+    <a
+      href="/salary/180000"
+      className="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-md transition"
+    >
+      🔥 Try Salary Tax Example
+    </a>
+  </div>
+
+</div>
+
+
 </div>        
 
       {/* CALCULATOR SECTION */}
-      <div className="max-w-xl mx-auto bg-white p-8 rounded-3xl shadow-xl border border-gray-100 mb-12">
+      <div className="max-w-xl mx-auto px-4 bg-white p-8 rounded-2xl shadow-md border border-gray-100 mb-12">
         <label className="block text-sm font-semibold mb-2">
           Select Tax Year
         </label>
@@ -240,7 +267,7 @@ export default function Home() {
       </div>
 
             {/* TAX YEAR UPDATE BOX */}
-      <div className="max-w-4xl mx-auto bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl mb-16">
+      <div className="max-w-4xl mx-auto bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl mb-10">
         <h3 className="text-lg font-bold mb-2">
           Tax Year 2026-27 Update
         </h3>

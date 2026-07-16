@@ -61,13 +61,13 @@ export default function RootLayout({
   crossOrigin="anonymous"
 />
     </head>
-      <body className="bg-gray-50 text-gray-900">
+      <body className="bg-white text-gray-900">
 
       
 
         {/* NAVBAR */}
        {/* Royal Black Bismillah Bar */}
-<div className="w-full bg-black py-3 shadow-lg border-b border-yellow-500/40">
+<div className="w-full bg-black py-3 border-b border-yellow-500/40">
   <div className="text-center">
     <span className="text-xl md:text-2xl font-extrabold tracking-widest bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-300 bg-clip-text text-transparent drop-shadow-[0_2px_6px_rgba(255,215,0,0.4)]">
       بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
@@ -79,7 +79,7 @@ export default function RootLayout({
 
         <nav className="bg-gradient-to-r from-slate-900 via-gray-900 to-slate-800 shadow-lg sticky top-0 z-50">
 
-  <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-center gap-8">
+  <div className="max-w-7xl mx-auto px-3 md:px-4 py-6 md:py-10 flex flex-col md:flex-row gap-8 bg-transparent">
 
     {/* Logo + Title */}
     <Link
@@ -136,7 +136,7 @@ export default function RootLayout({
 </nav>
 
         {/* PAGE CONTENT */}
-        <div className="max-w-7xl mx-auto px-3 md:px-4 py-6 md:py-10 flex flex-col md:flex-row gap-8">
+        <div className="max-w-7xl mx-auto px-3 md:px-4 flex flex-col md:flex-row gap-8">
 
   {/* SIDEBAR */}
   <div className="hidden lg:block">
