@@ -115,17 +115,17 @@ export default function Home() {
 />
 
           {/* Center Dot */}
-          <div className="absolute top-1/2 left-1/2 w-3 h-3 bg-green-700 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"></div>
+          <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-green-700 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"></div>
 
           {/* Hour Hand */}
           <div
-            className="absolute top-1/2 left-1/2 w-[3px] h-15 bg-black origin-bottom rounded"
+            className="absolute top-1/2 left-1/2 w-[3px] h-14 bg-black origin-bottom rounded"
             style={{ transform: `translate(-50%, -100%) rotate(${hourDeg}deg)` }}
           ></div>
 
           {/* Minute Hand */}
           <div
-            className="absolute top-1/2 left-1/2 w-[2px] h-20 bg-green-700 origin-bottom rounded"
+            className="absolute top-1/2 left-1/2 w-[2px] h-16 bg-green-700 origin-bottom rounded"
             style={{ transform: `translate(-50%, -100%) rotate(${minuteDeg}deg)` }}
           ></div>
 
