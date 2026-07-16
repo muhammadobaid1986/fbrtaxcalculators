@@ -1,34 +1,42 @@
-export const metadata = {
-  title: "About FBR Tax Calculators Pakistan",
-  description:
-    "Learn about FBR Tax Calculators, a free online platform for Pakistan income tax and salary tax tools.",
-};
-
-export default function Page() {
+export default function About() {
   return (
     <div className="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow mt-10">
       <h1 className="text-3xl font-bold mb-6">
         About FBR Tax Calculators
       </h1>
 
-      <p className="mb-4 text-gray-700">
-        FBR Tax Calculators is an independent online platform providing
-        accurate income tax, salary tax, zakat, and withholding tax tools
-        for individuals in Pakistan.
+      <p className="mb-4">
+        FBR Tax Calculators is an independent online platform designed to help
+        individuals in Pakistan calculate income tax, salary tax, zakat, and
+        withholding tax using official publicly available FBR tax slabs.
       </p>
 
-      <p className="mb-4 text-gray-700">
-        Our calculators are based on official FBR tax slabs and updated
-        according to the latest Finance Act.
+      <p className="mb-4">
+        Our goal is to simplify complex tax rules and make financial planning
+        easier for salaried individuals, freelancers, and professionals across
+        Pakistan.
       </p>
 
-      <p className="mb-4 text-gray-700">
-        We aim to simplify complex tax rules and help salaried individuals
-        calculate their take-home salary instantly.
-      </p>
+      <h2 className="text-xl font-semibold mt-6 mb-2">
+        What We Offer
+      </h2>
 
-      <p className="text-gray-600 text-sm">
-        Disclaimer: This website is not affiliated with the Federal Board of Revenue (FBR).
+      <ul className="list-disc pl-6 space-y-2 mb-4">
+        <li>Income Tax Calculator Pakistan</li>
+        <li>Salary After Tax Calculator</li>
+        <li>Zakat Calculator</li>
+        <li>Withholding Tax Calculator</li>
+        <li>Tax Slab Comparison Tools</li>
+      </ul>
+
+      <h2 className="text-xl font-semibold mt-6 mb-2">
+        Disclaimer
+      </h2>
+
+      <p>
+        This website is not affiliated with the Federal Board of Revenue (FBR).
+        All calculations are based on publicly available tax slab data and are
+        intended for informational purposes only.
       </p>
     </div>
   );
