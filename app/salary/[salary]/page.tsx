@@ -149,6 +149,83 @@ export default async function Page({ params }: any) {
     </tbody>
   </table>
 
+  {/* Detailed Salary Guide Section */}
+<div className="mt-12 prose max-w-none">
+
+  <h2>
+    Income Tax on Rs {monthlySalary.toLocaleString()} Salary in Pakistan (2026-27)
+  </h2>
+
+  <p>
+    If your monthly salary is Rs {monthlySalary.toLocaleString()}, your annual income becomes Rs {(monthlySalary * 12).toLocaleString()}.
+    Under the official FBR tax slabs for 2026-27, income tax is calculated using a marginal tax system.
+  </p>
+
+  <p>
+    This means different portions of your annual income are taxed at different rates depending on the applicable slab.
+    The first Rs 600,000 is tax-free, and the remaining income is taxed progressively.
+  </p>
+
+  <h3>
+    Monthly Take-Home Salary on Rs {monthlySalary.toLocaleString()}
+  </h3>
+
+  <p>
+    After deducting an estimated monthly tax of Rs {result.monthlyTax.toLocaleString()},
+    your approximate take-home salary is Rs {result.monthlyTakeHome.toLocaleString()}.
+  </p>
+
+  <h3>
+    Yearly Tax Calculation Breakdown
+  </h3>
+
+  <p>
+    Your total yearly tax liability is Rs {result.yearlyTax.toLocaleString()}.
+    Employers usually deduct this amount gradually throughout the year under withholding tax rules.
+  </p>
+
+  <h3>Related Salary Pages</h3>
+
+  <ul className="list-disc pl-6">
+    <li><a href="/salary/100000" className="text-green-600 hover:underline">Income Tax on 100,000 Salary</a></li>
+    <li><a href="/salary/200000" className="text-green-600 hover:underline">Income Tax on 200,000 Salary</a></li>
+    <li><a href="/salary/300000" className="text-green-600 hover:underline">Income Tax on 300,000 Salary</a></li>
+  </ul>
+
+</div>
+
+{/* Salary FAQ */}
+<div className="mt-12">
+
+  <h2 className="text-xl font-bold mb-4">
+    Frequently Asked Questions
+  </h2>
+
+  <div className="space-y-4 text-sm text-gray-700">
+
+    <div>
+      <p className="font-semibold">
+        Is Rs {monthlySalary.toLocaleString()} salary taxable in Pakistan?
+      </p>
+      <p>
+        Yes. If your annual income exceeds the tax-free threshold,
+        you are required to pay income tax according to FBR tax slabs.
+      </p>
+    </div>
+
+    <div>
+      <p className="font-semibold">
+        How much monthly tax on Rs {monthlySalary.toLocaleString()}?
+      </p>
+      <p>
+        Your estimated monthly tax is Rs {result.monthlyTax.toLocaleString()}.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
   <div className="mt-12 prose max-w-none">
   <h2>
     Detailed Income Tax Explanation for Rs {monthlySalary.toLocaleString()} Salary
