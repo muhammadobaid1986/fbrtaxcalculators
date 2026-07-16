@@ -111,9 +111,9 @@ export default function Home() {
 <Image
   src="/pakistan.svg"
   alt="Pakistan Map"
-  width={90}
-  height={90}
-  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-500"
+  width={70}
+  height={70}
+  className="absolute top-1/2 left-1/2 w-24 -translate-x-1/2 -translate-y-1/2 opacity-100 pointer-events-none"
 />
 
           {/* Center Dot */}
