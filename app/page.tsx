@@ -182,14 +182,14 @@ export default function Home() {
 
       {/* CALCULATOR SECTION */}
       <div className="max-w-xl mx-auto px-4 bg-white p-8 rounded-2xl shadow-md border border-gray-100 mb-12">
-        <label className="block text-sm font-semibold mb-2">
-          Select Tax Year
-        </label>
+        <label className="block text-center text-2xl font-extrabold mb-6 border-b-4 border-green-600 pb-2">
+  Select Tax Year
+</label>
 
         <select
           value={year}
           onChange={(e) => setYear(e.target.value)}
-          className="w-full p-3 border rounded-lg mb-4"
+          className="w-full p-4 border rounded-xl mb-6 text-center font-medium"
         >
           {Object.keys(taxData).map((y) => (
             <option key={y} value={y}>
@@ -207,11 +207,17 @@ export default function Home() {
         />
 
         <button
-          onClick={calculateTax}
-          className="w-full bg-gradient-to-r from-green-500 to-green-700 text-white p-4 rounded-full hover:scale-105 transition"
-        >
-          Calculate Tax
-        </button>
+  onClick={calculateTax}
+  className="relative w-full bg-gradient-to-r from-green-600 via-green-700 to-green-800 
+             text-white py-4 rounded-full font-extrabold text-lg tracking-wide 
+             shadow-lg hover:shadow-2xl hover:scale-[1.02] active:scale-95 
+             transition-all duration-300 overflow-hidden"
+             
+>
+  <span className="relative z-10">
+    ✅ Calculate Tax
+  </span>
+</button>
 
         {tax !== null && (
           <div className="mt-8 text-sm space-y-2">
