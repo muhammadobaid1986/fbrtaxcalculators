@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Pakistan Budget 2026-27 | FBR Tax Slabs & Key Updates",
+  title: "Pakistan Budget 2026-27 | Complete Income Tax Slabs & Key Updates",
   description:
-    "Complete details of Pakistan Budget 2026-27 including latest FBR income tax slabs, salary tax changes, and financial updates.",
+    "Full details of Pakistan Federal Budget 2026-27 including updated FBR income tax slabs, salary tax impact, filer rules, and financial changes.",
 };
 
 export default function Page() {
@@ -9,12 +9,13 @@ export default function Page() {
     <div className="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow mt-10">
 
       <h1 className="text-3xl md:text-4xl font-bold mb-6">
-        Pakistan Budget 2026-27 – Complete Overview
+        Pakistan Federal Budget 2026-27 – Complete Guide
       </h1>
 
       <p className="mb-4">
-        The Federal Budget 2026-27 introduces updates in income tax slabs,
-        salary taxation, and financial policies affecting individuals and businesses in Pakistan.
+        The Federal Budget 2026-27 introduced several changes in income tax slabs,
+        withholding tax rates, and compliance requirements for salaried individuals,
+        freelancers, and businesses across Pakistan.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">
@@ -22,25 +23,22 @@ export default function Page() {
       </h2>
 
       <ul className="list-disc pl-6 space-y-2 mb-6">
-        <li>Updated income tax slabs for salaried individuals</li>
-        <li>Changes in withholding tax rates</li>
-        <li>Revised ATL compliance measures</li>
-        <li>New policies for freelancers and digital earners</li>
+        <li>Revised income tax slabs for salaried individuals</li>
+        <li>Adjustments in withholding tax rates</li>
+        <li>Updated Active Taxpayer List (ATL) compliance rules</li>
+        <li>Policy updates for freelancers and digital earners</li>
+        <li>Changes in property and vehicle transaction taxes</li>
       </ul>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">
-        Income Tax Slabs 2026-27
+        Income Tax Slabs 2026-27 (Salaried Individuals)
       </h2>
-
-      <p className="mb-4">
-        The following slabs apply to salaried individuals for tax year 2026-27:
-      </p>
 
       <div className="overflow-x-auto mb-6">
         <table className="w-full border text-sm">
           <thead>
             <tr className="bg-gray-100">
-              <th className="border p-2 text-left">Income Range</th>
+              <th className="border p-2 text-left">Annual Income</th>
               <th className="border p-2 text-left">Tax Rate</th>
             </tr>
           </thead>
@@ -57,6 +55,14 @@ export default function Page() {
               <td className="border p-2">Rs 1,200,001 – Rs 2,200,000</td>
               <td className="border p-2">15%</td>
             </tr>
+            <tr>
+              <td className="border p-2">Rs 2,200,001 – Rs 3,200,000</td>
+              <td className="border p-2">25%</td>
+            </tr>
+            <tr>
+              <td className="border p-2">Above Rs 3,200,000</td>
+              <td className="border p-2">30%+</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -66,8 +72,14 @@ export default function Page() {
       </h2>
 
       <p className="mb-4">
-        These slab changes affect monthly take-home salaries. 
-        You can use our Income Tax Calculator to estimate updated deductions instantly.
+        The updated slabs affect monthly take-home salary calculations.
+        Employees earning above the tax-free threshold should review
+        their annual tax liability under the new rates.
+      </p>
+
+      <p className="mb-4">
+        Use our Income Tax Calculator to check how the 2026-27
+        budget affects your salary instantly.
       </p>
 
       <div className="mt-8 text-center">
@@ -77,6 +89,44 @@ export default function Page() {
         >
           Use Income Tax Calculator
         </a>
+      </div>
+
+      <h2 className="text-2xl font-semibold mt-8 mb-4">
+        Changes for Freelancers & Businesses
+      </h2>
+
+      <p className="mb-4">
+        Budget 2026-27 also introduced updates for freelancers,
+        IT exporters, and small businesses. Tax compliance rules
+        have been strengthened to improve documentation and reporting.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-8 mb-4">
+        Frequently Asked Questions
+      </h2>
+
+      <div className="space-y-4 text-gray-700">
+
+        <div>
+          <p className="font-semibold">
+            Did tax rates increase in Budget 2026-27?
+          </p>
+          <p>
+            Some income brackets experienced revisions depending on
+            government fiscal policies and revenue targets.
+          </p>
+        </div>
+
+        <div>
+          <p className="font-semibold">
+            When do the new tax slabs apply?
+          </p>
+          <p>
+            The new slabs apply to the relevant tax year starting
+            from July 1, 2026.
+          </p>
+        </div>
+
       </div>
 
     </div>
