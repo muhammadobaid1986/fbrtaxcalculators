@@ -173,6 +173,15 @@ export default function Home() {
     Try Salary Tax Example
   </span>
 </a>
+
+<div className="mt-6">
+  <a
+    href="/latest-budget-2026-27-tax-slabs"
+    className="text-green-600 font-semibold hover:underline"
+  >
+    👉 Read Full Pakistan Budget 2026-27 Details
+  </a>
+</div>
   </div>
 
 </div>
