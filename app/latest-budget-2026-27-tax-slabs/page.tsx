@@ -35,36 +35,50 @@ export default function Page() {
       </h2>
 
       <div className="overflow-x-auto mb-6">
-        <table className="w-full border text-sm">
-          <thead>
-            <tr className="bg-gray-100">
-              <th className="border p-2 text-left">Annual Income</th>
-              <th className="border p-2 text-left">Tax Rate</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="border p-2">Up to Rs 600,000</td>
-              <td className="border p-2">0%</td>
-            </tr>
-            <tr>
-              <td className="border p-2">Rs 600,001 – Rs 1,200,000</td>
-              <td className="border p-2">5%</td>
-            </tr>
-            <tr>
-              <td className="border p-2">Rs 1,200,001 – Rs 2,200,000</td>
-              <td className="border p-2">15%</td>
-            </tr>
-            <tr>
-              <td className="border p-2">Rs 2,200,001 – Rs 3,200,000</td>
-              <td className="border p-2">25%</td>
-            </tr>
-            <tr>
-              <td className="border p-2">Above Rs 3,200,000</td>
-              <td className="border p-2">30%+</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="overflow-x-auto mb-6">
+  <table className="w-full border text-sm">
+    <thead>
+      <tr className="bg-gray-100">
+        <th className="border p-2 text-left">Income Range</th>
+        <th className="border p-2 text-left">Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="border p-2">Rs 0 – Rs 600,000</td>
+        <td className="border p-2">0%</td>
+      </tr>
+      <tr>
+        <td className="border p-2">Rs 600,000 – Rs 1,200,000</td>
+        <td className="border p-2">1%</td>
+      </tr>
+      <tr>
+        <td className="border p-2">Rs 1,200,000 – Rs 2,200,000</td>
+        <td className="border p-2">11%</td>
+      </tr>
+      <tr>
+        <td className="border p-2">Rs 2,200,000 – Rs 3,200,000</td>
+        <td className="border p-2">20%</td>
+      </tr>
+      <tr>
+        <td className="border p-2">Rs 3,200,000 – Rs 4,100,000</td>
+        <td className="border p-2">25%</td>
+      </tr>
+      <tr>
+        <td className="border p-2">Rs 4,100,000 – Rs 5,600,000</td>
+        <td className="border p-2">29%</td>
+      </tr>
+      <tr>
+        <td className="border p-2">Rs 5,600,000 – Rs 7,000,000</td>
+        <td className="border p-2">32%</td>
+      </tr>
+      <tr>
+        <td className="border p-2">Above Rs 7,000,000</td>
+        <td className="border p-2">35%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
       </div>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">

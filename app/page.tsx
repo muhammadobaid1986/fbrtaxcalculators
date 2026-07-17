@@ -205,12 +205,12 @@ export default function Home() {
 <div className="mt-6 flex justify-center">
   <a
     href="/latest-budget-2026-27-tax-slabs"
-    className="inline-flex items-center gap-2 px-6 py-3 rounded-full 
-               bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-400 
-               text-black font-bold 
-               shadow-lg hover:shadow-2xl 
-               hover:scale-105 active:scale-95 
-               transition-all duration-300"
+    className="inline-flex items-center gap-2 px-8 py-3 rounded-full 
+           bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-400 
+           text-black font-extrabold text-lg tracking-wide
+           shadow-lg hover:shadow-2xl 
+           hover:scale-[1.02] active:scale-95 
+           transition-all duration-300"
   >
     📊 View Budget 2026-27 Details
   </a>
