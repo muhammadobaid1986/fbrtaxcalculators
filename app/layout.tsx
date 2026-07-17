@@ -141,58 +141,82 @@ export default function RootLayout({
   {/* SIDEBAR */}
   <div className="hidden lg:block">
   <aside className="w-full md:w-72">
-  <div className="bg-white/80 backdrop-blur-md rounded-3xl shadow-xl p-6 sticky top-28 border border-gray-100 hover:shadow-2xl transition">
+  <div className="relative bg-white rounded-3xl shadow-xl p-6 sticky top-28 transition border border-transparent">
+  {/* Premium Golden Frame */}
+<div className="absolute inset-0 rounded-3xl pointer-events-none border-2 border-yellow-400/60"></div>
+<div className="absolute inset-0 rounded-3xl pointer-events-none shadow-[0_0_20px_rgba(255,215,0,0.2)]"></div>
 
-    <h3 className="text-xl font-bold mb-6 text-green-600">
+    <h3 className="text-xl font-extrabold mb-6 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent tracking-wide">
       🚀 Quick Tools
     </h3>
 
     <ul className="space-y-4 text-sm">
 
   <li>
-    <Link href="/" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+    <Link href="/" className="flex items-center gap-3 p-3 rounded-xl hover:bg-gradient-to-r hover:from-green-100 hover:to-yellow-50 hover:shadow-md hover:-translate-y-1 transition-all duration-200">
       💰 Income Tax Calculator
     </Link>
   </li>
 
   <li>
-    <Link href="/monthly-tax-calculator-pakistan" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+    <Link href="/monthly-tax-calculator-pakistan" className="flex items-center gap-3 p-3 rounded-xl 
+           hover:bg-gradient-to-r hover:from-green-100 hover:to-yellow-50 
+           hover:shadow-md hover:-translate-y-1 
+           transition-all duration-200">
       📅 Monthly Tax Calculator
     </Link>
   </li>
 
   <li>
-    <Link href="/salary-after-tax-calculator" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+    <Link href="/salary-after-tax-calculator" className="flex items-center gap-3 p-3 rounded-xl 
+           hover:bg-gradient-to-r hover:from-green-100 hover:to-yellow-50 
+           hover:shadow-md hover:-translate-y-1 
+           transition-all duration-200">
       💸 Salary After Tax
     </Link>
   </li>
 
   <li>
-    <Link href="/tax-slab-finder-pakistan" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+    <Link href="/tax-slab-finder-pakistan" className="flex items-center gap-3 p-3 rounded-xl 
+           hover:bg-gradient-to-r hover:from-green-100 hover:to-yellow-50 
+           hover:shadow-md hover:-translate-y-1 
+           transition-all duration-200">
       📊 Tax Slab Finder
     </Link>
   </li>
 
   <li>
-    <Link href="/tax-slab-comparison-pakistan" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+    <Link href="/tax-slab-comparison-pakistan" className="flex items-center gap-3 p-3 rounded-xl 
+           hover:bg-gradient-to-r hover:from-green-100 hover:to-yellow-50 
+           hover:shadow-md hover:-translate-y-1 
+           transition-all duration-200">
       📈 Tax Slab Comparison
     </Link>
   </li>
 
   <li>
-    <Link href="/withholding-tax-calculator" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+    <Link href="/withholding-tax-calculator" className="flex items-center gap-3 p-3 rounded-xl 
+           hover:bg-gradient-to-r hover:from-green-100 hover:to-yellow-50 
+           hover:shadow-md hover:-translate-y-1 
+           transition-all duration-200">
       🧾 Withholding Tax
     </Link>
   </li>
 
   <li>
-    <Link href="/zakat-calculator" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+    <Link href="/zakat-calculator" className="flex items-center gap-3 p-3 rounded-xl 
+           hover:bg-gradient-to-r hover:from-green-100 hover:to-yellow-50 
+           hover:shadow-md hover:-translate-y-1 
+           transition-all duration-200">
       🕌 Zakat Calculator
     </Link>
   </li>
 
   <li>
-    <Link href="/blog" className="flex items-center gap-2 p-3 rounded-xl hover:bg-green-50 hover:text-green-600 transition">
+    <Link href="/blog" className="flex items-center gap-3 p-3 rounded-xl 
+           hover:bg-gradient-to-r hover:from-green-100 hover:to-yellow-50 
+           hover:shadow-md hover:-translate-y-1 
+           transition-all duration-200">
       📘 Tax Guides
     </Link>
   </li>
