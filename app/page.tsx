@@ -174,12 +174,17 @@ export default function Home() {
   </span>
 </a>
 
-<div className="mt-6">
+<div className="mt-6 flex justify-center">
   <a
     href="/latest-budget-2026-27-tax-slabs"
-    className="text-green-600 font-semibold hover:underline"
+    className="inline-flex items-center gap-2 px-6 py-3 rounded-full 
+               bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-400 
+               text-black font-bold 
+               shadow-lg hover:shadow-2xl 
+               hover:scale-105 active:scale-95 
+               transition-all duration-300"
   >
-    👉 Read Full Pakistan Budget 2026-27 Details
+    📊 View Budget 2026-27 Details
   </a>
 </div>
   </div>
