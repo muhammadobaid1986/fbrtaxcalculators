@@ -143,6 +143,34 @@ export default function Home() {
 
   </div>
 
+  {/* Budget 2026-27 Highlight Banner */}
+<div className="max-w-4xl mx-auto mb-8">
+
+  <div className="bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-400 
+                  text-black rounded-2xl shadow-lg p-6 flex flex-col md:flex-row 
+                  items-center justify-between gap-4">
+
+    <div>
+      <h3 className="text-xl font-bold">
+        Pakistan Budget 2026-27 Released
+      </h3>
+      <p className="text-sm">
+        View updated FBR tax slabs, salary impact and key financial changes.
+      </p>
+    </div>
+
+    <a
+      href="/latest-budget-2026-27-tax-slabs"
+      className="bg-black text-white px-6 py-2 rounded-full font-semibold 
+                 hover:bg-gray-900 transition"
+    >
+      View Full Details
+    </a>
+
+  </div>
+
+</div>
+
   <div className="mb-12"></div>
             {/* HERO SECTION */}
 <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-none p-10 border border-gray-200 mb-0 text-center">
