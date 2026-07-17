@@ -184,38 +184,43 @@ export default function Home() {
     salary tax and yearly tax instantly according to official FBR slabs.
   </p>
 
-  <div className="mt-8 flex justify-center">
-    <a
-  href="/salary/180000"
-  className="relative inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full font-semibold text-white 
-             bg-gradient-to-r from-green-600 via-green-700 to-green-800 
-             shadow-lg hover:shadow-2xl 
-             transition-all duration-300 ease-in-out 
-             hover:scale-105 active:scale-95 overflow-hidden"
->
-  {/* Glow effect */}
-  <span className="absolute inset-0 bg-white/20 opacity-0 hover:opacity-30 transition duration-300"></span>
+  <div className="mt-8 flex flex-wrap justify-center gap-4">
 
-  <span className="relative flex items-center gap-2">
-    🔥
-    Try Salary Tax Example
-  </span>
-</a>
+  {/* Try Salary Button */}
+  <a
+    href="/salary/180000"
+    className="relative inline-flex items-center justify-center gap-2 
+               min-w-[220px] px-8 py-3 rounded-full 
+               bg-gradient-to-r from-green-600 to-green-700 
+               text-white font-bold text-base 
+               shadow-lg hover:shadow-xl 
+               hover:scale-105 active:scale-95 
+               transition-all duration-200 overflow-hidden"
+  >
+    <span className="absolute inset-0 bg-white/20 opacity-0 hover:opacity-20 transition duration-300"></span>
+    <span className="relative flex items-center gap-2">
+      🔥 Try Salary Tax Example
+    </span>
+  </a>
 
-<div className="mt-6 flex justify-center">
+  {/* Budget Button */}
   <a
     href="/latest-budget-2026-27-tax-slabs"
-    className="inline-flex items-center gap-2 px-8 py-3 rounded-full 
-           bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-400 
-           text-black font-extrabold text-lg tracking-wide
-           shadow-lg hover:shadow-2xl 
-           hover:scale-[1.02] active:scale-95 
-           transition-all duration-300"
+    className="relative inline-flex items-center justify-center gap-2 
+               min-w-[220px] px-8 py-3 rounded-full 
+               bg-gradient-to-r from-yellow-400 to-amber-500 
+               text-black font-bold text-base 
+               shadow-lg hover:shadow-xl 
+               hover:scale-105 active:scale-95 
+               transition-all duration-200 overflow-hidden"
   >
-    📊 View Budget 2026-27 Details
+    <span className="absolute inset-0 bg-white/30 opacity-0 hover:opacity-20 transition duration-300"></span>
+    <span className="relative flex items-center gap-2">
+      📊 View Budget 2026‑27
+    </span>
   </a>
+
 </div>
-  </div>
 
 </div>
 
