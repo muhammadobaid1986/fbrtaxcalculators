@@ -577,6 +577,34 @@ export default async function Page({ params }: any) {
   </a>
 </div>
 
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": `How much tax on Rs ${monthlySalary} salary in Pakistan?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `Estimated yearly tax on Rs ${monthlySalary} salary is Rs ${result.yearlyTax}.`
+          }
+        },
+        {
+          "@type": "Question",
+          "name": `What is take-home salary after tax?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `After tax, monthly take-home salary is approximately Rs ${result.monthlyTakeHome}.`
+          }
+        }
+      ]
+    })
+  }}
+/>
+
     </div>
   );
 }
