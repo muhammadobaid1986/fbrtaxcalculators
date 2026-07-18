@@ -1,8 +1,10 @@
 export const metadata = {
+  
   title: "Pakistan Budget 2026-27 | Complete Income Tax Slabs & Key Updates",
   description:
     "Full details of Pakistan Federal Budget 2026-27 including updated FBR income tax slabs, salary tax impact, filer rules, and financial changes.",
 };
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -96,6 +98,17 @@ export default function Page() {
         budget affects your salary instantly.
       </p>
 
+      <p className="mb-6">
+  You can also check detailed calculations for specific income levels such as{" "}
+  <Link href="/income-tax-on-1000000-salary-pakistan" className="text-blue-600 underline">
+    Tax on Rs 1,000,000 Salary
+  </Link>{" "}
+  or{" "}
+  <Link href="/income-tax-on-2000000-salary-pakistan" className="text-blue-600 underline">
+    Tax on Rs 2,000,000 Salary
+  </Link>.
+</p>
+
       <div className="mt-8 text-center">
         <a
           href="/"
@@ -114,6 +127,59 @@ export default function Page() {
         IT exporters, and small businesses. Tax compliance rules
         have been strengthened to improve documentation and reporting.
       </p>
+
+      {/* Salient Features Section */}
+
+<h2 className="text-2xl font-semibold mt-12 mb-4">
+  Salient Features of Budget 2026-27 (Summary)
+</h2>
+
+<p className="mb-4">
+  The Federal Budget 2026-27 introduces major reforms across Customs,
+  Sales Tax, Income Tax, and Federal Excise laws to simplify taxation,
+  improve transparency, and stimulate economic growth.
+</p>
+
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  1. Customs Act 1969 – Key Changes
+</h3>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>Reduction in Customs Duty rates under National Tariff Policy 2025-30.</li>
+  <li>Reduction and elimination of Additional Customs Duty (ACD).</li>
+  <li>Regulatory Duty capped at 20% and rationalized across sectors.</li>
+  <li>Exemptions on agricultural machinery and critical pharmaceutical imports.</li>
+  <li>Faceless adjudication and stronger anti-smuggling measures introduced.</li>
+</ul>
+
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  2. Sales Tax Act 1990 – Major Measures
+</h3>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>Exemptions for electric vehicles extended till 2027.</li>
+  <li>Abolition of tampon tax.</li>
+  <li>Expansion of withholding sales tax on unregistered buyers.</li>
+  <li>Introduction of electronic invoicing and faceless audit system.</li>
+</ul>
+
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  3. Income Tax Ordinance 2001 – Relief & Revenue Changes
+</h3>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>Reduction in income tax rates for salaried individuals.</li>
+  <li>Abolition of deemed income tax (Section 7E).</li>
+  <li>Super Tax abolished up to Rs. 500 million income.</li>
+  <li>Lower advance tax on property transactions.</li>
+  <li>Withholding tax introduced on digital & social media income.</li>
+</ul>
+
+<h3 className="text-xl font-semibold mt-6 mb-2">
+  4. Federal Excise Act 2005 – Updates
+</h3>
+<ul className="list-disc pl-6 space-y-2 mb-6">
+  <li>Reduction in FED on foreign travel.</li>
+  <li>Imposition of FED on luxury vehicles and certain petroleum products.</li>
+  <li>New faceless audit and monitoring provisions.</li>
+</ul>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">
         Frequently Asked Questions
@@ -149,11 +215,10 @@ export default function Page() {
         📜 Official Budget Speech 2026-27 (Full PDF)
       </h2>
 
-      <p className="mb-4">
-        Read the complete official Pakistan Federal Budget Speech 2026-27 
-        as presented in the National Assembly. You can view it online 
-        below or download the full document.
-      </p>
+      <p className="mb-6">
+  Download the complete official Pakistan Federal Budget Speech 2026-27 
+  as presented in the National Assembly.
+</p>
 
       {/* Official Budget Speech Download Section */}
 
@@ -168,6 +233,31 @@ export default function Page() {
     ⬇ DOWNLOAD FULL BUDGET SPEECH PDF
   </a>
 </div>
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "Pakistan Budget 2026-27 – Complete Guide",
+      description:
+        "Complete details of Pakistan Federal Budget 2026-27 including income tax slabs, salient features, and major legal amendments.",
+      author: {
+        "@type": "Organization",
+        name: "FBR Tax Calculators",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "FBR Tax Calculators",
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://fbrtaxcalculators.com/latest-budget-2026-27-tax-slabs",
+      },
+    }),
+  }}
+/>
 
     </div>
   );
