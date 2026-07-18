@@ -143,6 +143,32 @@ export default function Page() {
 
       </div>
 
+            {/* Official Budget Speech PDF Section */}
+
+      <h2 className="text-2xl font-semibold mt-12 mb-4">
+        📜 Official Budget Speech 2026-27 (Full PDF)
+      </h2>
+
+      <p className="mb-4">
+        Read the complete official Pakistan Federal Budget Speech 2026-27 
+        as presented in the National Assembly. You can view it online 
+        below or download the full document.
+      </p>
+
+      {/* Official Budget Speech Download Section */}
+
+
+
+<div className="text-center">
+  <a
+    href="/budget-speech-2026-27.pdf"
+    download
+    className="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-8 py-4 rounded-full transition text-lg shadow-md"
+  >
+    ⬇ DOWNLOAD FULL BUDGET SPEECH PDF
+  </a>
+</div>
+
     </div>
   );
 }
