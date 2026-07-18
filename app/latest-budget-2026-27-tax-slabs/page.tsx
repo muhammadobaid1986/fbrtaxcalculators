@@ -181,6 +181,15 @@ export default function Page() {
   <li>New faceless audit and monitoring provisions.</li>
 </ul>
 
+<div className="text-center mb-10">
+  <Link
+    href="/salient-features-budget-2026-27"
+    className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-full transition text-lg shadow-md"
+  >
+    📖 Read Complete Detailed Salient Features
+  </Link>
+</div>
+
       <h2 className="text-2xl font-semibold mt-8 mb-4">
         Frequently Asked Questions
       </h2>
