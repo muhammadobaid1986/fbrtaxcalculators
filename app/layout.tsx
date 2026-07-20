@@ -60,6 +60,20 @@ export default function RootLayout({
   src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1040104111900400"
   crossOrigin="anonymous"
 ></script>
+
+<Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-WKEEFK13QH"
+  strategy="afterInteractive"
+/>
+<Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WKEEFK13QH');
+  `}
+</Script>
+
     </head>
       <body className="bg-white text-gray-900">
 
