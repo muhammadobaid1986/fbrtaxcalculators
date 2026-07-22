@@ -228,6 +228,17 @@ export default function RootLayout({
   </Link>
 </li>
 
+<li>
+  <Link
+    href="/freelancer-it-tax-calculator-pakistan"
+    className="flex items-center gap-3 p-3 rounded-xl 
+           hover:bg-gradient-to-r hover:from-green-100 hover:to-yellow-50 
+           hover:shadow-md hover:-translate-y-1 
+           transition-all duration-200">
+    💻 Freelancer & IT Tax
+  </Link>
+</li>
+
   <li>
     <Link href="/zakat-calculator" className="flex items-center gap-3 p-3 rounded-xl 
            hover:bg-gradient-to-r hover:from-green-100 hover:to-yellow-50 
