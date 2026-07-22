@@ -39,6 +39,12 @@ export default function PropertyAdvanceCalculator() {
           🏠 Property Advance Tax Calculator Pakistan 2026‑2027
         </h1>
 
+        <div className="bg-green-950/40 border border-green-400/30 p-4 rounded-2xl mb-6 text-sm text-green-200">
+  ✅ Official Finance Act 2026‑2027 Rates  
+  ✅ Filer vs Non‑Filer Comparison  
+  ✅ Instant Calculation Before Registry
+</div>
+
         <div className="space-y-6">
 
           <div>
@@ -88,6 +94,10 @@ export default function PropertyAdvanceCalculator() {
           >
             Calculate Tax
           </button>
+
+            <p className="text-red-400 text-sm mt-2">
+  ⚠ Non‑Filers pay significantly higher advance tax.
+</p>
 
           {tax !== null && (
             <div className="mt-6 bg-green-950/40 p-6 rounded-2xl border border-green-400/40">
