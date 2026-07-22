@@ -166,8 +166,126 @@ export default function PropertyAdvanceTaxCalculator() {
   </div>
 </div>
 
+<div className="mt-14 text-gray-200 space-y-6">
+
+  <h2 className="text-2xl font-bold text-green-300">
+    Property Advance Tax in Pakistan (Section 236C & 236K)
+  </h2>
+
+  <p>
+    Under the Income Tax Ordinance, advance tax is collected on the purchase
+    and sale of immovable property in Pakistan. Section 236K applies to
+    property buyers, while Section 236C applies to property sellers.
+  </p>
+
+  <h3 className="text-xl font-semibold text-green-300">
+    Section 236K – Advance Tax on Property Purchase
+  </h3>
+
+  <p>
+    Buyers of property are required to pay advance tax based on the fair market value
+    or DC valuation rate. The tax rate differs for filers and non-filers.
+  </p>
+
+  <h3 className="text-xl font-semibold text-green-300">
+    Section 236C – Advance Tax on Property Sale
+  </h3>
+
+  <p>
+    Sellers must pay advance tax at the time of transfer. The rate depends on
+    filer status and is deducted during registration.
+  </p>
+
+  <h3 className="text-xl font-semibold text-green-300">
+    Who is Considered a Filer?
+  </h3>
+
+  <p>
+    A filer is a person whose name appears in the Active Taxpayer List (ATL)
+    issued by FBR. Non-filers are subject to significantly higher tax rates.
+  </p>
+
+</div>
+
+<div className="mt-14 text-gray-200 space-y-6">
+
+  <h2 className="text-2xl font-bold text-green-300">
+    Frequently Asked Questions
+  </h2>
+
+  <div>
+    <h3 className="font-semibold text-green-200">
+      Is property advance tax adjustable?
+    </h3>
+    <p>
+      Yes, advance tax paid under Section 236C or 236K is adjustable
+      against your final income tax liability.
+    </p>
+  </div>
+
+  <div>
+    <h3 className="font-semibold text-green-200">
+      What happens if I am a non-filer?
+    </h3>
+    <p>
+      Non-filers pay significantly higher advance tax rates.
+      It is recommended to become a filer to reduce tax burden.
+    </p>
+  </div>
+
+  <div>
+    <h3 className="font-semibold text-green-200">
+      Does this calculator use official FBR rates?
+    </h3>
+    <p>
+      Yes, this tool is based on Finance Act 2026-2027 rates
+      for property transactions in Pakistan.
+    </p>
+  </div>
+
+</div>
+
+
         </div>
       </div>
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is property advance tax adjustable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, advance tax paid under Section 236C or 236K is adjustable against final income tax liability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I am a non-filer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non-filers pay higher advance tax rates under FBR rules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this calculator use official FBR rates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, this calculator uses Finance Act 2026-2027 rates."
+          }
+        }
+      ]
+    })
+  }}
+/>
+
+
     </div>
   );
 }
