@@ -150,7 +150,7 @@ export default function RootLayout({
 </nav>
 
         {/* PAGE CONTENT */}
-        <div className="max-w-7xl mx-auto px-3 md:px-4 flex flex-col md:flex-row gap-8">
+        <div className="max-w-7xl mx-auto px-3 md:px-4 flex flex-col md:flex-row gap-6 mt-4">
 
   {/* SIDEBAR */}
   <div className="hidden lg:block">

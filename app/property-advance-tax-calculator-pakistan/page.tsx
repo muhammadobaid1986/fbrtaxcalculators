@@ -36,9 +36,9 @@ export default function PropertyAdvanceTaxCalculator() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-gray-900 to-emerald-950 pt-3 pb-15 px-4 flex justify-center">
+    <div className="min-h-screen bg-gradient-to-br from-green-900 via-emerald-900 to-green-950 pt-10 pb-16 px-4 flex justify-center rounded-3xl">
 
-      <div className="w-full max-w-2xl bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-2xl border border-green-500/40 rounded-[28px] shadow-[0_0_40px_rgba(16,185,129,0.15)] p-10">
+      <div className="w-full max-w-3xl mt-3 bg-green-900/60 backdrop-blur-xl border border-green-400/40 rounded-[28px] shadow-[0_15px_40px_rgba(0,0,0,0.35)] pt-6 pb-8 px-8">
 
         <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
           🏠 Property Advance Tax Calculator (236C & 236K)
@@ -51,26 +51,26 @@ export default function PropertyAdvanceTaxCalculator() {
         <div className="space-y-6">
 
           <div>
-            <label className="block mb-2 font-semibold">
+            <label className="block mb-2 font-semibold text-gray-200 tracking-wide">
               Property Value (PKR)
             </label>
             <input
-              type="number"
-              value={value}
-              onChange={(e) => setValue(e.target.value)}
-              className="w-full p-3 rounded-xl bg-gray-800 border border-boldgreen-500/30 focus:outline-none focus:ring-2 focus:ring-green-500"
-              placeholder="Enter property value"
-            />
+  type="number"
+  value={value}
+  onChange={(e) => setValue(e.target.value)}
+  className="w-full p-3 rounded-xl bg-gray-800 border border-green-500/30 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500"
+  placeholder="Enter property value"
+/>
           </div>
 
           <div>
-            <label className="block mb-2 font-semibold">
+            <label className="block mb-2 font-semibold text-gray-200 tracking-wide">
               Transaction Type
             </label>
             <select
               value={type}
               onChange={(e) => setType(e.target.value)}
-              className="w-full p-3 rounded-xl bg-gray-800 border border-green-500/30"
+              className="w-full p-3 rounded-xl bg-gray-800 border border-green-500/30 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
             >
               <option value="purchase">Property Purchase (236K)</option>
               <option value="sale">Property Sale (236C)</option>
@@ -78,13 +78,13 @@ export default function PropertyAdvanceTaxCalculator() {
           </div>
 
           <div>
-            <label className="block mb-2 font-semibold">
+            <label className="block mb-2 font-semibold text-gray-200 tracking-wide">
               Tax Status
             </label>
             <select
               value={status}
               onChange={(e) => setStatus(e.target.value)}
-              className="w-full p-3 rounded-xl bg-gray-800 border border-green-500/30"
+              className="w-full p-3 rounded-xl bg-gray-800 border border-green-500/30 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
             >
               <option value="filer">Filer</option>
               <option value="nonfiler">Non-Filer</option>
