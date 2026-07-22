@@ -116,7 +116,7 @@ export default function Home() {
 />
 
           {/* Center Dot */}
-          <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-green-700 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"></div>
+          <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-yellow-400 rounded-full -translate-x-1/2 -translate-y-1/2 z-10 shadow-[0_0_10px_rgba(250,204,21,0.8)]"></div>
 
           {/* Hour Hand */}
           <div
