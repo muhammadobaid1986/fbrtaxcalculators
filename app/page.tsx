@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import SectionTitle from "../components/SectionTitle";
 import Image from "next/image";
 import moment from "moment-hijri";
@@ -142,6 +143,37 @@ export default function Home() {
     </div>
 
   </div>
+
+      {/* Mobile Featured Calculators */}
+<div className="xl:hidden mt-6 space-y-4 px-4">
+
+  <div className="bg-white rounded-2xl shadow-md p-4 border border-green-300">
+    <h3 className="text-lg font-bold text-green-700 mb-2">
+      🏠 Property Advance Tax
+    </h3>
+    <Link
+      href="/property-advance-tax-calculator-pakistan"
+      className="block text-center bg-green-600 text-white py-2 rounded-lg font-semibold"
+    >
+      Calculate Now →
+    </Link>
+  </div>
+
+  <div className="bg-white rounded-2xl shadow-md p-4 border border-green-300">
+    <h3 className="text-lg font-bold text-green-700 mb-2">
+      💻 Freelancer & IT Tax
+    </h3>
+    <Link
+      href="/freelancer-it-tax-calculator-pakistan"
+      className="block text-center bg-green-600 text-white py-2 rounded-lg font-semibold"
+    >
+      Calculate Now →
+    </Link>
+  </div>
+
+</div>
+
+
 
   {/* Budget 2026-27 Highlight Banner */}
 <div className="max-w-4xl mx-auto mb-8">
