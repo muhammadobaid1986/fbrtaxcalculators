@@ -171,6 +171,46 @@ export default function Home() {
     </Link>
   </div>
 
+    {/* Mobile Quick Tools Accordion */}
+<div className="xl:hidden mt-4 px-4">
+
+  <details className="bg-white rounded-2xl shadow-md p-4 border border-green-300">
+    <summary className="cursor-pointer font-semibold text-green-700 text-lg">
+      📂 More Calculators
+    </summary>
+
+    <div className="mt-3 space-y-2 text-sm">
+
+      <Link href="/" className="block text-green-700">
+        💰 Income Tax Calculator
+      </Link>
+
+      <Link href="/monthly-tax-calculator-pakistan" className="block text-green-700">
+        📅 Monthly Tax Calculator
+      </Link>
+
+      <Link href="/salary-after-tax-calculator" className="block text-green-700">
+        💸 Salary After Tax
+      </Link>
+
+      <Link href="/withholding-tax-calculator" className="block text-green-700">
+        🧾 Withholding Tax
+      </Link>
+
+      <Link href="/zakat-calculator" className="block text-green-700">
+        🕌 Zakat Calculator
+      </Link>
+
+      <Link href="/tax-slab-finder-pakistan" className="block text-green-700">
+        📊 Tax Slab Finder
+      </Link>
+
+    </div>
+  </details>
+
+</div>
+
+
 </div>
 
 
