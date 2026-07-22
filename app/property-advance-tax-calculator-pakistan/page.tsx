@@ -7,33 +7,33 @@ export default function PropertyAdvanceTaxCalculator() {
   const [type, setType] = useState("purchase");
   const [status, setStatus] = useState("filer");
   const [tax, setTax] = useState<number | null>(null);
+  const [rateApplied, setRateApplied] = useState<number | null>(null);
 
   const calculateTax = () => {
-    const amount = Number(value);
-    if (!amount || amount <= 0) return setTax(null);
+  const amount = Number(value);
+  if (!amount || amount <= 0) return;
 
-    let rate = 0;
+  let rate = 0;
 
-    if (type === "purchase") {
-      // 236K
-      if (status === "filer") {
-        rate = 0.0125;
-      } else {
-        if (amount <= 50000000) rate = 0.105;
-        else if (amount <= 100000000) rate = 0.145;
-        else rate = 0.185;
-      }
+  if (type === "purchase") {
+    if (status === "filer") {
+      rate = 0.0125;
     } else {
-      // 236C
-      if (status === "filer") {
-        rate = 0.0275;
-      } else {
-        rate = 0.115;
-      }
+      if (amount <= 50000000) rate = 0.105;
+      else if (amount <= 100000000) rate = 0.145;
+      else rate = 0.185;
     }
+  } else {
+    if (status === "filer") {
+      rate = 0.0275;
+    } else {
+      rate = 0.115;
+    }
+  }
 
-    setTax(amount * rate);
-  };
+  setRateApplied(rate);
+  setTax(amount * rate);
+};
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-900 via-emerald-900 to-green-950 pt-10 pb-16 px-4 flex justify-center rounded-3xl">
@@ -99,15 +99,72 @@ export default function PropertyAdvanceTaxCalculator() {
           </button>
 
           {tax !== null && (
-            <div className="mt-8 bg-gradient-to-r from-emerald-900/40 to-green-900/30 border border-green-400/40 p-8 rounded-[24px] text-center shadow-inner">
-              <h2 className="text-xl font-semibold mb-2">
-                Estimated Advance Tax
-              </h2>
-              <p className="text-3xl font-bold text-green-400">
-                Rs {tax.toLocaleString()}
-              </p>
-            </div>
-          )}
+  <div className="mt-8 bg-gradient-to-r from-emerald-800/50 to-green-900/40 border border-green-400/40 p-8 rounded-2xl">
+
+    <h2 className="text-xl font-semibold mb-4 text-green-300">
+      Tax Calculation Breakdown
+    </h2>
+
+    <div className="space-y-2 text-gray-200">
+      <p><strong>Property Value:</strong> Rs {Number(value).toLocaleString()}</p>
+      <p><strong>Section:</strong> {type === "purchase" ? "236K (Purchase)" : "236C (Sale)"}</p>
+      <p><strong>Status:</strong> {status === "filer" ? "Filer" : "Non‑Filer"}</p>
+      <p><strong>Rate Applied:</strong> {(rateApplied! * 100).toFixed(2)}%</p>
+    </div>
+
+    <div className="mt-6 text-center">
+      <p className="text-lg text-gray-300">Estimated Advance Tax</p>
+      <p className="text-3xl font-bold text-green-400">
+        Rs {tax.toLocaleString()}
+      </p>
+    </div>
+  </div>
+)}
+
+<div className="mt-12 bg-green-950/40 p-6 rounded-2xl border border-green-500/30">
+  <h3 className="text-xl font-bold text-green-300 mb-4">
+    Official Advance Tax Rates (Finance Act 2026‑27)
+  </h3>
+
+  <div className="overflow-x-auto text-sm">
+    <table className="w-full text-left border-collapse">
+      <thead>
+        <tr className="border-b border-green-500/40 text-green-200">
+          <th className="py-2">Section</th>
+          <th>Value Range</th>
+          <th>Filer</th>
+          <th>Non‑Filer</th>
+        </tr>
+      </thead>
+      <tbody className="text-gray-200">
+        <tr>
+          <td>236K</td>
+          <td>Up to 50M</td>
+          <td>1.25%</td>
+          <td>10.50%</td>
+        </tr>
+        <tr>
+          <td>236K</td>
+          <td>50M – 100M</td>
+          <td>1.25%</td>
+          <td>14.50%</td>
+        </tr>
+        <tr>
+          <td>236K</td>
+          <td>Above 100M</td>
+          <td>1.25%</td>
+          <td>18.50%</td>
+        </tr>
+        <tr>
+          <td>236C</td>
+          <td>All Slabs</td>
+          <td>2.75%</td>
+          <td>11.50%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
         </div>
       </div>
