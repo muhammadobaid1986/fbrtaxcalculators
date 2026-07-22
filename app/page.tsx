@@ -106,13 +106,13 @@ export default function Home() {
       {/* RIGHT SIDE CLOCK */}
       <div className="flex justify-center">
 
-        <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full bg-white border-[10px] border-green-300 shadow-md">
+        <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full bg-white border-[5px] border-yellow-400 shadow-[0_0_25px_rgba(250,204,21,0.5)] overflow-hidden">
 
             {/* Pakistan Map Background */}
 <img
   src="/pakistan.svg"
   alt="Pakistan Map"
-  className="absolute top-1/2 left-1/2 w-16 h-16 -translate-x-1/2 -translate-y-1/2 opacity-100 pointer-events-none"
+  className="absolute inset-0 w-full h-full object-cover opacity-100 brightness-80 pointer-events-none scale-110"
 />
 
           {/* Center Dot */}
