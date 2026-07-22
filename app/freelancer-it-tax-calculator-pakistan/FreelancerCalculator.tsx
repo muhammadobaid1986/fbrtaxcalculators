@@ -20,13 +20,31 @@ export default function FreelancerITTaxCalculator() {
     } else if (regime === "presumptive") {
       appliedRate = 0.01; // 1%
     } else {
-      // Simplified Normal Slab Example
-      if (amount <= 600000) appliedRate = 0;
-      else if (amount <= 1200000) appliedRate = 0.01;
-      else if (amount <= 2200000) appliedRate = 0.11;
-      else if (amount <= 3200000) appliedRate = 0.20;
-      else appliedRate = 0.29;
-    }
+  let calculatedTax = 0;
+
+  if (amount <= 600000) calculatedTax = 0;
+  else if (amount <= 1200000)
+    calculatedTax = (amount - 600000) * 0.01;
+  else if (amount <= 2200000)
+    calculatedTax =
+      600000 * 0.01 +
+      (amount - 1200000) * 0.11;
+  else if (amount <= 3200000)
+    calculatedTax =
+      600000 * 0.01 +
+      1000000 * 0.11 +
+      (amount - 2200000) * 0.20;
+  else
+    calculatedTax =
+      600000 * 0.01 +
+      1000000 * 0.11 +
+      1000000 * 0.20 +
+      (amount - 3200000) * 0.29;
+
+  setTax(calculatedTax);
+  setRate(null);
+  return;
+}
 
     // Example non-filer adjustment
     if (status === "nonfiler") {
@@ -102,25 +120,61 @@ export default function FreelancerITTaxCalculator() {
           </button>
 
           {tax !== null && (
-            <div className="mt-6 bg-green-950/40 border border-green-400/40 p-6 rounded-2xl">
-              <h3 className="text-green-300 font-semibold mb-3">
-                Tax Breakdown
-              </h3>
-              <p className="text-gray-200">
-                Income: Rs {Number(income).toLocaleString()}
-              </p>
-              <p className="text-gray-200">
-                Rate Applied: {(rate! * 100).toFixed(2)}%
-              </p>
+  <div className="mt-8 bg-green-950/40 border border-green-400/40 p-8 rounded-2xl space-y-4">
 
-              <div className="mt-4 text-center">
-                <p className="text-lg text-gray-300">Estimated Tax</p>
-                <p className="text-3xl font-bold text-green-400">
-                  Rs {tax.toLocaleString()}
-                </p>
-              </div>
-            </div>
-          )}
+    <h3 className="text-green-300 font-semibold text-lg">
+      Tax Breakdown
+    </h3>
+
+    <p className="text-gray-200">
+      Annual Income: Rs {Number(income).toLocaleString()}
+    </p>
+
+    <p className="text-gray-200">
+      Regime:
+      {" "}
+      {regime === "it_export" && "IT Export (0.25%)"}
+      {regime === "presumptive" && "Presumptive Tax (1%)"}
+      {regime === "normal" && "Normal Income Tax Slab"}
+    </p>
+
+    {rate !== null && (
+      <p className="text-gray-200">
+        Rate Applied: {(rate * 100).toFixed(2)}%
+      </p>
+    )}
+
+    {status === "nonfiler" && (
+      <p className="text-red-400 text-sm">
+        ⚠ Non‑Filer rates may be significantly higher under FBR rules.
+      </p>
+    )}
+
+    <div className="mt-6 text-center">
+      <p className="text-lg text-gray-300">Estimated Annual Tax</p>
+      <p className="text-3xl font-bold text-green-400">
+        Rs {tax.toLocaleString()}
+      </p>
+    </div>
+
+  </div>
+)}
+
+<div className="mt-12 text-gray-200 space-y-4">
+  <h2 className="text-xl font-bold text-green-300">
+    Tax Regimes for Freelancers & IT Exporters (2026-2027)
+  </h2>
+
+  <ul className="list-disc pl-6 space-y-2">
+    <li><strong>IT Export (0.25%)</strong> – Applicable to registered IT exporters.</li>
+    <li><strong>Presumptive Tax (1%)</strong> – Applicable to certain foreign remittances.</li>
+    <li><strong>Normal Tax Slab</strong> – Progressive tax system based on income.</li>
+  </ul>
+
+  <p>
+    Always verify your tax position with FBR or a qualified tax advisor.
+  </p>
+</div>
 
         </div>
       </div>

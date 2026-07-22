@@ -55,11 +55,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         
-      <script
+      <Script
   async
+  strategy="afterInteractive"
   src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1040104111900400"
   crossOrigin="anonymous"
-></script>
+/>
 
 <Script
   src="https://www.googletagmanager.com/gtag/js?id=G-WKEEFK13QH"
@@ -101,14 +102,12 @@ export default function RootLayout({
       className="flex items-center gap-3"
     >
       <Image
-        src="/logo.png"
-        alt="FBR Tax Calculators Logo"
-        width={44}
-        height={44}
-        priority
-        className="rounded-xl"
-      />
-
+  src="/logo.png"
+  alt="FBR Tax Calculators Logo"
+  width={44}
+  height={44}
+  loading="lazy"
+/>
       <div>
         <h1 className="text-xl md:text-2xl font-bold text-white leading-none">
           FBR Tax Calculators
@@ -155,7 +154,7 @@ export default function RootLayout({
   {/* SIDEBAR */}
   <div className="hidden lg:block">
   <aside className="w-full md:w-72">
-  <div className="relative bg-white rounded-3xl shadow-xl p-6 sticky top-28 transition border border-transparent">
+  <div className="relative bg-white rounded-3xl shadow-md p-6 sticky top-28 transition border border-transparent">
   {/* Premium Golden Frame */}
 <div className="absolute inset-0 rounded-3xl pointer-events-none border-2 border-yellow-400/60"></div>
 <div className="absolute inset-0 rounded-3xl pointer-events-none shadow-[0_0_20px_rgba(255,215,0,0.2)]"></div>
@@ -268,27 +267,42 @@ export default function RootLayout({
     {children}
   </main>
 
- {/* Featured Tool - Styled Like Quick Tools */}
+ {/* Featured Calculators (Desktop) */}
 <div className="hidden xl:block">
-  <aside className="w-full md:w-72">
+  <aside className="w-full md:w-72 space-y-6">
+
+    {/* Property Advance Tax */}
     <div className="relative bg-white rounded-3xl shadow-xl p-6 sticky top-28 border border-yellow-400/40">
-
-      <h3 className="text-xl font-extrabold mb-6 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent tracking-wide">
-        🏠 Featured Tool
+      <h3 className="text-lg font-extrabold mb-4 text-green-700">
+        🏠 Property Advance Tax
       </h3>
-
       <p className="text-sm text-gray-600 mb-4">
-        Calculate FBR Advance Property Tax under Section 236C & 236K instantly.
+        Calculate FBR advance tax under Section 236C & 236K.
       </p>
-
       <Link
         href="/property-advance-tax-calculator-pakistan"
         className="block text-center bg-gradient-to-r from-green-600 to-green-700 text-white py-3 rounded-xl font-semibold hover:shadow-lg hover:-translate-y-1 transition"
       >
         Calculate Now →
       </Link>
-
     </div>
+
+    {/* Freelancer & IT Tax */}
+    <div className="relative bg-white rounded-3xl shadow-xl p-6 border border-yellow-400/40">
+      <h3 className="text-lg font-extrabold mb-4 text-green-700">
+        💻 Freelancer & IT Tax
+      </h3>
+      <p className="text-sm text-gray-600 mb-4">
+        Calculate tax for IT exporters, freelancers & remote earners (2026‑2027).
+      </p>
+      <Link
+        href="/freelancer-it-tax-calculator-pakistan"
+        className="block text-center bg-gradient-to-r from-green-600 to-green-700 text-white py-3 rounded-xl font-semibold hover:shadow-lg hover:-translate-y-1 transition"
+      >
+        Calculate Now →
+      </Link>
+    </div>
+
   </aside>
 </div>
 </div>
