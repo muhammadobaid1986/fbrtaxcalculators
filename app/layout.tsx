@@ -25,20 +25,20 @@ export const metadata = {
     locale: "en_PK",
     type: "website",
     images: [
-      {
-        url: "/logo.png",
-        width: 512,
-        height: 512,
-        alt: "FBR Tax Calculators",
-      },
-    ],
+  {
+    url: "https://fbrtaxcalculators.com/og-image.jpg",
+    width: 1200,
+    height: 630,
+    alt: "FBR Tax Calculators Pakistan 2026-2027",
+  },
+],
   },
   twitter: {
     card: "summary_large_image",
     title: "FBR Tax Calculators Pakistan",
     description:
       "Free Pakistan Income Tax Calculator based on FBR tax slabs.",
-    images: ["/logo.png"],
+    images: ["https://fbrtaxcalculators.com/og-image.jpg"],
   },
   robots: {
     index: true,
