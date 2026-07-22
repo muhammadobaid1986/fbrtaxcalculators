@@ -217,6 +217,17 @@ export default function RootLayout({
     </Link>
   </li>
 
+    <li>
+  <Link
+    href="/property-advance-tax-calculator-pakistan"
+    className="flex items-center gap-3 p-3 rounded-xl 
+           hover:bg-gradient-to-r hover:from-green-100 hover:to-yellow-50 
+           hover:shadow-md hover:-translate-y-1 
+           transition-all duration-200">
+    🏠 Property Advance Tax
+  </Link>
+</li>
+
   <li>
     <Link href="/zakat-calculator" className="flex items-center gap-3 p-3 rounded-xl 
            hover:bg-gradient-to-r hover:from-green-100 hover:to-yellow-50 
@@ -246,6 +257,29 @@ export default function RootLayout({
     {children}
   </main>
 
+ {/* Featured Tool - Styled Like Quick Tools */}
+<div className="hidden xl:block">
+  <aside className="w-full md:w-72">
+    <div className="relative bg-white rounded-3xl shadow-xl p-6 sticky top-28 border border-yellow-400/40">
+
+      <h3 className="text-xl font-extrabold mb-6 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent tracking-wide">
+        🏠 Featured Tool
+      </h3>
+
+      <p className="text-sm text-gray-600 mb-4">
+        Calculate FBR Advance Property Tax under Section 236C & 236K instantly.
+      </p>
+
+      <Link
+        href="/property-advance-tax-calculator-pakistan"
+        className="block text-center bg-gradient-to-r from-green-600 to-green-700 text-white py-3 rounded-xl font-semibold hover:shadow-lg hover:-translate-y-1 transition"
+      >
+        Calculate Now →
+      </Link>
+
+    </div>
+  </aside>
+</div>
 </div>
 
 <div className="my-8 text-center" style={{ minHeight: "250px" }}>
