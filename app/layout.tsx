@@ -284,12 +284,9 @@ export default function RootLayout({
 
     {/* Property Advance Tax */}
     <div className="relative bg-white rounded-3xl shadow-xl p-6 sticky top-28 border border-yellow-400/40">
-      <h3 className="text-lg font-extrabold mb-2 text-green-700 flex items-center gap-2">
-  🏠 Property Advance Tax
-  <span className="text-xs bg-yellow-500 text-black px-2 py-1 rounded-full">
-    Most Used
-  </span>
-</h3>
+      <h3 className="text-lg font-extrabold mb-4 text-green-700">
+        🏠 Property Advance Tax
+      </h3>
       <p className="text-sm text-gray-600 mb-4">
         Calculate FBR advance tax under Section 236C & 236K.
       </p>
@@ -321,7 +318,7 @@ export default function RootLayout({
 <div className="relative bg-white rounded-3xl shadow-xl p-6 border border-yellow-400/40">
   <h3 className="text-lg font-extrabold mb-2 text-green-700 flex items-center gap-2">
   📊 Capital Gain Tax
-  <span className="text-xs bg-red-500 text-white px-2 py-1 rounded-full">
+  <span className="text-xs bg-red-500 text-white px-2 py-1 rounded-full shadow animate-pulse">
     NEW
   </span>
 </h3>
