@@ -238,6 +238,17 @@ export default function RootLayout({
   </Link>
 </li>
 
+<li>
+  <Link
+    href="/capital-gain-tax-calculator-pakistan"
+    className="flex items-center gap-3 p-3 rounded-xl 
+           hover:bg-gradient-to-r hover:from-green-100 hover:to-yellow-50 
+           hover:shadow-md hover:-translate-y-1 
+           transition-all duration-200">
+    📊 Capital Gain Tax
+  </Link>
+</li>
+
   <li>
     <Link href="/zakat-calculator" className="flex items-center gap-3 p-3 rounded-xl 
            hover:bg-gradient-to-r hover:from-green-100 hover:to-yellow-50 
@@ -302,6 +313,22 @@ export default function RootLayout({
         Calculate Now →
       </Link>
     </div>
+
+    {/* Capital Gain Tax */}
+<div className="relative bg-white rounded-3xl shadow-xl p-6 border border-yellow-400/40">
+  <h3 className="text-lg font-extrabold mb-4 text-green-700">
+    📊 Capital Gain Tax
+  </h3>
+  <p className="text-sm text-gray-600 mb-4">
+    Calculate capital gain tax on property sale (2026‑2027).
+  </p>
+  <Link
+    href="/capital-gain-tax-calculator-pakistan"
+    className="block text-center bg-gradient-to-r from-green-600 to-green-700 text-white py-3 rounded-xl font-semibold hover:shadow-lg hover:-translate-y-1 transition"
+  >
+    Calculate Now →
+  </Link>
+</div>
 
   </aside>
 </div>
