@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
-
+import Link from "next/link";
 export default function FreelancerITTaxCalculator() {
   const [income, setIncome] = useState("");
   const [regime, setRegime] = useState("it_export");
   const [status, setStatus] = useState("filer");
+  
   const [tax, setTax] = useState<number | null>(null);
   const [rate, setRate] = useState<number | null>(null);
 
@@ -174,6 +175,16 @@ export default function FreelancerITTaxCalculator() {
   <p>
     Always verify your tax position with FBR or a qualified tax advisor.
   </p>
+
+  <p>
+  You can also calculate property transaction tax using our{" "}
+  <Link
+    href="/property-advance-tax-calculator-pakistan"
+    className="text-green-400 underline"
+  >
+    Property Advance Tax Calculator
+  </Link>.
+</p>
 </div>
 
         </div>

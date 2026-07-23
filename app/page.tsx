@@ -247,9 +247,9 @@ export default function Home() {
             {/* HERO SECTION */}
 <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-none p-10 border border-gray-200 mb-0 text-center">
 
-  <h1 className="text-1xl md:text-2xl font-extrabold leading-tight">
-    FBR Tax Calculator Pakistan 2026-27 | Income & Salary Tax Slabs
-  </h1>
+  <h1 className="text-3xl md:text-4xl font-bold mb-6">
+  Official FBR Tax Calculator Pakistan 2026‑2027 | Income, Property & Freelancer Tax
+</h1>
 
   <p className="mt-6 text-gray-600 text-lg">
     Use our FBR tax calculator in Pakistan to calculate income tax,
