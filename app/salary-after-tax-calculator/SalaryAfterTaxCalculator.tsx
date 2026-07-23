@@ -87,7 +87,7 @@ setResult(tax);
       </div>
 
       {result && (
-  <div className="mt-4 bg-green-950/40 border border-yellow-400 rounded-2xl p-6 text-gray-200 shadow-[0_0_15px_rgba(250,204,21,0.3)]">
+  <div className="mt-2 bg-green-950/40 border border-yellow-400 rounded-2xl p-6 text-gray-200 shadow-[0_0_15px_rgba(250,204,21,0.3)]">
 
     <h2 className="text-2xl font-bold text-center mb-6">
       Salary Breakdown
