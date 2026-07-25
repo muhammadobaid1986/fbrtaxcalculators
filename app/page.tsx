@@ -46,7 +46,7 @@ export default function Home() {
   const secondDeg = seconds * 6;
 
   return (
-    <main className="min-h-screen bg-green-900/60 backdrop-blur-xl border border-green-400/30">
+    <main className="min-h-screen bg-white">
 
       {/* Premium Pakistan Time Card */}
 <div className="max-w-3xl mx-auto mt-4 mb-6 px-4 rounded-3xl shadow-md overflow-hidden">
@@ -599,9 +599,9 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="max-w-4xl mx-auto mt-16 px-4 text-gray-200 space-y-6">
+      <div className="max-w-4xl mx-auto mt-16 px-4 text-black-200 space-y-6">
 
-  <h2 className="text-2xl font-bold text-white">
+  <h2 className="text-2xl font-bold text-black">
     About FBR Tax Calculators
   </h2>
 
