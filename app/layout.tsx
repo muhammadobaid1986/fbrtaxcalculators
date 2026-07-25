@@ -149,7 +149,7 @@ export default function RootLayout({
 </nav>
 
         {/* PAGE CONTENT */}
-        <div className="max-w-7xl mx-auto px-3 md:px-4 flex flex-col md:flex-row gap-6 mt-4">
+        <div className="w-full px-6 md:px-8 lg:px-12 flex flex-col md:flex-row gap-6 mt-4">
 
   {/* SIDEBAR */}
   <div className="hidden lg:block">
@@ -351,7 +351,7 @@ export default function RootLayout({
         {/* FOOTER */}
         <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-300 mt-24 pt-14 pb-8">
           
-          <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+          <div className="w-full px-6 md:px-12 grid md:grid-cols-3 gap-12">
 
             <div>
               <h3 className="text-xl font-bold text-white mb-4">

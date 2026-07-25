@@ -245,7 +245,7 @@ export default function Home() {
 
   <div className="mb-12"></div>
             {/* HERO SECTION */}
-<div className="max-w-7xl mx-auto bg-green-900/60 backdrop-blur-xl border border-green-400/30 rounded-3xl p-10 mb-0 text-center">
+<div className="w-full px-6 md:px-12 bg-green-900/60 backdrop-blur-xl border border-green-400/30 rounded-3xl p-10 mb-0 text-center">
 
   <h1 className="text-3xl md:text-4xl font-bold mb-6">
   Official FBR Tax Calculator Pakistan 2026‑2027 | Income, Property & Freelancer Tax
