@@ -46,7 +46,7 @@ export default function Home() {
   const secondDeg = seconds * 6;
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-green-900/60 backdrop-blur-xl border border-green-400/30">
 
       {/* Premium Pakistan Time Card */}
 <div className="max-w-3xl mx-auto mt-4 mb-6 px-4 rounded-3xl shadow-md overflow-hidden">
@@ -67,7 +67,7 @@ export default function Home() {
         </p>
 
         {/* Date */}
-        <div className="inline-flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full mb-8 text-sm">
+        <div className="inline-flex items-center gap-2 bg-green-900/60 backdrop-blur-xl border border-green-400/30/10 px-3 py-1 rounded-full mb-8 text-sm">
           📅
           {now &&
             now.toLocaleDateString("en-PK", {
@@ -97,7 +97,7 @@ export default function Home() {
         </div>
 
         {/* Islamic Date */}
-        <div className="bg-white/10 px-4 py-2 rounded-2xl text-sm">
+        <div className="bg-green-900/60 backdrop-blur-xl border border-green-400/30/10 px-4 py-2 rounded-2xl text-sm">
           🌙 Islamic Date: {hijriDate}
         </div>
 
@@ -106,7 +106,7 @@ export default function Home() {
       {/* RIGHT SIDE CLOCK */}
       <div className="flex justify-center">
 
-        <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full bg-white border-[5px] border-yellow-400 shadow-[0_0_25px_rgba(250,204,21,0.5)] overflow-hidden">
+        <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full bg-green-900/60 backdrop-blur-xl border border-green-400/30 border-[5px] border-yellow-400 shadow-[0_0_25px_rgba(250,204,21,0.5)] overflow-hidden">
 
             {/* Pakistan Map Background */}
 <img
@@ -147,7 +147,7 @@ export default function Home() {
       {/* Mobile Featured Calculators */}
 <div className="xl:hidden mt-6 space-y-4 px-4">
 
-  <div className="bg-white rounded-2xl shadow-md p-4 border border-green-300">
+  <div className="bg-green-900/60 backdrop-blur-xl border border-green-400/30 rounded-2xl shadow-md p-4 border border-green-300">
     <h3 className="text-lg font-bold text-green-700 mb-2">
       🏠 Property Advance Tax
     </h3>
@@ -159,7 +159,7 @@ export default function Home() {
     </Link>
   </div>
 
-  <div className="bg-white rounded-2xl shadow-md p-4 border border-green-300">
+  <div className="bg-green-900/60 backdrop-blur-xl border border-green-400/30 rounded-2xl shadow-md p-4 border border-green-300">
     <h3 className="text-lg font-bold text-green-700 mb-2">
       💻 Freelancer & IT Tax
     </h3>
@@ -174,7 +174,7 @@ export default function Home() {
     {/* Mobile Quick Tools Accordion */}
 <div className="xl:hidden mt-4 px-4">
 
-  <details className="bg-white rounded-2xl shadow-md p-4 border border-green-300">
+  <details className="bg-green-900/60 backdrop-blur-xl border border-green-400/30 rounded-2xl shadow-md p-4 border border-green-300">
     <summary className="cursor-pointer font-semibold text-green-700 text-lg">
       📂 More Calculators
     </summary>
@@ -245,13 +245,13 @@ export default function Home() {
 
   <div className="mb-12"></div>
             {/* HERO SECTION */}
-<div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-none p-10 border border-gray-200 mb-0 text-center">
+<div className="max-w-7xl mx-auto bg-green-900/60 backdrop-blur-xl border border-green-400/30 rounded-3xl p-10 mb-0 text-center">
 
   <h1 className="text-3xl md:text-4xl font-bold mb-6">
   Official FBR Tax Calculator Pakistan 2026‑2027 | Income, Property & Freelancer Tax
 </h1>
 
-  <p className="mt-6 text-gray-600 text-lg">
+  <p className="mt-6 text-black-600 text-lg">
     Use our FBR tax calculator in Pakistan to calculate income tax,
     salary tax and yearly tax instantly according to official FBR slabs.
   </p>
@@ -286,7 +286,7 @@ export default function Home() {
                hover:scale-105 active:scale-95 
                transition-all duration-200 overflow-hidden"
   >
-    <span className="absolute inset-0 bg-white/30 opacity-0 hover:opacity-20 transition duration-300"></span>
+    <span className="absolute inset-0 bg-green-900/60 backdrop-blur-xl border border-green-400/30/30 opacity-0 hover:opacity-20 transition duration-300"></span>
     <span className="relative flex items-center gap-2">
       📊 View Budget 2026‑27
     </span>
@@ -568,12 +568,12 @@ export default function Home() {
 
 
       {/* SEO CONTENT SECTION */}
-      <div className="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow mb-16">
+      <div className="max-w-4xl mx-auto bg-green-900/60 backdrop-blur-xl border border-green-400/30 p-8 rounded-2xl mb-16">
         <h2 className="text-2xl font-bold mb-4">
           Income Tax Calculator Pakistan 2026-27
         </h2>
 
-        <p className="mb-4 text-gray-700">
+        <p className="mb-4 text-black-700">
           Our Income Tax Calculator Pakistan helps salaried individuals
           calculate monthly and yearly income tax instantly according to
           official FBR tax slabs.
@@ -583,7 +583,7 @@ export default function Home() {
           Who Should Use This Salary Tax Calculator?
         </h3>
 
-        <p className="mb-4 text-gray-700">
+        <p className="mb-4 text-black-700">
           This calculator is designed for salaried individuals working in
           Pakistan who want to estimate monthly tax deductions from their
           salary and calculate yearly tax liability.
@@ -593,11 +593,35 @@ export default function Home() {
           How Income Tax Is Calculated in Pakistan?
         </h3>
 
-        <p className="mb-4 text-gray-700">
+        <p className="mb-4 text-black-700">
           Income tax in Pakistan is calculated on annual income using
           marginal tax slabs announced each year in the Finance Act.
         </p>
       </div>
+
+      <div className="max-w-4xl mx-auto mt-16 px-4 text-gray-200 space-y-6">
+
+  <h2 className="text-2xl font-bold text-white">
+    About FBR Tax Calculators
+  </h2>
+
+  <p>
+    FBR Tax Calculators is an independent informational platform designed
+    to simplify income tax, property tax, zakat and capital gain tax
+    calculations in Pakistan.
+  </p>
+
+  <p>
+    All tools are based on publicly available Finance Act 2026‑2027 data
+    and official FBR tax slabs.
+  </p>
+
+  <p>
+    We aim to provide clear, accurate and user‑friendly tax estimation tools
+    without requiring registration or personal data.
+  </p>
+
+</div>
 
 
       {/* FAQ SECTION */}
@@ -641,6 +665,9 @@ export default function Home() {
         </div>
       </div>
 
+              <div className="max-w-4xl mx-auto text-sm text-darkgreen-400 text-center mb-10">
+  Developed for informational purposes. Updated for Finance Act 2026‑2027.
+</div>
 
       {/* FAQ SCHEMA */}
       <script
