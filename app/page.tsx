@@ -106,7 +106,7 @@ export default function Home() {
       {/* RIGHT SIDE CLOCK */}
       <div className="flex justify-center">
 
-        <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full bg-green-900/60 backdrop-blur-xl border border-green-400/30 border-[5px] border-yellow-400 shadow-[0_0_25px_rgba(250,204,21,0.5)] overflow-hidden">
+        <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full bg-green-900/60 backdrop-blur-xl border-[5px] border-yellow-400 shadow-[0_0_25px_rgba(250,204,21,0.5)] overflow-hidden"
 
             {/* Pakistan Map Background */}
 <img
