@@ -76,7 +76,7 @@ export default function RootLayout({
 </Script>
 
     </head>
-      <body className="bg-gradient-to-br from-green-950 via-emerald-900 to-green-950 text-gray-100"></body><body className="bg-white text-gray-900">
+      <body className="bg-gradient-to-br from-green-950 via-emerald-900 to-green-950 text-gray-100"></body> <body className="bg-white text-gray-900">
       
 
       
