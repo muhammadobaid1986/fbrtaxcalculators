@@ -94,7 +94,7 @@ export default function RootLayout({
 
         <nav className="bg-gradient-to-r from-slate-900 via-gray-900 to-slate-800 shadow-lg sticky top-0 z-50">
 
-  <div className="max-w-7xl mx-auto px-3 md:px-4 py-6 md:py-10 flex flex-col md:flex-row gap-8 bg-transparent">
+  <div className="w-full px-6 md:px-10 flex flex-col md:flex-row gap-6 mt-4">
 
     {/* Logo + Title */}
     <Link
