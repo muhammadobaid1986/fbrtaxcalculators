@@ -568,7 +568,7 @@ export default function Home() {
 
 
       {/* SEO CONTENT SECTION */}
-      <div className="max-w-4xl mx-auto bg-green-900/60 backdrop-blur-xl border border-green-400/30 p-8 rounded-2xl mb-16">
+      <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition">
         <h2 className="text-2xl font-bold mb-4">
           Income Tax Calculator Pakistan 2026-27
         </h2>
