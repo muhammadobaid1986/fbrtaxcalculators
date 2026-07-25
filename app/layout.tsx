@@ -76,7 +76,8 @@ export default function RootLayout({
 </Script>
 
     </head>
-      <body className="bg-gradient-to-br from-green-950 via-emerald-900 to-green-950 text-gray-100"></body><body className="bg-white text-gray-900">
+      <body className="bg-gradient-to-br from-green-950 via-emerald-900 to-green-950 text-gray-100"></body>
+      <body className="bg-white text-gray-900">
 
       
 
@@ -94,7 +95,7 @@ export default function RootLayout({
 
         <nav className="bg-gradient-to-r from-slate-900 via-gray-900 to-slate-800 shadow-lg sticky top-0 z-50">
 
-  <div className="w-full px-6 md:px-10 flex flex-col md:flex-row gap-6 mt-4">
+  <div className="w-full px-6 md:px-10 py-8 md:py-12 flex flex-col md:flex-row gap-8 bg-transparent">
 
     {/* Logo + Title */}
     <Link
