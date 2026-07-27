@@ -13,11 +13,62 @@ export default function Page() {
       </h1>
 
       <p className="mb-4 text-gray-700">
-        In Pakistan, the terms <strong>filer</strong> and <strong>non-filer</strong> 
-        are extremely important for financial transactions. Your filer status 
-        directly affects the amount of tax deducted on property purchases, 
-        vehicle registration, banking transactions, prize bonds, and other activities.
-      </p>
+In Pakistan, taxpayers are classified into two main categories: filers and non-filers. 
+This classification significantly affects how much tax you pay on property transactions, 
+vehicle registration, banking activities and other financial dealings. 
+Understanding the difference between filer and non-filer status can help you 
+save substantial amounts of money and avoid unnecessary penalties.
+</p>
+
+<p className="mb-4 text-gray-700">
+The Federal Board of Revenue (FBR) maintains the Active Taxpayer List (ATL), 
+which includes individuals who have filed their income tax returns. 
+If your name appears in the ATL, you are considered a filer; otherwise, 
+you are treated as a non-filer for tax purposes.
+</p>
+
+<h2 className="text-2xl font-semibold mt-8 mb-4">
+Tax Rate Differences Between Filer and Non-Filer
+</h2>
+
+<p className="mb-4 text-gray-700">
+The most significant difference between filer and non-filer status is the tax rate. 
+Non-filers are charged higher withholding taxes on property purchases, vehicle 
+registration, prize bonds, banking transactions and other major financial activities.
+</p>
+
+<ul className="list-disc pl-6 space-y-2 mb-6 text-gray-700">
+  <li>Higher advance tax on property purchase under Section 236K</li>
+  <li>Higher tax on vehicle registration</li>
+  <li>Increased withholding tax on banking transactions</li>
+  <li>Higher tax on prize bonds and investments</li>
+</ul>
+
+<h2 className="text-2xl font-semibold mt-8 mb-4">
+Example: Property Tax Difference (2026)
+</h2>
+
+<p className="mb-4 text-gray-700">
+Suppose a person purchases property worth Rs 10,000,000. 
+A filer may pay a lower percentage as advance tax, while a non-filer 
+may pay significantly higher tax. The difference can amount to 
+hundreds of thousands of rupees.
+</p>
+
+<p className="mb-4 text-gray-700">
+This clearly shows why maintaining filer status is financially beneficial.
+</p>
+
+<h2 className="text-2xl font-semibold mt-8 mb-4">
+Benefits of Being a Filer
+</h2>
+
+<ul className="list-disc pl-6 space-y-2 mb-6 text-gray-700">
+  <li>Lower tax rates on major transactions</li>
+  <li>Eligibility for loans and financial credibility</li>
+  <li>Compliance with FBR regulations</li>
+  <li>Reduced risk of legal notices</li>
+</ul>
 
       <p className="mb-4 text-gray-700">
         This guide explains everything you need to know about filer vs non-filer 
@@ -142,6 +193,47 @@ export default function Page() {
           Use Income Tax Calculator
         </a>
       </div>
+
+      <div className="mt-10 border-t pt-6 text-gray-700 space-y-3">
+
+  <p>
+    To understand how income tax is calculated, read our
+    <a href="/how-income-tax-works-in-pakistan" className="text-green-600 font-semibold ml-1">
+      Complete Income Tax Guide
+    </a>.
+  </p>
+
+  <p>
+    You can also estimate your tax using our
+    <a href="/" className="text-green-600 font-semibold ml-1">
+      Income Tax Calculator
+    </a>.
+  </p>
+
+</div>
+
+<h2 className="text-2xl font-semibold mt-10 mb-4">
+Frequently Asked Questions
+</h2>
+
+<div className="space-y-6 text-gray-700">
+
+  <div>
+    <p className="font-semibold">How can I check my filer status?</p>
+    <p>You can check your name in the FBR Active Taxpayer List (ATL) online.</p>
+  </div>
+
+  <div>
+    <p className="font-semibold">Can a non-filer become a filer?</p>
+    <p>Yes, by submitting your income tax return through IRIS portal.</p>
+  </div>
+
+  <div>
+    <p className="font-semibold">Do non-filers pay double tax?</p>
+    <p>Non-filers generally pay significantly higher withholding tax rates.</p>
+  </div>
+
+</div>
 
     </div>
   );
