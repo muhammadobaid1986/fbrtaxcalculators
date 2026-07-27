@@ -49,7 +49,7 @@ export default function Home() {
     <main className="min-h-screen bg-white">
 
       {/* Premium Pakistan Time Card */}
-<div className="max-w-3xl mx-auto mt-4 mb-6 px-4 rounded-3xl shadow-md overflow-hidden">
+<div className="max-w-5xl mx-auto mt-4 mb-6 px-6 rounded-3xl shadow-md overflow-hidden">
 
   <div className="bg-gradient-to-br from-[#115e45] via-[#0f5138] to-[#0c3f2e] text-white p-2 md:p-3 rounded-[30px]">
 
@@ -97,7 +97,7 @@ export default function Home() {
         </div>
 
         {/* Islamic Date */}
-        <div className="bg-green-900/60 backdrop-blur-xl border border-green-400/30/10 px-4 py-2 rounded-2xl text-sm">
+        <div className="bg-green-900/60 backdrop-blur-xl border border-green-400/30 px-4 py-2 rounded-2xl text-sm">
           🌙 Islamic Date: {hijriDate}
         </div>
 
@@ -245,7 +245,7 @@ export default function Home() {
 
   <div className="mb-12"></div>
             {/* HERO SECTION */}
-<div className="max-w-7xl mx-auto bg-green-900/60 backdrop-blur-xl border border-green-400/30 rounded-3xl p-10 mb-0 text-center">
+<div className="max-w-6xl mx-auto bg-green-900/60 backdrop-blur-xl border border-green-400/30 rounded-3xl p-10 mb-0 text-center">
 
   <h1 className="text-3xl md:text-4xl font-bold mb-6">
   Official FBR Tax Calculator Pakistan 2026‑2027 | Income, Property & Freelancer Tax
