@@ -49,7 +49,7 @@ export default function Home() {
     <main className="min-h-screen bg-white">
 
       {/* Premium Pakistan Time Card */}
-<div className="max-w-5xl mx-auto mt-4 mb-6 px-6 rounded-3xl shadow-md overflow-hidden">
+<div className="max-w-6xl mx-auto mt-4 mb-6 px-6 rounded-3xl shadow-md overflow-hidden">
 
   <div className="bg-gradient-to-br from-[#115e45] via-[#0f5138] to-[#0c3f2e] text-white p-2 md:p-3 rounded-[30px]">
 

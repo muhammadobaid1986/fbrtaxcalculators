@@ -76,7 +76,7 @@ export default function RootLayout({
 </Script>
 
     </head>
-      <body className="bg-white text-gray-900"></body> <body className="bg-white text-gray-900">
+      <body className="bg-white text-gray-900">
       
 
       
@@ -150,7 +150,7 @@ export default function RootLayout({
 </nav>
 
         {/* PAGE CONTENT */}
-        <div className="w-full px-6 md:px-8 lg:px-12 flex flex-col md:flex-row gap-6 mt-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 flex flex-col md:flex-row gap-6 mt-4">
 
   {/* SIDEBAR */}
   <div className="hidden lg:block">
