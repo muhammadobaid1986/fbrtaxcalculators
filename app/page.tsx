@@ -656,6 +656,38 @@ export default function Home() {
 
 </div>
 
+      <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent my-12"></div>
+
+<section className="max-w-5xl mx-auto mb-16">
+  <h2 className="text-2xl font-bold text-center mb-8">
+    Helpful Tax Guides
+  </h2>
+
+  <div className="grid md:grid-cols-3 gap-6">
+
+    <a href="/how-income-tax-works-in-pakistan" className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition">
+      <h3 className="font-semibold mb-2">Income Tax Guide 2026-27</h3>
+      <p className="text-sm text-gray-600">
+        Learn how income tax slabs work in Pakistan.
+      </p>
+    </a>
+
+    <a href="/how-to-become-filer-pakistan" className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition">
+      <h3 className="font-semibold mb-2">How to Become a Filer</h3>
+      <p className="text-sm text-gray-600">
+        Step-by-step guide to register on FBR IRIS portal.
+      </p>
+    </a>
+
+    <a href="/latest-budget-2026-27-tax-slabs" className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition">
+      <h3 className="font-semibold mb-2">Budget 2026-27 Summary</h3>
+      <p className="text-sm text-gray-600">
+        View updated tax slabs and changes.
+      </p>
+    </a>
+
+  </div>
+</section>
 
       {/* FAQ SECTION */}
       <div className="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow mb-16">
