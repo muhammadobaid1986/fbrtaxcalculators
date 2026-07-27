@@ -1,1 +1,2 @@
 declare module "moment-hijri";
+

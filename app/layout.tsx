@@ -92,7 +92,7 @@ export default function RootLayout({
 
         <nav className="bg-gradient-to-r from-slate-900 via-gray-900 to-slate-800 shadow-lg sticky top-0 z-50">
 
-  <div className="w-full px-6 md:px-10 py-8 md:py-12 flex flex-col md:flex-row gap-8 bg-transparent">
+  <div className="w-full px-6 md:px-10 py-8 md:py-12 flex items-center justify-between bg-transparent">
 
     {/* Logo + Title */}
     <Link
@@ -120,6 +120,8 @@ export default function RootLayout({
     {/* Menu */}
     <div className="flex flex-wrap gap-3">
 
+     
+
       <Link href="/" className="px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition">
         Home
       </Link>
@@ -143,6 +145,16 @@ export default function RootLayout({
     </div>
 
   </div>
+
+   {/* Sliding Info Bar */}
+<div className="hidden lg:block overflow-hidden whitespace-nowrap w-[400px]">
+  <div className="animate-marquee text-sm text-green-300 font-medium">
+    ✅ Updated Tax Slabs 2026-27 &nbsp;&nbsp; | &nbsp;&nbsp;
+    ✅ Become a Filer & Save Tax &nbsp;&nbsp; | &nbsp;&nbsp;
+    ✅ Check ATL Status Online &nbsp;&nbsp; | &nbsp;&nbsp;
+    ✅ Calculate Salary & Property Tax Instantly
+  </div>
+</div>
 
 </nav>
 
