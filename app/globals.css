@@ -9,8 +9,9 @@ body {
 /* Gradient Text */
 .gradient-text {
   background: linear-gradient(to right, #16a34a, #22c55e);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 /* Card Style */
@@ -29,15 +30,4 @@ button:hover {
 html,
 body {
   overflow-x: hidden;
-}
-
-@keyframes marquee {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-.animate-marquee {
-  display: inline-block;
-  min-width: 100%;
-  animation: marquee 18s linear infinite;
 }
