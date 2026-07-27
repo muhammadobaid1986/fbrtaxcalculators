@@ -154,7 +154,7 @@ export default function RootLayout({
 
   {/* SIDEBAR */}
   <div className="hidden lg:block">
-  <aside className="w-full md:w-72">
+  <aside className="w-full md:w-80">
   <div className="relative bg-white rounded-3xl shadow-md p-6 sticky top-28 transition border border-transparent">
   {/* Premium Golden Frame */}
 <div className="absolute inset-0 rounded-3xl pointer-events-none border-2 border-yellow-400/60"></div>
@@ -275,7 +275,7 @@ export default function RootLayout({
 </div>
 
   {/* MAIN CONTENT */}
-  <main className="flex-1 min-w-0">
+  <main className="flex-1 min-w-0 max-w-[950px] mx-auto">
     {children}
   </main>
 
