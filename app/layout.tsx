@@ -92,7 +92,7 @@ export default function RootLayout({
 
         <nav className="bg-gradient-to-r from-slate-900 via-gray-900 to-slate-800 shadow-lg sticky top-0 z-50">
 
-  <div className="w-full px-6 md:px-10 py-8 md:py-12 flex items-center justify-between bg-transparent">
+  <div className="w-full px-6 md:px-10 py-8 md:py-12 grid grid-cols-[auto_1fr_auto] items-center bg-transparent">
 
     {/* Logo + Title */}
     <Link
@@ -115,10 +115,22 @@ export default function RootLayout({
           Pakistan Tax Tools
         </p>
       </div>
+{/* Sliding Info Bar */}
+<div className="absolute left-[350px] right-[520px] overflow-hidden">
+  <div className="hidden lg:flex justify-center overflow-hidden whitespace-nowrap"></div>
+  <div className="animate-marquee text-sm text-green-300 font-medium">
+    ✅ Updated Tax Slabs 2026-27 &nbsp;&nbsp; | &nbsp;&nbsp;
+    ✅ Become a Filer & Save Tax &nbsp;&nbsp; | &nbsp;&nbsp;
+    ✅ Check ATL Status Online &nbsp;&nbsp; | &nbsp;&nbsp;
+    ✅ Calculate Salary & Property Tax Instantly
+  </div>
+</div>
+
+
     </Link>
 
     {/* Menu */}
-    <div className="flex flex-wrap gap-3">
+    <div className="flex flex-wrap gap-3 justify-end mr-2">
 
      
 
@@ -146,15 +158,7 @@ export default function RootLayout({
 
   </div>
 
-   {/* Sliding Info Bar */}
-<div className="hidden lg:block overflow-hidden whitespace-nowrap w-[400px]">
-  <div className="animate-marquee text-sm text-green-300 font-medium">
-    ✅ Updated Tax Slabs 2026-27 &nbsp;&nbsp; | &nbsp;&nbsp;
-    ✅ Become a Filer & Save Tax &nbsp;&nbsp; | &nbsp;&nbsp;
-    ✅ Check ATL Status Online &nbsp;&nbsp; | &nbsp;&nbsp;
-    ✅ Calculate Salary & Property Tax Instantly
-  </div>
-</div>
+   
 
 </nav>
 
