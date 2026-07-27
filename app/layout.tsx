@@ -76,11 +76,8 @@ export default function RootLayout({
 </Script>
 
     </head>
-      <body className="bg-white text-gray-900">
+      <body className="bg-gradient-to-br from-gray-50 via-white to-gray-100 text-gray-900">
       
-
-      
-
         {/* NAVBAR */}
        {/* Royal Black Bismillah Bar */}
 <div className="w-full bg-black py-3 border-b border-yellow-500/40">
@@ -150,17 +147,33 @@ export default function RootLayout({
 </nav>
 
         {/* PAGE CONTENT */}
-        <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-12 flex flex-col md:flex-row gap-6 mt-4">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-8 lg:px-12 flex flex-col md:flex-row gap-6 mt-4">
 
   {/* SIDEBAR */}
   <div className="hidden lg:block">
   <aside className="w-full md:w-80">
   <div className="relative bg-white rounded-3xl shadow-md p-6 sticky top-28 transition border border-transparent">
   {/* Premium Golden Frame */}
-<div className="absolute inset-0 rounded-3xl pointer-events-none border-2 border-yellow-400/60"></div>
+<div className="absolute inset-0 rounded-3xl pointer-events-none border border-yellow-400/40"></div>
 <div className="absolute inset-0 rounded-3xl pointer-events-none shadow-[0_0_20px_rgba(255,215,0,0.2)]"></div>
 
     <h3 className="text-xl font-extrabold mb-6 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent tracking-wide">
+      <div className="space-y-3 mb-6">
+
+  <div className="bg-yellow-100 border border-yellow-400 p-3 rounded-xl text-sm text-gray-900 font-medium shadow-sm">
+    📢 <Link href="/latest-budget-2026-27-tax-slabs" className="hover:underline">Latest Tax Update</Link>
+  </div>
+
+  <div className="bg-green-100 border border-green-400 p-3 rounded-xl text-sm text-gray-900 font-medium shadow-sm">
+    ✅ <Link href="/how-to-check-filer-status-pakistan" className="hover:underline">Become Filer</Link>
+  </div>
+
+  <div className="bg-blue-100 border border-blue-400 p-3 rounded-xl text-sm text-gray-900 font-medium shadow-sm">
+    🔎 <Link href="/atl-status-check-pakistan" className="hover:underline">ATL Status Check</Link>
+  </div>
+
+</div>
+
       🚀 Quick Tools
     </h3>
 
@@ -281,6 +294,22 @@ export default function RootLayout({
 
  {/* Featured Calculators (Desktop) */}
 <div className="hidden xl:block">
+  {/* Info Cards */}
+<div className="space-y-4 mb-6">
+
+  <div className="bg-white rounded-2xl shadow-md p-4 border border-gray-200 hover:shadow-lg transition">
+    🔥 <span className="font-semibold">Trending Tools</span>
+  </div>
+
+  <div className="bg-white rounded-2xl shadow-md p-4 border border-gray-200 hover:shadow-lg transition">
+    🆕 <span className="font-semibold">New Calculator</span>
+  </div>
+
+ <div className="bg-white rounded-2xl shadow-md p-4 border border-gray-200 hover:shadow-lg transition">
+    📊 <span className="font-semibold">Budget Summary</span>
+  </div>
+
+</div>
   <aside className="w-full md:w-72 space-y-6">
 
     {/* Property Advance Tax */}

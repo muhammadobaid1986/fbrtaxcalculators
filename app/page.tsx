@@ -300,7 +300,7 @@ export default function Home() {
 </div>        
 
       {/* CALCULATOR SECTION */}
-      <div className="max-w-xl mx-auto px-4 bg-white p-8 rounded-2xl shadow-md border border-gray-100 mb-12">
+      <div className="max-w-xl mx-auto px-6 bg-white p-10 rounded-3xl shadow-xl border border-gray-200 mb-16">
         <label className="block text-center text-2xl font-extrabold mb-6 border-b-4 border-green-600 pb-2">
   Select Tax Year
 </label>
@@ -374,7 +374,7 @@ export default function Home() {
           </div>
         )}
       </div>
-
+<div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent my-12"></div>
 
       {/* TAX SLAB TABLE */}
       <div className="max-w-xl mx-auto bg-white p-6 rounded-2xl shadow mb-12">
@@ -408,7 +408,7 @@ export default function Home() {
         </div>
       </div>
 
-            {/* TAX YEAR UPDATE BOX */}
+                  {/* TAX YEAR UPDATE BOX */}
       <div className="max-w-4xl mx-auto bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl mb-10">
         <h3 className="text-lg font-bold mb-2">
           Tax Year 2026-27 Update
@@ -513,7 +513,7 @@ export default function Home() {
         </div>
       </div>
               
-      
+      <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent my-12"></div>
             {/* WHY CHOOSE SECTION */}
       <div className="max-w-5xl mx-auto mb-16">
         <SectionTitle
@@ -600,6 +600,39 @@ export default function Home() {
       </div>
 
       <div className="max-w-4xl mx-auto mt-16 px-4 text-black-200 space-y-6">
+
+        <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent my-12"></div>
+
+<section className="max-w-4xl mx-auto bg-white rounded-2xl shadow-md p-8 mb-16">
+  <h2 className="text-2xl font-bold mb-4">
+    Complete Guide to Income Tax in Pakistan
+  </h2>
+
+  <p className="mb-4 text-gray-700">
+    Income tax in Pakistan is calculated using progressive tax slabs announced under the Finance Act. 
+    Salaried individuals, freelancers and business owners must calculate annual income and apply 
+    the correct slab rate to determine total tax liability.
+  </p>
+
+  <p className="mb-4 text-gray-700">
+  Whether you are a salaried employee, freelancer, property investor 
+  or small business owner, understanding how tax slabs apply to your 
+  annual income can help you plan better and avoid penalties.
+</p>
+
+
+  <p className="mb-4 text-gray-700">
+    Our detailed guide explains how tax slabs work, how to calculate monthly deductions, 
+    how to become a filer, and how to reduce penalties legally.
+  </p>
+
+  <Link
+    href="/how-income-tax-works-in-pakistan"
+    className="text-green-700 font-semibold hover:underline"
+  >
+    Read Complete Guide →
+  </Link>
+</section>
 
   <h2 className="text-2xl font-bold text-black">
     About FBR Tax Calculators
