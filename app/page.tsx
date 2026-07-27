@@ -46,7 +46,7 @@ export default function Home() {
   const secondDeg = seconds * 6;
 
   return (
-    <main className="min-h-screen bg-white">
+     <div className="min-h-screen">
 
       {/* Premium Pakistan Time Card */}
 <div className="max-w-6xl mx-auto mt-4 mb-6 px-6 rounded-3xl shadow-md overflow-hidden">
@@ -698,7 +698,7 @@ export default function Home() {
         }}
       />
 
-    </main>
+    </div>
   );
 }
 

@@ -150,7 +150,7 @@ export default function RootLayout({
 </nav>
 
         {/* PAGE CONTENT */}
-        <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 flex flex-col md:flex-row gap-6 mt-4">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-12 flex flex-col md:flex-row gap-6 mt-4">
 
   {/* SIDEBAR */}
   <div className="hidden lg:block">
@@ -275,7 +275,7 @@ export default function RootLayout({
 </div>
 
   {/* MAIN CONTENT */}
-  <main className="flex-1 min-w-0 max-w-[950px] mx-auto">
+  <main className="flex-1 min-w-0">
     {children}
   </main>
 
