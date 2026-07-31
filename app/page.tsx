@@ -299,6 +299,25 @@ export default function Home() {
 
 </div>        
 
+<section className="max-w-4xl mx-auto bg-white rounded-2xl shadow-md p-8 mb-12">
+  <h2 className="text-2xl font-bold mb-4">
+    Understanding Income Tax in Pakistan
+  </h2>
+
+  <p className="mb-4 text-gray-700">
+    Income tax in Pakistan is calculated under the Finance Act announced each year 
+    by the Federal Board of Revenue (FBR). Taxpayers are required to declare their 
+    annual income and pay tax according to progressive tax slabs.
+  </p>
+
+  <p className="mb-4 text-gray-700">
+    Our FBR Tax Calculators platform provides accurate tools and detailed guides 
+    to help salaried individuals, freelancers and business owners understand 
+    their tax obligations and make informed financial decisions.
+  </p>
+</section>
+
+
       {/* CALCULATOR SECTION */}
       <div className="max-w-xl mx-auto px-6 bg-white p-10 rounded-3xl shadow-xl border border-gray-200 mb-16">
         <label className="block text-center text-2xl font-extrabold mb-6 border-b-4 border-green-600 pb-2">
