@@ -297,7 +297,9 @@ export default function Home() {
 </div>
 
 
-</div>        
+</div>      
+
+
 
 <section className="max-w-4xl mx-auto bg-white rounded-2xl shadow-md p-8 mb-12">
   <h2 className="text-2xl font-bold mb-4">
@@ -621,6 +623,40 @@ export default function Home() {
       <div className="max-w-4xl mx-auto mt-16 px-4 text-black-200 space-y-6">
 
         <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent my-12"></div>
+
+<section className="max-w-5xl mx-auto bg-white rounded-2xl shadow-md p-8 mb-12 mt-10">
+  <h2 className="text-2xl font-bold mb-4">
+    Complete Guide to Income Tax in Pakistan (2026–2027)
+  </h2>
+
+  <p className="mb-4 text-gray-700">
+    Income tax in Pakistan is regulated by the Federal Board of Revenue (FBR) 
+    under the annual Finance Act. Individuals earning above the minimum 
+    exemption threshold are required to calculate and pay tax according to 
+    progressive tax slabs announced each year.
+  </p>
+
+  <p className="mb-4 text-gray-700">
+    Whether you are a salaried employee, freelancer, IT exporter, 
+    business owner, or property investor, understanding how income tax 
+    works helps you avoid penalties and optimize your financial planning.
+  </p>
+
+  <p className="mb-4 text-gray-700">
+    This platform provides updated FBR tax slabs, salary tax breakdowns, 
+    property advance tax calculations, capital gain tax estimations, and 
+    step‑by‑step filing guidance to help taxpayers stay compliant and informed.
+  </p>
+
+  <ul className="list-disc pl-6 space-y-2 text-gray-700">
+    <li>Updated income tax slabs for 2026–2027</li>
+    <li>Filer vs non-filer tax comparison</li>
+    <li>Salary after tax calculation</li>
+    <li>Property and capital gain tax guidance</li>
+    <li>Step-by-step tax return filing instructions</li>
+  </ul>
+</section>
+
 
 <section className="max-w-4xl mx-auto bg-white rounded-2xl shadow-md p-8 mb-16">
   <h2 className="text-2xl font-bold mb-4">
