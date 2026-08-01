@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Tax on Prize Bonds in Pakistan (2025 Guide)",
+  title: "Tax on Prize Bonds in Pakistan (2026 To 2026 Guide)",
   description:
     "Learn how tax on prize bond winnings is deducted in Pakistan for filers and non-filers.",
 };

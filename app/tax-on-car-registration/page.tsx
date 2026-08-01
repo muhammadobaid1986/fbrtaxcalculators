@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Tax on Car Registration in Pakistan 2025",
+  title: "Tax on Car Registration in Pakistan 2026 To 2026",
   description:
     "Check car registration tax rates for filers and non-filers in Pakistan.",
 };
