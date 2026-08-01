@@ -1,7 +1,7 @@
 
 import RelatedLinks from "../../components/RelatedLinks";
 export const metadata = {
-  title: "Tax on Bank Profit in Pakistan 2025",
+  title: "Tax on Bank Profit in Pakistan 2026 To 27",
   description:
     "Complete guide on tax deducted on bank profit in Pakistan for filers and non-filers.",
 };

@@ -1,7 +1,7 @@
 import ZakatCalculator from "./ZakatCalculator";
 
 export const metadata = {
-  title: "Zakat Calculator Pakistan (2025-26)",
+  title: "Zakat Calculator Pakistan (2026-27)",
   description:
     "Calculate your zakat instantly using our free Pakistan Zakat Calculator.",
 };

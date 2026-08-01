@@ -1,6 +1,6 @@
 import RelatedLinks from "../../components/RelatedLinks";
 export const metadata = {
-  title: "Property Tax in Pakistan – Complete Guide 2025",
+  title: "Property Tax in Pakistan – Complete Guide 2026 To 2027",
   description:
     "Learn about property tax in Pakistan, tax rates, filer vs non filer property tax, and how to calculate property tax.",
 };
