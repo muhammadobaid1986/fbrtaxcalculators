@@ -9,7 +9,7 @@ export default function Article() {
   return (
     <div className="bg-white p-8 rounded-xl shadow mt-6 max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">
-        Property Tax in Pakistan – Complete Guide 2025
+        Property Tax in Pakistan – Complete Guide 2026 To 2027
       </h1>
 
       <p className="mb-4">

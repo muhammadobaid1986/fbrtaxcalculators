@@ -753,37 +753,72 @@ export default function Home() {
         <div className="space-y-6 text-sm text-gray-700">
 
           <div>
-            <p className="font-semibold">
-              What is the minimum salary to pay income tax in Pakistan?
-            </p>
-            <p>
-              Annual income up to Rs 600,000 is exempt from income tax
-              for salaried individuals.
-            </p>
-          </div>
+  <p className="font-semibold">
+    What is the minimum salary to pay income tax in Pakistan?
+  </p>
+  <p>
+    Annual income up to Rs 600,000 is exempt from income tax for salaried individuals.
+  </p>
+</div>
 
-          <div>
-            <p className="font-semibold">
-              How is monthly income tax calculated?
-            </p>
-            <p>
-              Monthly tax is calculated by dividing yearly tax liability
-              by 12 months.
-            </p>
-          </div>
+<div>
+  <p className="font-semibold">
+    How is monthly income tax calculated?
+  </p>
+  <p>
+    Monthly tax is calculated by dividing yearly tax liability by 12 months.
+  </p>
+</div>
 
-          <div>
-            <p className="font-semibold">
-              Is this calculator officially affiliated with FBR?
-            </p>
-            <p>
-              No. This is an independent informational tool based on
-              publicly available tax slab data.
-            </p>
-          </div>
+<div>
+  <p className="font-semibold">
+    Is this website officially affiliated with FBR?
+  </p>
+  <p>
+    No, FBR Tax Calculators is an independent informational platform.
+  </p>
+</div>
+
+<div>
+  <p className="font-semibold">
+    How often are FBR tax slabs updated?
+  </p>
+  <p>
+    FBR tax slabs are updated annually under the Federal Budget and Finance Act.
+  </p>
+</div>
+
+<div>
+  <p className="font-semibold">
+    Can freelancers use this income tax calculator?
+  </p>
+  <p>
+    Yes, freelancers and IT exporters can estimate their annual income tax using our tool.
+  </p>
+</div>
+
+<div>
+  <p className="font-semibold">
+    What happens if I do not file my income tax return?
+  </p>
+  <p>
+    Non-filers may face higher withholding tax rates and financial penalties.
+  </p>
+</div>
+
+<div>
+  <p className="font-semibold">
+    How can I verify my tax information?
+  </p>
+  <p>
+    Always verify tax details from the official FBR IRIS portal or consult a qualified tax professional.
+  </p>
+</div>
 
         </div>
       </div>
+
+      
 
               <div className="max-w-4xl mx-auto text-sm text-darkgreen-400 text-center mb-10">
   Developed for informational purposes. Updated for Finance Act 2026‑2027.
