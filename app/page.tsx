@@ -259,21 +259,14 @@ export default function Home() {
   <div className="mt-8 flex flex-wrap justify-center gap-4">
 
   {/* Try Salary Button */}
-  <a
-    href="/salary/180000"
-    className="relative inline-flex items-center justify-center gap-2 
-               min-w-[220px] px-8 py-3 rounded-full 
-               bg-gradient-to-r from-green-600 to-green-700 
-               text-white font-bold text-base 
-               shadow-lg hover:shadow-xl 
-               hover:scale-105 active:scale-95 
-               transition-all duration-200 overflow-hidden"
-  >
+  <Link href="/salary/180000">
+  
     <span className="absolute inset-0 bg-white/20 opacity-0 hover:opacity-20 transition duration-300"></span>
     <span className="relative flex items-center gap-2">
       🔥 Try Salary Tax Example
     </span>
-  </a>
+  </Link>
+  
 
   {/* Budget Button */}
   <a
@@ -655,38 +648,6 @@ export default function Home() {
     <li>Property and capital gain tax guidance</li>
     <li>Step-by-step tax return filing instructions</li>
   </ul>
-</section>
-
-
-<section className="max-w-4xl mx-auto bg-white rounded-2xl shadow-md p-8 mb-16">
-  <h2 className="text-2xl font-bold mb-4">
-    Complete Guide to Income Tax in Pakistan
-  </h2>
-
-  <p className="mb-4 text-gray-700">
-    Income tax in Pakistan is calculated using progressive tax slabs announced under the Finance Act. 
-    Salaried individuals, freelancers and business owners must calculate annual income and apply 
-    the correct slab rate to determine total tax liability.
-  </p>
-
-  <p className="mb-4 text-gray-700">
-  Whether you are a salaried employee, freelancer, property investor 
-  or small business owner, understanding how tax slabs apply to your 
-  annual income can help you plan better and avoid penalties.
-</p>
-
-
-  <p className="mb-4 text-gray-700">
-    Our detailed guide explains how tax slabs work, how to calculate monthly deductions, 
-    how to become a filer, and how to reduce penalties legally.
-  </p>
-
-  <Link
-    href="/how-income-tax-works-in-pakistan"
-    className="text-green-700 font-semibold hover:underline"
-  >
-    Read Complete Guide →
-  </Link>
 </section>
 
   <h2 className="text-2xl font-bold text-black">
