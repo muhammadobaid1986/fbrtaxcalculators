@@ -444,7 +444,7 @@ export default function Home() {
           Popular Tax Calculators
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="relative w-full px-6 md:px-10 py-6 md:py-12 flex flex-col md:grid md:grid-cols-[auto_1fr_auto] items-center bg-transparent">
 
           <a
             href="/"

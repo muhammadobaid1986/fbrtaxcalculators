@@ -116,7 +116,7 @@ export default function RootLayout({
         </p>
       </div>
 {/* Sliding Info Bar */}
-<div className="absolute left-[350px] right-[520px] overflow-hidden hidden lg:block">
+<div className="absolute left-[350px] right-[520px] overflow-hidden hidden md:block">
   <div className="animate-marquee whitespace-nowrap text-sm text-green-300 font-medium">
     ✅ Updated Tax Slabs 2026-27 &nbsp;&nbsp; | &nbsp;&nbsp;
     ✅ Become a Filer & Save Tax &nbsp;&nbsp; | &nbsp;&nbsp;
