@@ -92,7 +92,7 @@ export default function RootLayout({
 
         <nav className="bg-gradient-to-r from-slate-900 via-gray-900 to-slate-800 shadow-lg sticky top-0 z-50">
 
-  <div className="w-full px-6 md:px-10 py-8 md:py-12 grid grid-cols-[auto_1fr_auto] items-center bg-transparent">
+  <div className="w-full px-6 md:px-10 py-6 md:py-12 flex flex-col md:grid md:grid-cols-[auto_1fr_auto] items-center bg-transparent">
 
     {/* Logo + Title */}
     <Link
@@ -129,7 +129,7 @@ export default function RootLayout({
     </Link>
 
     {/* Menu */}
-    <div className="flex flex-wrap gap-3 justify-end mr-2">
+    <div className="flex flex-wrap gap-3 justify-center md:justify-end mt-4 md:mt-0">
 
      
 
