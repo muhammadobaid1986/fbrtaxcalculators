@@ -1,32 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://fbrtaxcalculators.com/</loc>
-  </url>
+  <url><loc>https://fbrtaxcalculators.com/</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/blog</loc></url>
 
-  <url>
-    <loc>https://fbrtaxcalculators.com/blog</loc>
-  </url>
+  <!-- Blog posts -->
+  <url><loc>https://fbrtaxcalculators.com/blog/fbr-tax-rates-2026-explained</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/blog/filer-vs-non-filer</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/blog/how-to-calculate-income-tax</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/blog/how-to-file-tax-return-online</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/blog/income-tax-return-guide-2026</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/blog/income-tax-slabs-2026-27-pakistan</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/blog/pakistan-income-tax-guide</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/blog/tax-calculator-pakistan</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/blog/tax-free-salary-pakistan</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/blog/tax-resource-center</loc></url>
 
-  <url>
-    <loc>https://fbrtaxcalculators.com/zakat-calculator</loc>
-  </url>
+  <!-- Pillar guides -->
+  <url><loc>https://fbrtaxcalculators.com/how-income-tax-works-in-pakistan</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/filer-vs-non-filer</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/how-to-file-tax-return-online-pakistan</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/how-to-become-a-filer</loc></url>
 
-  <url>
-    <loc>https://fbrtaxcalculators.com/withholding-tax-calculator</loc>
-  </url>
+  <!-- Tools / calculators -->
+  <url><loc>https://fbrtaxcalculators.com/salary-after-tax-calculator</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/monthly-tax-calculator-pakistan</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/tax-slab-finder-pakistan</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/tax-slab-comparison-pakistan</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/withholding-tax-calculator</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/zakat-calculator</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/property-advance-tax-calculator-pakistan</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/freelancer-it-tax-calculator-pakistan</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/capital-gain-tax-calculator-pakistan</loc></url>
 
-  <url>
-    <loc>https://fbrtaxcalculators.com/how-income-tax-works-in-pakistan</loc>
-  </url>
+  <!-- Budget -->
+  <url><loc>https://fbrtaxcalculators.com/latest-budget-2026-27-tax-slabs</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/salient-features-budget-2026-27</loc></url>
 
-  <url>
-    <loc>https://fbrtaxcalculators.com/filer-vs-non-filer</loc>
-  </url>
-
-  <url>
-    <loc>https://fbrtaxcalculators.com/how-to-file-tax-return-online-pakistan</loc>
-  </url>
+  <!-- Trust / legal -->
+  <url><loc>https://fbrtaxcalculators.com/about</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/contact</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/privacy-policy</loc></url>
+  <url><loc>https://fbrtaxcalculators.com/disclaimer</loc></url>
 
 </urlset>
